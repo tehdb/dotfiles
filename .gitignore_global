@@ -1,0 +1,51 @@
+
+################################
+### System #####################
+
+.DS_Store
+tags
+
+################################
+### IDE's ######################
+
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+*.vim
+
+################################
+### Tools ######################
+
+.yalc/
+yalc.lock
+package.json.lerna_backup
+.nvmrc
+.rpt2_cache
+test.ignore
+
+################################
+### Logs #######################
+
+# *.log
+derby.log
+terminal.log
+terminal.log.1
+
+################################
+### Package manager ############
+
+node_modules
+bower_components
+yarn-error.log
+
+################################
+### Custom #####################
+
+.x/
+*-x
+
+################################
+### Projects ###################
+
+client-app/src/main/javascript/mpos.conf.json

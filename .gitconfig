@@ -1,0 +1,37 @@
+[user]
+	name = xac
+	email = x@c
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[pager]
+	branch = false
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[alias]
+	ci = commit
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	changes = diff --name-status -r
+	diffstat = diff --stat -r
+[core]
+	ignorecase = false
+	eol = lf
+	autocrlf = input
+	excludesfile = /Users/xac/.gitignore_global
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[merge]
+	tool = diffconflicts
+[mergetool "diffconflicts"]
+	cmd = nvim -c DiffConflicts \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = true

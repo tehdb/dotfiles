@@ -1,0 +1,30 @@
+
+alias v="nvim"
+alias c="code"
+alias i="idea"
+alias f="vifm"
+alias t="tmux"
+alias r="pygmentize -f terminal256 -O style=native -g"
+# alias r="nvim -R"
+alias x="open -a Xcode"
+# alias x="open -a Xcode_10_1"
+
+alias pwdc="pwd|pbcopy"
+
+## Tools
+alias m="greadme"
+
+## Shortcuts
+alias v-edit="nvim ~/.config/nvim/init.vim"
+alias v-edit-plugins="nvim ~/.config/nvim/plugins.vimrc"
+alias v-edit-mappings="nvim ~/.config/nvim/mappings.vimrc"
+alias z-edit="nvim ~/.zshrc"
+alias z-edit-alias="nvim ~/.zsh_aliases"
+alias z-source="source ~/.zshrc"
+alias f-edit="nvim ~/.config/vifm/vifmrc"
+alias t-edit="nvim ~/.tmux.conf"
+alias t-source="tmux source ~/.tmux.conf"
+alias a-edit="nvim ~/.config/alacritty/alacritty.yml"
+alias k-edit="nvim ~/.config/kitty/kitty.conf"
+
+alias cd-icloud="cd /Users/xac/Library/Mobile\ Documents/com~apple~CloudDocs"
