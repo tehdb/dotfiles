@@ -6,9 +6,8 @@ export ZSH="/Users/xac/.oh-my-zsh"				 # Path to your oh-my-zsh installation
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs vi_mode)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( vi_mode)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( status command_execution_time vcs )
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( vi_mode )
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( status command_execution_time )
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 
@@ -18,7 +17,10 @@ POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND='24'
 POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND='142'
 POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND='22'
 
+export FZF_DEFAULT_OPTS='--bind ctrl-J:down,ctrl-K:up'
+
 ### theme ######################################################################
+
 ### plugins ####################################################################
 plugins=(
   brew
@@ -27,19 +29,16 @@ plugins=(
   docker-compose
   git
   git-extras
-  gulp
-  # history
-  # node
+  node
   npm
-  # npx
+  npx
   yarn
   osx
   tmux
   vi-mode
-  # vscode
-  # zsh-completions
   zsh-syntax-highlighting
   history-substring-search
+  z
 )
 
 #################################################################### plugins ###
@@ -48,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 DISABLE_UNTRACKED_FILES_DIRTY="true"    # faster repo status check by disabling marking untracked files
 HISTSIZE=1000                           # commands history
 SAVEHIST=1000
-HISTFILE=~/.zsh_history
+HISTFILE=~/.config/omz/zsh_history
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -59,20 +58,53 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export KEYTIMEOUT=1
 
 ### zsh-users ##################################################################
-autoload -U compinit && compinit
-# source zsh-syntax-highlighting.zsh
-# source zsh-history-substring-search.zsh
+# autoload -U compinit && compinit
+## completion stuff
+zstyle ':compinstall' filename '$HOME/.zshrc'
 
-# bindkey '^[[5~' history-substring-search-up
-# bindkey '^[[6~' history-substring-search-down
+zcachedir="$HOME/.zcache"
+[[ -d "$zcachedir" ]] || mkdir -p "$zcachedir"
+
+_update_zcomp() {
+    setopt local_options
+    setopt extendedglob
+    autoload -Uz compinit
+    local zcompf="$1/zcompdump"
+    # use a separate file to determine when to regenerate, as compinit doesn't
+    # always need to modify the compdump
+    local zcompf_a="${zcompf}.augur"
+
+    if [[ -e "$zcompf_a" && -f "$zcompf_a"(#qN.md-1) ]]; then
+        compinit -C -d "$zcompf"
+    else
+        compinit -d "$zcompf"
+        touch "$zcompf_a"
+    fi
+    # if zcompdump exists (and is non-zero), and is older than the .zwc file,
+    # then regenerate
+    if [[ -s "$zcompf" && (! -s "${zcompf}.zwc" || "$zcompf" -nt "${zcompf}.zwc") ]]; then
+        # since file is mapped, it might be mapped right now (current shells), so
+        # rename it then make a new one
+        [[ -e "$zcompf.zwc" ]] && mv -f "$zcompf.zwc" "$zcompf.zwc.old"
+        # compile it mapped, so multiple shells can share it (total mem reduction)
+        # run in background
+        zcompile -M "$zcompf" &!
+    fi
+}
+_update_zcomp "$zcachedir"
+unfunction _update_zcomp
+
+
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+
+# bindkey -M vicmd 'n' nvim .
 ################################################################## zsh-users ###
 ### java #######################################################################
 
 # Manage your Java environment [jEnv](https://www.jenv.be/)
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
 
 # export JAVA_HOME=$(/usr/libexec/java_home)
 export MAVEN_OPTS="-Xms1024m -Xmx4096m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
@@ -97,9 +129,16 @@ export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 ####################################################################### ruby ###
 ### python #####################################################################
 
+# export PATH=$PATH:$HOME/Library/Python/3.7/bin
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 
 ##################################################################### python ###
+### Rust #######################################################################
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+####################################################################### rust ###
 ### chromium ###################################################################
 
 # disable google api for chromium:
@@ -108,35 +147,25 @@ export GOOGLE_DEFAULT_CLIENT_ID="no"
 export GOOGLE_DEFAULT_CLIENT_SECRET="no"
 
 ################################################################### chromium ###
-
 ### brew #######################################################################
 
-export HOMEBREW_GITHUB_API_TOKEN=xxx
+export HOMEBREW_GITHUB_API_TOKEN=XXX
+export PATH="/usr/local/sbin:$PATH"
 
 ####################################################################### brew ###
+### cocoapods ##################################################################
 
-### kitty ######################################################################
-# autoload -Uz compinit
-# compinit
-# # Completion for kitty
-# kitty + complete setup zsh | source /dev/stdin
-###################################################################### kitty ###
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
 
-# Aliases
-. ~/.zsh_aliases
+################################################################## cocoapods ###
+### chruby #####################################################################
+# source /usr/local/opt/chruby/share/chruby/auto.sh
+##################################################################### chruby ###
 
-# Functions
-#
-# fpath+=${ZDOTDIR:-~}/.zsh_functions
-# fpath=( ~/.zsh_functions "${fpath[@]}" )
+### aliases ####################################################################
+. ~/.config/omz/zsh_aliases
 
-# FPATH=~/.zsh_functions:$FPATH
-# function xac() {
-#   echo "xac is here"
-# }
 
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
