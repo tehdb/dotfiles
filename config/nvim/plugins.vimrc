@@ -1,3 +1,17 @@
+"=== deoplete ==================================================================
+  " Completion framework
+  " https://github.com/Shougo/deoplete.nvim
+  let g:deoplete#enable_at_startup = 1
+  call deoplete#custom#option({
+    \ 'auto_complete_delay': 500,
+    \ 'smart_case': v:true,
+    \ 'max_list': 10,
+    \ 'prev_completion_mode': 'mirror'
+    \ })
+  " let g:node_host_prog = '/usr/local/bin/neovim-node-host'
+  " let g:nvim_typescript#diagnostics_enable = 0
+"================================================================== deoplete ===
+"
 "=== CtrlP =====================================================================
   " File searcher
   " https://github.com/ctrlpvim/ctrlp.vim
@@ -6,8 +20,8 @@
   let g:ctrlp_show_hidden = 1
   let g:ctrlp_working_path_mode = 'rw'
   let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:10,results:30'
-  let g:ctrlp_custom_ignore = { 'dir':  '\.git$\|\.hg$\|\.svn$\|\.idea$\|\.vcode$\|bower_components$\|node_modules$\|target$\|dist$\|vendors$\|\.build$',
-    \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$\|\.ai$\|\.bmp$\|\.gif$\|\.hqx$\|\.icns$\|\.ico$\|\.jpeg$\|\.jpg$\|\.png$\|\.psd$\|\.tif$\|\.tiff$'}
+  let g:ctrlp_custom_ignore = { 'dir':  '\.git$\|\.hg$\|\.svn$\|\.idea$\|\.vcode$\|bower_components$\|node_modules$\|target$\|dist$\|vendors$\|npm-packages-offline-cache$\|www$\|.rpt2_cache$\|\.stencil$\|\.build$\|\.temp$',
+    \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$\|\.ai$\|\.bmp$\|\.gif$\|\.hqx$\|\.icns$\|\.ico$\|\.jpeg$\|\.jpg$\|\.png$\|\.psd$\|\.tif$\|\.tiff$\|\.log$\|\.crt$\|\.pem$\|\.p12$\|\.jar$\|\.js.map$\|\.ts.map$\|\.d.ts$\|\.css.map$\|yarn.lock\|package-lock.json\|.DS_Store'}
 "===================================================================== CtrlP ===
 
 
@@ -18,6 +32,8 @@
 
   let g:NERDTreeWinSize=50
   let g:NERDTreeAutoDeleteBuffer = 1
+  let g:NERDTreeBookmarksSort=0
+  let g:NERDTreeShowBookmarks=1
 
   " open automatically when vim starts up if no files were specified
   " autocmd StdinReadPre * let s:std_in=1
@@ -70,14 +86,27 @@
 "======================================================================= ack ===
 
 
-"=== deoplete ==================================================================
-  " Completion framework
-  " https://github.com/Shougo/deoplete.nvim
-  let g:deoplete#enable_at_startup = 1
-  let g:node_host_prog = '/usr/local/bin/neovim-node-host'
-  let g:nvim_typescript#diagnostics_enable = 0
-"================================================================== deoplete ===
+"=== far.vim ===================================================================
+  nnoremap <Leader>r :Far<Space>
+  nnoremap <Leader>rd :Fardo<CR>
+"=================================================================== far.vim ===
 
+"=== LanguageClient-neovim =====================================================
+  let g:LanguageClient_diagnosticsEnable = 0
+  let g:LanguageClient_serverCommands = {
+    \ 'javascript': ['typescript-language-server', '--stdio'],
+    \ 'javascript.jsx': ['typescript-language-server', '--stdio'],
+    \ 'typescript': ['typescript-language-server', '--stdio'],
+    \ 'typescript.tsx': ['typescript-language-server', '--stdio'],
+    \ }
+
+
+  " nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+  " Or map each action separately
+  " nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+  nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+  " nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+"===================================================== LanguageClient-neovim ===
 
 "=== vim-table-mode ============================================================
   " VIM Table Mode for instant table creation
@@ -91,7 +120,7 @@
   " Collection of language packs
   " https://github.com/sheerun/vim-polyglot
 
-  " let g:polyglot_disabled = ['ts', 'tsx']
+  let g:polyglot_disabled = ['ts', 'tsx']
 "=============================================================== vim-polyglot ===
 
 
@@ -99,33 +128,28 @@
   " Syntax checking
   " https://github.com/vim-syntastic/syntastic
 
-  set statusline+=%#warningmsg#
-  set statusline+=%{SyntasticStatuslineFlag()}
-  set statusline+=%*
-
-  let g:syntastic_always_populate_loc_list = 1
-  let g:syntastic_auto_loc_list = 1
-  let g:syntastic_check_on_open = 1
-  let g:syntastic_check_on_wq = 0
-
-  " TODO: make syntastic fly for gk custom tags
-  " let g:syntastic_html_tidy_ignore_errors=["<gk-", "discarding unexpected </gk-", " proprietary attribute \"gk-"]
-  " Set up the arrays to ignore for later
-  if !exists('g:syntastic_html_tidy_ignore_errors') | let g:syntastic_html_tidy_ignore_errors = [] | endif
-  " Ignore gk tags in HTML syntax checking
-  let g:syntastic_html_tidy_ignore_errors += ["<gk-", "discarding unexpected </gk-", "plain text isn't allowed in <head> elements"]
-
-  " Ignore ionic tags in HTML syntax checking, See http://stackoverflow.com/questions/30366621
-  let g:syntastic_html_tidy_ignore_errors += ["<ion-", "discarding unexpected </ion-", " proprietary attribute \"ng-"]
-
-  let g:syntastic_ignore_files = ['index\.html']
-  " let g:syntastic_filetype_checkers['xml'] = []
-  let g:syntastic_xml_checkers = []
-  let g:syntastic_hbs_checkers = []
-  " let g:syntastic_xml_plutil_quiet_messages = []
-  " let g:syntastic_xml_xmllint_quiet_messages = []
-  " let g:syntastic_disabled_filetypes = ['xml']
-  " let g:syntastic_xml_checkers=[''];
+  " set statusline+=%#warningmsg#
+  " set statusline+=%{SyntasticStatuslineFlag()}
+  " set statusline+=%*
+  "
+  " let g:syntastic_always_populate_loc_list = 1
+  " let g:syntastic_auto_loc_list = 1
+  " let g:syntastic_check_on_open = 1
+  " let g:syntastic_check_on_wq = 0
+  "
+  " " TODO: make syntastic fly for gk custom tags
+  " " let g:syntastic_html_tidy_ignore_errors=["<gk-", "discarding unexpected </gk-", " proprietary attribute \"gk-"]
+  " " Set up the arrays to ignore for later
+  " if !exists('g:syntastic_html_tidy_ignore_errors') | let g:syntastic_html_tidy_ignore_errors = [] | endif
+  " " Ignore gk tags in HTML syntax checking
+  " let g:syntastic_html_tidy_ignore_errors += ["<gk-", "discarding unexpected </gk-", "plain text isn't allowed in <head> elements"]
+  "
+  " " Ignore ionic tags in HTML syntax checking, See http://stackoverflow.com/questions/30366621
+  " let g:syntastic_html_tidy_ignore_errors += ["<ion-", "discarding unexpected </ion-", " proprietary attribute \"ng-"]
+  "
+  " let g:syntastic_ignore_files = ['index\.html']
+  " let g:syntastic_xml_checkers = []
+  " let g:syntastic_hbs_checkers = []
 "============================================================== vim-syntastic ===
 
 
@@ -194,6 +218,10 @@
   " let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 "==================================================== lightline /  bufferline ===
+
+"=== taboo ======================================================================
+  let g:taboo_tab_format = " %N:%f%m "
+"====================================================================== taboo ===
 
 "=== vim-devicons ===============================================================
   let g:webdevicons_enable_nerdtree = 1

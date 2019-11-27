@@ -17,13 +17,12 @@ window:
 
   decorations: full
 
-  start_maximized: false
+  # start_maximized: false
 
 scrolling:
 
   history: 10000
   multiplier: 3
-  faux_multiplier: 3
   auto_scroll: false
 
 tabspaces: 8
@@ -50,12 +49,6 @@ font:
 
   use_thin_strokes: true
 
-# Display the time it takes to redraw each frame.
-render_timer: false
-
-# Keep the log file after quitting Alacritty.
-persistent_logging: false
-
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
@@ -71,7 +64,8 @@ colors:
   cursor:
     text: '0x212121'
     # cursor: '0xeeffff'
-    cursor: '0x00FF00'
+    # cursor: '0x00FF00'
+    cursor: '0xFF0000'
 
   # Normal colors
   normal:
@@ -88,8 +82,10 @@ colors:
   bright:
     black:   '0x4a4a4a'
     red:     '0xf78c6c'
-    green:   '0x303030'
-    yellow:  '0x353535'
+    # green:   '0x303030'
+    green:   '0xb3bd60'
+    # yellow:  '0x353535'
+    yellow:  '0xefcd72'
     blue:    '0xb2ccd6'
     magenta: '0xeeffff'
     cyan:    '0xff5370'
@@ -291,7 +287,8 @@ key_bindings:
 
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
-  - { key: L,        mods: Control, action: ClearLogNotice                   }
+  # - { key: L,        mods: Control, action: ClearLogNotice                   }
+  - { key: L,        mods: Control, action: None                             }
   - { key: L,        mods: Control, chars: "\x0c"                            }
   - { key: Home,                    chars: "\x1bOH",        mode: AppCursor  }
   - { key: Home,                    chars: "\x1b[H",        mode: ~AppCursor }

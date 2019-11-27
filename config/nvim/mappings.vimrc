@@ -3,7 +3,7 @@
 " vmap - mapping for visual mode
 nmap <Leader><space> :nohlsearch<CR>
 nmap <Leader>ev :tabedit ~/.config/nvim/init.vim<CR>
-nmap <Leader>m :call mkdir(expand("%:p:h"), "p")<CR>
+" nmap <Leader>m :call mkdir(expand("%:p:h"), "p")<CR>
 
 nmap <Leader>h :split<CR>
 nmap <Leader>v :vsplit<CR>
@@ -29,12 +29,13 @@ noremap <right> <nop>
 noremap <up> <nop>
 noremap <down> <nop>
 
-nmap <Leader>n :NERDTreeToggle<CR>
-" nmap <Leader>n :ToggleNERDTreeAndTagbar<CR>
+" nmap <Leader>n :NERDTreeToggle<CR>
+nmap <Leader>n :ToggleNERDTreeAndTagbar<CR>
 nmap <Leader>N :NERDTreeFind<CR>
 
 
-" CtrlP
+" copy to clipboard
+vnoremap <Leader>c "*y
 
 " quote
 " :nnoremap <Leader>q" ciw""<Esc>P
@@ -47,4 +48,11 @@ nmap <Leader>d :bdelete<CR>
 nmap <Leader>w :write<CR>
 
 " close vim
-nmap <Leader>q :qa<CR>
+nmap <Leader>q :qa!<CR>
+
+" reload file
+nmap <Leader>u :e!<CR>
+
+" marks
+" nmap <Leader>m :SignatureListBufferMarks<CR>
+" nmap <Leader>mg :SignatureListGlobalMarks<CR>
