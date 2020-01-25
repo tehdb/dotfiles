@@ -1,0 +1,52 @@
+snippet xlg "console.log (tslint ignore)"
+console.log('${0}'); // tslint:disable-line
+endsnippet
+
+snippet xim "import"
+import { ${2:Module} } from '${1:Package}'
+endsnippet
+
+
+snippet xcl "class"
+export class ${1:ClassName} {
+
+	// CONSTRUCTOR ---------------------------------------------------------------
+	constructor($2) {
+
+	} // constructor
+
+	// PRIVATE -------------------------------------------------------------------
+
+	// GETTER/SETTER -------------------------------------------------------------
+
+	// PUBLIC --------------------------------------------------------------------
+
+} /////////////////////////////////////// ${0:$1} ///
+endsnippet
+
+
+snippet xcm "class method"
+${1:method}(${2}) {
+	${3}
+	return ${4:void};
+} // ${0:$1}
+
+
+endsnippet
+
+
+snippet xnafn "named array function"
+const ${1} = (${2}) => {
+	${3}
+	return ${4:void};
+} // ${0:$1}
+endsnippet
+
+
+snippet xaafn "anonymous array function"
+(${1}) => {
+	${2}
+	return ${3:void};
+}
+endsnippet
+
