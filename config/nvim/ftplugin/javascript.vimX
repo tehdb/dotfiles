@@ -1,0 +1,9 @@
+
+" Register tag name associated the filetype
+" call jspretmpl#register_tag('gql', 'graphql')
+
+set foldlevel=999  " close all folds
+
+autocmd FileType javascript syn clear foldBraces
+autocmd FileType javascript.jsx syn clear foldBraces
+
