@@ -1,81 +1,144 @@
 # dotfiles
 Development Environment Setup
 
-
 ## ArchLinux
 
-### Remap Caps-Lock to Escape
-```bash
-pacman -S setxkbmap
+### Keyboard adjustments
 
-```
-add the command before the `exec gnome-session`: `setxkbmap -option caps:escape`
-
-### Tools
+#### Remap Caps-Lock to Escape and reposition Ctrl and Alt
 
 ```bash
-pacman -S alacritty 
-neovim 
-tmux 
-ctags 
-powerline 
-python
-python-pip
-python2
-ruby 
-nodejs 
-npm 
-yarn
-# code-searching tool - https://github.com/ggreer/the_silver_searcher
-pacman -S the_silver_searcher
-
-# command-line fuzzy finder - https://github.com/junegunn/fzf
-pacman -S fzf
+# install and launch gnome tweaks tool
+pacman -S gnome-tweaks
+gnome-tweaks
 ```
+`Keboard & Mouse` → `Additional Layout Options`
+- `Caps Lock behavior` → `Make Caps Lock an additional Esc`
+- `Alt/Win key behavior` → `Ctrl is mapped to Alt; Alt is mapped to Win`
 
-### global npm packages
+#### Remap other keys
+
 ```bash
+# find key code or name
+xev -event keyboard
 
+# create key map
+xmodmap -pke > ~/.Xmodmap
+
+# swap backtick to less key
+# by replacing the value of keycode 94 (less)
+# with the value from keycode 49 (grave)
+
+# activate custom table
+# ~/.xinitrc
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 ```
 
-### 
+## Cross-platfrom Tools
 
-### Fonts using [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+### [Alacritty](https://github.com/alacritty/alacritty) · cross-platform, GPU-accelerated terminal emulator
+- ArchLinux: `pacman -S alacritty`
+- MacOS: `brew cask install alacritty`
+
+### Typeface for source code [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 ```bash
 git clone https://github.com/ryanoasis/nerd-fonts
 ./install.sh Hack
 ```
 
-## oh-my-zsh
+Statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, tmux etc...
+- ArchLinux: `pacman -S powerline`
+- MacOS: `brew install powerline`
 
-### Theme [Powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k)
+
+### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) · framework for managing zsh configuration
+
+#### Theme [Powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k)
 ```bash
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git \
+                 ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
-### [syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+#### [Syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```bash
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 
+### [fzf](https://github.com/junegunn/fzf) · command-line fuzzy finder
+- ArchLinux: `pacman -S fzf`
 
+### [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) · code-searching tool
+- ArchLinux: `pacman -S the_silver_searcher`
 
-## neovim
+### [tmux](https://github.com/tmux/tmux) · terminal multiplexer
+- ArchLinux: `pacman -S tmux`
+- MacOS: `brew install tmux`
 
-plugin manager [vim-plug](https://github.com/junegunn/vim-plug)
+#### [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+`pacman -S ctags`
+
+`pacman -S python`
+`pacman -S python-pip`
+`pacman -S python2`
+`pacman -S ruby`
+
+## [Node.js®](https://nodejs.org/en/) · JavaScript runtime built on Chrome's V8 JavaScript engine
+
+- ArchLinux: `pacman -S nodejs`
+- MacOS: `brew install node`
+
+### [npm]() - Node package manager
+- ArchLinux: `pacman -S npm`
+- MacOS: `brew install npm`
+
+### [yarn]() - Node package manager
+- ArchLinux: `pacman -S yarn`
+- MacOS: `brew install yarn`
+
+### global npm packages
+- n
+- typescript
+...
+
+## [neovim](https://neovim.io/) · hyperextensible Vim-based text editor
+- ArchLinux: `pacman -S neovim`
+- MacOS: `brew install neovim`
+
+### Additional neovim tools
+#### [neovim](https://www.npmjs.com/package/neovim) · Neovim client API and neovim remote plugin provider
+- via npm: `npm i -g neovim`
+
+### nvim plugin manager [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```bash
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-## tmux
+### [Docker](https://docs.docker.com/get-started/)
+- ArchLinux:
+  ```bash
+  pacman -S docker
+  pacman -S docker-compose
+  systemctl start docker.service
+  systemctl enable docker.service
+  groupadd docker
+  gpasswd -a $USER docker
+  usermod -aG docker $USER
+  newgrp docker
+  docker info
+  ```
+### [Postman](https://learning.getpostman.com/docs/postman/api-documentation/documenting-your-api/) · Collaboration Platform for API Development
 
-### [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
-```bash
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
+- ArchLinux GUI via [snapcraft](https://snapcraft.io/): `snap install postman`
+- NodeJS CLI via [yarn](https://yarnpkg.com): `yarn global add newman --prefix /usr/local`
 
 
