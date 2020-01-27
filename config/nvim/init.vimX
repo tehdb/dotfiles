@@ -10,7 +10,8 @@ let &packpath = &runtimepath
   filetype indent on
   set encoding=utf-8
   set t_CO=256			                  " use 256 bit colors
-  set shell=/usr/local/bin/zsh
+  " set shell=/usr/local/bin/zsh      " MacOS zsh path
+  set shell=/usr/bin/zsh              " ArchLinux zsh path
   set foldmethod=syntax
   set foldlevel=777
   set autoindent                      " :h ai
