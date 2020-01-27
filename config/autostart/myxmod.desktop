@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=MyXmodmap
+GenericName=load custom keyboard map
+MimeType=
+Exec=xmodmap /home/xac/.Xmodmap
+Type=Application
+GenericName=Terminal
+Terminal=false
+Icon=terminal
+Comment=xmodmap
+X-KDE-StartupNotify=false
+Categories=System;
+X-GNOME-UsesNotifications=true

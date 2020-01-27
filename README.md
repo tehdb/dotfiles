@@ -28,11 +28,9 @@ xmodmap -pke > ~/.Xmodmap
 # swap backtick to less key
 # by replacing the value of keycode 94 (less)
 # with the value from keycode 49 (grave)
-
-# activate custom table
-# ~/.xinitrc
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 ```
+> Will not work in (gnome) cuz it is applying its own keyboard settings and resetting custom modifications.
+`cp /path/to/dotfiles/autostart/myxmod.desctop ~/.config/autostart/myxmod.desktop`
 
 ## Cross-platfrom Tools
 

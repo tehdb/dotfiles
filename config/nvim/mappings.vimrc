@@ -40,8 +40,16 @@ noremap <right> <nop>
 noremap <up> <nop>
 noremap <down> <nop>
 
-" copy to clipboard
-vnoremap <Leader>c "*y
+let s:OSName = system("uname -s")
+if s:OSName == "Darwin\n"
+  " OSX
+  " set clipboard=unnamed
+  vnoremap <Leader>c "*y
+elseif s:OSName == "Linux\n"
+  " Linux
+  " set clipboard=unnamedplus
+  vnoremap <Leader>c "+y
+endif
 
 " delete current buffer
 nmap <Leader>d :bdelete<CR>

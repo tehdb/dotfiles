@@ -196,6 +196,7 @@ let &packpath = &runtimepath
   " source ~/.config/nvim/xpluggins/diminactive.vimrc
   source ~/.config/nvim/xpluggins/marks.vimrc
   source ~/.config/nvim/xpluggins/yoink.vimrc
+  source ~/.config/nvim/xpluggins/cutclass.vimrc
   " source ~/.config/nvim/xpluggins/deoplete.vimrc
   " source ~/.config/nvim/xpluggins/ale.vimrc
   " source ~/.config/nvim/xpluggins/langauge-client.vimrc
