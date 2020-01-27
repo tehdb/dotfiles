@@ -37,6 +37,7 @@ let &packpath = &runtimepath
 "===================================================================== basic ===
 
 "=== plugins ===================================================================
+"
   call plug#begin('~/.vim/plugged')
     " Plug 'jeffkreeftmeijer/vim-numbertoggle'                      " Toggles between hybrid and absolute line numbers automatically - https://github.com/jeffkreeftmeijer/vim-numbertoggle
     " Plug 'ctrlpvim/ctrlp.vim'                                       " File searcher - https://github.com/ctrlpvim/ctrlp.vim
@@ -76,15 +77,21 @@ let &packpath = &runtimepath
     " Plug 'pseewald/nerdtree-tagbar-combined'                      " Tagbar and NERDTree - https://github.com/pseewald/nerdtree-tagbar-combined
     Plug 'kristijanhusak/vim-hybrid-material'                       " Material theme - https://github.com/kristijanhusak/vim-hybrid-material
     Plug 'itchyny/lightline.vim'                                    " Status line - https://github.com/itchyny/lightline.vim
-    Plug 'blueyed/vim-diminactive'                                  " Dim inactive windows - https://github.com/blueyed/vim-diminactive
+    " Plug 'blueyed/vim-diminactive'                                  " Dim inactive windows - https://github.com/blueyed/vim-diminactive
     Plug 'gcmt/taboo.vim'                                           " Pretty tabs - https://github.com/gcmt/taboo.vim
     Plug 'ryanoasis/vim-devicons'                                   " Glyphs / icons - https://github.com/ryanoasis/vim-devicons
-    Plug 'junegunn/vim-peekaboo'                                    " Sidebar registers - https://github.com/junegunn/vim-peekaboo
     Plug 'kshenoy/vim-signature'                                    " Marks tools - https://github.com/kshenoy/vim-signature
     Plug 'pseewald/vim-anyfold'                                     " Foldings - https://github.com/pseewald/vim-anyfold
     Plug 'brooth/far.vim'                                           " Find And Replace Vim plugin - https://github.com/brooth/far.vim
     Plug 'tyru/open-browser.vim'                                    " Open URI with browser - https://github.com/tyru/open-browser.vim/
-    Plug 'dhruvasagar/vim-zoom'
+    " Plug 'dhruvasagar/vim-zoom'
+    " Plug 'junegunn/vim-peekaboo'                                    " Sidebar registers - https://github.com/junegunn/vim-peekaboo
+    "
+    " TODO: try this plugins:
+    Plug 'svermeulen/vim-yoink'                                     " Yank history to cycle between when pasting - https://github.com/svermeulen/vim-yoink
+    Plug 'svermeulen/vim-cutlass'                                   " Adds a 'cut' operation separate from 'delete' - https://github.com/svermeulen/vim-cutlass
+    " Plug 'svermeulen/vim-subversive'                                " Operator motions to quickly replace text - https://github.com/svermeulen/vim-subversive
+    "
 
     " TODO: check this out
     " Plug 'benmills/vimux'                                           " vim plugin to interact with tmux - https://github.com/benmills/vimux
@@ -167,6 +174,7 @@ let &packpath = &runtimepath
   " set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
 "================================================================= settings ===
 
+"
 "=== plugins configs ===========================================================
   source ~/.config/nvim/xpluggins/foldtext.vimrc
   source ~/.config/nvim/xpluggins/coc.vimrc
@@ -183,9 +191,10 @@ let &packpath = &runtimepath
   source ~/.config/nvim/xpluggins/devicons.vimrc
   source ~/.config/nvim/xpluggins/tagbar.vimrc
   source ~/.config/nvim/xpluggins/ultisnips.vimrc
-  source ~/.config/nvim/xpluggins/peekaboo.vimrc
-  source ~/.config/nvim/xpluggins/diminactive.vimrc
+  " source ~/.config/nvim/xpluggins/peekaboo.vimrc
+  " source ~/.config/nvim/xpluggins/diminactive.vimrc
   source ~/.config/nvim/xpluggins/marks.vimrc
+  source ~/.config/nvim/xpluggins/yoink.vimrc
   " source ~/.config/nvim/xpluggins/deoplete.vimrc
   " source ~/.config/nvim/xpluggins/ale.vimrc
   " source ~/.config/nvim/xpluggins/langauge-client.vimrc
