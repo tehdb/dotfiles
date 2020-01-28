@@ -40,7 +40,6 @@ noremap <right> <nop>
 noremap <up> <nop>
 noremap <down> <nop>
 
-let s:OSName = system("uname -s")
 if s:OSName == "Darwin\n"
   " OSX
   " set clipboard=unnamed
