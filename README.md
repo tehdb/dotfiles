@@ -5,6 +5,26 @@ Development Environment Setup
 
 ### Keyboard adjustments
 
+#### Connect apple magic keyboard via bluetooth
+
+```bash
+pacman -S bluez-utilz bluez-hid2hci
+
+# get the MAC address of the keyboard
+bluetoothctl
+[bluetooth]$ power on
+[bluetooth]$ devices
+Device xx:xx:xx:xx:xx:xx Apple Wireless Keyboard
+
+# connect the keyboard to bluetooth
+[bluetooth]$ agent KeyboardOnly
+[bluetooth]$ default-agent
+[bluetooth]$ pairable on
+[bluetooth]$ pair xx:xx:xx:xx:xx:xx
+[bluetooth]$ trust xx:xx:xx:xx:xx:xx
+[bluetooth]$ connect xx:xx:xx:xx:xx:xx
+```
+
 #### Remap Caps-Lock to Escape and reposition Ctrl and Alt
 
 ```bash
@@ -14,7 +34,8 @@ gnome-tweaks
 ```
 `Keboard & Mouse` → `Additional Layout Options`
 - `Caps Lock behavior` → `Make Caps Lock an additional Esc`
-- `Alt/Win key behavior` → `Ctrl is mapped to Alt; Alt is mapped to Win`
+- (pc keyboard) - `Alt/Win key behavior` → `Ctrl is mapped to Alt; Alt is mapped to Win`
+- (apple keyboard) - `Alt/Win key behavior` → `Ctrl is mapped to Win and the usual Ctrl keys`
 
 #### Remap other keys
 
