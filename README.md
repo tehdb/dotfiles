@@ -34,8 +34,11 @@ gnome-tweaks
 ```
 `Keboard & Mouse` → `Additional Layout Options`
 - `Caps Lock behavior` → `Make Caps Lock an additional Esc`
-- (pc keyboard) - `Alt/Win key behavior` → `Ctrl is mapped to Alt; Alt is mapped to Win`
-- (apple keyboard) - `Alt/Win key behavior` → `Ctrl is mapped to Win and the usual Ctrl keys`
+- (pc keyboard)
+  - `Alt/Win key behavior` → `Ctrl is mapped to Alt; Alt is mapped to Win`
+- (apple keyboard)
+  - `Alt/Win key behavior` → `Disabled`
+  - `Ctrl position` → `Swap Left Win with Left Ctrl`
 
 #### Remap other keys
 

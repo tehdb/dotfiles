@@ -1,7 +1,7 @@
 
 env:
-  # TERM: xterm-256color
-  TERM: screen-256color
+  TERM: xterm-256color
+  # TERM: screen-256color
 
 window:
 
@@ -57,7 +57,8 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x1c1c1c'
+    # background: '0x1c1c1c'
+    background: '0x121212'
     foreground: '0xeeffff'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
@@ -273,13 +274,11 @@ key_bindings:
   #- { key: Key0,   mods: Command, action: ResetFontSize    }
   #- { key: Equals, mods: Command, action: IncreaseFontSize }
   #- { key: Minus,  mods: Command, action: DecreaseFontSize }
-  #- { key: K,      mods: Command, action: ClearHistory     }
-  #- { key: K,      mods: Command, chars: "\x0c"            }
   #- { key: V,      mods: Command, action: Paste            }
   #- { key: C,      mods: Command, action: Copy             }
-  #- { key: H,      mods: Command, action: Hide             }
-  #- { key: Q,      mods: Command, action: Quit             }
-  #- { key: W,      mods: Command, action: Quit             }
+  - { key: K,      mods: Command, action: ReceiveChar      }
+  - { key: H,      mods: Command, action: ReceiveChar      }
+  - { key: W,      mods: Command, action: ReceiveChar      }
 
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
