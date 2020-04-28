@@ -1,1149 +1,1052 @@
-: 1577664391:0;./setup.sh email add xac@aeroji.com
-: 1577664422:0;curl -o setup.sh https://raw.githubusercontent.com/tomav/docker-mailserver/master/setup.sh
-: 1577664466:0;docker-compose up -d mail
-: 1577664792:0;docker-compose down -v
-: 1577703371:0;docker-compose up -d 
-: 1577703638:0;docker volume rm mailserver_mail
-: 1577703740:0;./setup.sh email add xac@aeroji.com 1234asdF
-: 1577704362:0;docker-compose start cache database
-: 1577711558:0;git commit -m "setup local mail server"
-: 1577711689:0;docker-compose rm -v
-: 1577711697:0;docker-compose rm
-: 1577711715:0;alias rm
-: 1577711784:0;git checkout -b fix/clean-up
-: 1577711799:0;git checkout master 
-: 1577711907:0;./setup.sh email add noreply@aeroji.com 1234asdF\
+: 1583661752:0;history 1
+: 1583661866:0;echo $BASH_COMMAND
+: 1583662082:0;history | tail -1
+: 1583662095:0;history | tail -2 | head -1 | cut -c8-999
+: 1583662573:0;history | head
+: 1583662600:0;history | grep -v history
+: 1583662652:0;history -1
+: 1583706738:0;n ls-remote 10
+: 1583706796:0;n install 12.16.1
+: 1583708281:0;which npm
+: 1583745131:0;~/Workspace/xac/aeroji/apps/mail-service
+: 1583745200:0;./setup.sh email add user1@aeroji.com user1passwd
+: 1583745211:0;./setup.sh email add user2@aeroji.com user2passwd
+: 1583745222:0;./setup.sh email add user3@aeroji.com user3passwd
+: 1583762640:0;~/Workspace/xac/aeroji
+: 1583779029:0;ag form
+: 1583779037:0;ag form --html
+: 1583779404:0;cd ../aeroji-old/client-hybrid/src
+: 1583783481:0;../aeroji/apps/web-app
+: 1583783572:0;cp node_modules/material-design-icons/action/svg/production/ic_lock_48px.svg apps/web-app/src/assets/icons
+: 1583879045:0;npm i -g @nrwl/cli n
+: 1583881378:0;brew doctor
+: 1583881442:0;brew info joplin
+: 1583881479:0;brew cask update joplin
+: 1583965850:0;ps
+: 1583965853:0;htop
+: 1584265256:0;cd ../aeroji-old
+: 1584267079:0;cp src/app/services/auth/auth.interceptor.ts ../../aeroji/libs/core/services/auth
+: 1584267087:0;cp src/app/services/auth/auth.types.ts ../../aeroji/libs/core/services/auth
+: 1584267093:0;cp src/app/services/auth/index.ts ../../aeroji/libs/core/services/auth
+: 1584269236:0;cp src/app/state/auth/auth.facade.ts ../../aeroji/libs/core/state/src/auth
+: 1584269298:0;cp src/app/state/auth/auth.selectors.ts ../../aeroji/libs/core/state/src/auth
+: 1584269826:0;npm view store version
+: 1584269923:0;npm i store --save
+: 1584315285:0;npm run web-app:serve:dev 
+: 1584351862:0;cd mono
+: 1584353981:0;npm view cordova-plugin-scanner-unified
+: 1584357291:0;la ~/Library/MobileDevice/Provisioning\ Profiles
+: 1584375334:0;connect-to-macmini-bas
+: 1584375854:0;cd Workspace/gk/external-modules-publisher/
+: 1584378092:0;cd packaged-sap.ui.core
+: 1584378195:0;git submodule foreach 'git fetch'
+: 1584378243:0;npm run setup
+: 1584378282:0;npmrc gk
+: 1584378284:0;npm run release
+: 1584378351:0;git remote -v
+: 1584378395:0;git commit -m "publish 1.52.36"
+: 1584378459:0;npm view packaged-sap.ui.core version
+: 1584378489:0;npm view openui5-sap.ui.core
+: 1584385711:0;gco story/POCP-46057
+: 1584385800:0;connect-to-macmini2-bas
+: 1584385934:0;rm -rf clients/mpos-next
+: 1584385971:0;git commit -m "POCP-46057 call nvm to switch node version"
+: 1584385975:0;git push 
+: 1584385987:0;git push origin story/POCP-46057 
+: 1584385991:0;git push origin story/POCP-46057 --no-verify 
+: 1584435422:0;connect-to-macmini-es
+: 1584438424:0;brew info nevoim
+: 1584444288:0;n
+: 1584444489:0;npm i -g tslint @angular-devkit/schematics-cli @angular/cli @nestjs/cli @nrwl/cli
+: 1584446335:0;r package.json
+: 1584446343:0;yarn build:deb
+: 1584446778:0;sudo xcode-select -s /Applications/Xcode.app/
+: 1584446790:0;xcodebuild -version
+: 1584446795:0;yarn build:debug:ipa 
+: 1584447056:0;x .build/ios/platforms/ios/Mobile\ POS.xcworkspace
+: 1584468721:0;pdw
+: 1584469948:0;lah
+: 1584469951:0;ls -lah
+: 1584469971:0;:q
+: 1584469981:0;exit
+: 1584470285:0;е
+: 1584521157:0;yarn dev -- --port=8787 --sercure=false --eslint=false --bundleComponents=false --osNotifications=true
+: 1584521321:0;ln -s ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS611/conf.json mpos.dev.conf.json
+: 1584521327:0;ln -sr ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS611/conf.json mpos.dev.conf.json
+: 1584521336:0;man ln
+: 1584523114:0;curl --location --request GET 'https://tron.gk.gk-software.com:8443/config-service/services/rest/v1/configurations/configuration/structure-nodes/002.9090.MPOS600/apps/GKR-OPOS-MOBILE/versions/v5.15.0/raw?path=./parameter/settings.properties&type=file-resource' \\
+--header 'Accept: application/json' \\
+--header 'Authorization: Basic bXBvczpzZXM='
+: 1584523154:0;curl --location --request GET 'https://tron.gk.gk-software.com:8443/config-service/services/rest/v1/configurations/configuration/structure-nodes/002.9090.MPOS611/apps/GKR-OPOS-MOBILE/versions/v5.15.0/raw?path=./parameter/settings.properties&type=file-resource' \\
+--header 'Accept: application/json' \\
+--header 'Authorization: Basic bXBvczpzZXM='
+: 1584523203:0;curl --location --request GET 'https://tron.gk.gk-software.com:9443/config-service/services/rest/v1/configurations/configuration/structure-nodes/002.9090.MPOS611/apps/GKR-OPOS-MOBILE/versions/v5.15.0/raw?path=./parameter/settings.properties&type=file-resource' \\
+--header 'Accept: application/json' \\
+--header 'Authorization: Basic bXBvczpzZXM='
+: 1584523856:0;gco bugfix/POCP-46060 
+: 1584525148:0;git reset yarn.lock
+: 1584525167:0;git rebase develop
+: 1584606609:0;git push origin bugfix/POCP-46060 --force --no-verify 
+: 1584629113:0;rm -rf components/widgets/money-laundering
+: 1584631511:0;rm -rf npm-packages-offline-cache
+: 1584631515:0;rm yarn.lock
+: 1584631522:0;rm MobilePOS_5.15.0_b0000_20200317-131019_debug.ipa
+: 1584634125:0;yarn 
+: 1584635669:0;git stash pop
+: 1584636376:0;git commit -m "align deps"
+: 1584647765:0;git commit -m "sync deps"
+: 1584647833:0;git push origin feature/mpos-next --no-verify --force -o ci.skip
+: 1584695914:0;npm install -g ntl
+: 1584695924:0;ntl
+: 1584696047:0;npm i -g @angular/cli @nestjs/cli npm ts-node remotedebug-ios-webkit-adapter
+: 1584701633:0;cd mpos
+: 1584702064:0;yarn install less
+: 1584702069:0;yarn add less
+: 1584702166:0;ag less
+: 1584703077:0;brew cask info cablire
+: 1584703081:0;brew cask info calibre
+: 1584720445:0;git commit -m "adds build tooling"
+: 1584720474:0;gco feature/POCP-37305-goods-no-receiptci
+: 1584720483:0;gco feature/POCP-37305-goods-no-receipt
+: 1584720508:0;git status
+: 1584723739:0;lerna build --scope @gk-software/component-service-opos-service
+: 1584724219:0;lerna run build --scope @gk-software/component-service-opos-service
+: 1584724372:0;git stash
+: 1584726042:0;ln -sf ~/Workspace/gk/configs/mpos/tron-8443-ent1-002.9090.MPOS611/conf.json mpos.dev.conf.json
+: 1584726044:0;yarn dev -- --port=8787 --secure=false --eslint=false --bundleComponents=false --osNotifications=true
+: 1584735699:0;history 
+: 1584735718:0;history | tail -n 2
+: 1584735802:0;history | tail -n 5
+: 1584735895:0;history | tail -n 1
+: 1584736205:0;Workspace/xac/aj
+: 1584736569:0;Workspace/xac/aeroji
+: 1584738906:0;cp node_modules/material-design-icons/image/svg/production/ic_portrait_48px.svg apps/web-app/src/assets/icons
+: 1584746153:0;cd dist/apps/media-service/uploads
+: 1584746163:0;cd 5776f983-0063-4398-97d3-096a5b869136
+: 1584748230:0;git commit -m "[web-app] profile settings dialog"
+: 1584748336:0;docker-compose down 
+: 1584748351:0;docker-compose down --rmi
+: 1584748356:0;docker-compose down --rmi all
+: 1584748365:0;rm -rf volumes
+: 1584954652:0;bat
+: 1584954667:0;bat README.md
+: 1584954690:0;brew update bat
+: 1584954697:0;brew upgrade bat
+: 1584964129:0;la dist/apps/media-service/uploads
+: 1584967362:0;git commit -m "fix router state selector"
+: 1584967386:0;git push origin feature/mpos-next --no-verify -o ci.skip
+: 1584975989:0;cd client-hybrid
+: 1584981638:0;lerna run build --scope @gk-software/component-widget-drawer-application-menu 
+: 1584983930:0;open dist/apps/media-service/uploads/
+: 1584984512:0;cp node_modules/material-design-icons/action/svg/production/ic_exit_to_app_48px.svg apps/web-app/src/assets/icons
+: 1584984542:0;cp node_modules/material-design-icons/action/svg/production/ic_assignment_ind_48px.svg apps/web-app/src/assets/icons
+: 1585073692:0;npm i @ng-stack/forms --save
+: 1585075930:0;cp node_modules/material-design-icons/action/svg/production/ic_done_48px.svg apps/web-app/src/assets/icons
+: 1585076867:0;cp node_modules/material-design-icons/action/svg/production/ic_hourglass_empty_48px.svg apps/web-app/src/assets/icons
+: 1585089210:0;cd apps/web-app/src/app/core/ui
+: 1585089225:0;ng g component custom-input
+: 1585127802:0;cd Workspace/xac/aeroji-old
+: 1585127804:0;../aeroji
+: 1585139815:0;npm run auth-service:cache:gui
+: 1585173613:0;cd apps/mssg-service
+: 1585173629:0;docker-compose start
+: 1585173635:0;docker-compose up
+: 1585238466:0;brew install tmuxinator
+: 1585238515:0;wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O /usr/local/share/zsh/site-functions/_tmuxinator
+: 1585238568:0;tmuxinator new aeroji
+: 1585265155:0;cd Workspace/xac/
+: 1585265493:0;дд
+: 1585266021:0;npm run mssg-service:db:run
+: 1585295519:0;cd ~/Workspace/xac/aeroji/
+: 1585296578:0;cp node_modules/material-design-icons/editor/svg/production/ic_attach_file_48px.svg apps/web-app/src/assets/icons
+: 1585318726:0;cd ../gk/mo
+: 1585324183:0;git reset --hard
+: 1585324197:0;gco feature/mpos-next 
+: 1585324253:0;git rebase --abort 
+: 1585324281:0;git rebase develop 
+: 1585324329:0;git rebase --edit-todo 
+: 1585324490:0;rm -rf components/widgets/auth/loader
+: 1585324499:0;rm -rf components/widgets/drawer-config-login-menu/loader
+: 1585324513:0;rm -rf components/widgets/line-item-list/loader
+: 1585324521:0;rm -rf components/widgets/transaction-container/loader
+: 1585324596:0;rm -rf components/runtime/ui/footer-widget/loader
+: 1585324611:0;rm -rf components/runtime/ui/modal-dialog/loader
+: 1585324630:0;git rm -rf components/runtime/ui/header-widget/loader
+: 1585324639:0;git rm -rf components/widgets/drawer-application-menu/loader
+: 1585324658:0;rm -rf components/runtime/ui/header-widget/loader
+: 1585324668:0;rm -rf components/widgets/drawer-application-menu/loader
+: 1585324714:0;rm -rf components/widgets/richemont-drawer-config-login-menu/www
+: 1585325047:0;rm -rf components/widgets/gift-certificate-info/loader
+: 1585325304:0;git mergetool
+: 1585325335:0;git rebase --continue 
+: 1585428354:0;git commit -m "adds messaging"
+: 1585477406:0;cd /Users/xac/Workspace/xac/aeroji/dist/apps/media-service/uploads/1cbc7e36-b2b6-4c8c-8481-d260c0e001da
+: 1585477409:0;r meta.json
+: 1585478007:0;r node_modules/@types/multer/index.d.ts
+: 1585478826:0;r /Users/xac/Workspace/xac/aeroji/dist/apps/media-service/uploads/3eec8927-1f43-4910-b0ba-3a0f2914ca1a/meta.json
+: 1585487280:0;n -ls-remote 12
+: 1585487287:0;n ls-remote 112
+: 1585487362:0;npm i -g @angular-devkit/schematics-cli @angular/cli @nestjs/cli @nrwl/cli
+: 1585487411:0;npm i -g npm
+: 1585487429:0;npm i -g prettier ts-node jest
+: 1585487818:0;cd aeroji
+: 1585487864:0;brew cask info joplin
+: 1585495238:1;npm run media-service:serve:dev k
+: 1585497532:0;r /Users/xac/Workspace/xac/aeroji/dist/apps/media-service/uploads/f4db7d9f-9ebc-495c-953d-2d3342b6dd7b/meta.json
+: 1585499085:0;la c700c6f6-2a65-45b6-b2ed-0515317271bb
+: 1585500195:0;npm run media-service:serve:dev 
+: 1585501822:0;npm run auth-service:db:gui
+: 1585516826:0;npm run mssg-service:db:gui
+: 1585554183:0;cd ../gk/mono
+: 1585556132:0;lerna run build --scope @gk-software/uikit
+: 1585559005:0;cd ../mpos-next
+: 1585560263:0;la node_modules/@gk-software
+: 1585563534:0;v dist/types
+: 1585563570:0;r components/widgets/retrieve-receipt/dist/types/components.d.ts
+: 1585564295:0;yarn clean
+: 1585568026:0;cd components/widgets/retrieve-receipt
+: 1585568030:0;rm loader
+: 1585568230:0;la dist
+: 1585568301:0;la dist/collection/components/retrieve-receipt
+: 1585568314:0;v dist/collection/components/retrieve-receipt
+: 1585568371:0;la dist/types/components.d.ts
+: 1585568376:0;r dist/types/components.d.ts
+: 1585568391:0;la dist/types
+: 1585568411:0;la dist/types/retrieve-receipt
+: 1585568427:0;la dist/types/retrieve-receipt/.stencil/retrieve-receipt.types.d.ts
+: 1585574977:0;npm run media-service:serve:dev
+: 1585578646:0;lerna run build --scope @gk-software/component-widget-retrieve-receipt
+: 1585579389:0;rm -rf dist 
+: 1585579668:0;....
+: 1585579789:0;yarn syncpack list-mismatches
+: 1585579933:0;yarn install
+: 1585580610:0;cd opos-service
+: 1585580838:0;cd runtime/ui
+: 1585580841:0;cd footer-widget
+: 1585580870:0;la node_modules
+: 1585581221:0;ag "hasFetch = isFunction$8(global.fetch)"
+: 1585581274:0;npm view rollup-plugin-node-builtins version
+: 1585581325:0;npm view rollup-plugin-node-polyfills
+: 1585581330:0;npm view rollup-plugin-node-polyfills version
+: 1585581423:0;ag "hasFetch"
+: 1585581758:0;rm -rf dist loader
+: 1585582308:0;ag "global"
+: 1585582320:0;ag "global" --ts
+: 1585582388:0;ag globalThis
+: 1585582901:0;cd widgets/busy-indicator
+: 1585583059:0;cd node_modules
+: 1585583062:0;ag "const {env} = process;"
+: 1585583114:0;la supports-hyperlinks/index.js
+: 1585583127:0;la env-paths/index.js
+: 1585583771:0;cd services/opos-settings
+: 1585584770:0;rm -rf dist
+: 1585584772:0;rm -rf loader
+: 1585584775:0;rm -rf www
+: 1585584777:0;yarn build
+: 1585588633:0;git commit -m "fix issues"
+: 1585589606:0;git push origin feature/mpos-next --force
+: 1585590394:0;git push origin feature/mpos-next --force --no-verify 
+: 1585590852:0;npm view @gk-software/component-widget-enter-amount
+: 1585600269:0;renamePane
+: 1585600521:0;tmux rename-window -t${1} "Title Text"
+: 1585600548:0;tmux rename-window -t${TMUX_PANE} "Title Text"
+: 1585600557:0;tmux rename-window -t${TMUX_PANE} "???"
+: 1585600759:0;printf '\033]2;%s\033\\' 'title goes here'
+: 1585600823:0;tmux select-pane -T title1
+: 1585601026:0;printf '\033]2;My Pane Title\033\\'
+: 1585601031:0;tmux set -g pane-border-format "#{pane_index} #T"
+: 1585601089:0;printf '\033]2;My Pane Title\033\\'\
 
-: 1577711917:0;./setup.sh email add support@aeroji.com 1234asdF\
+: 1585601098:0;printf '\033]2;XXXX \033\\'\
 
-: 1577712134:0;git push origin master  --force
-: 1577714088:0;docker container --all
-: 1577714131:0;docker container -h
-: 1577714139:0;docker container ls -h
-: 1577714148:0;docker container ls --all
-: 1577714165:0;docker container ps
-: 1577717590:0;yarn add moment
-: 1577721480:0;git commit -m "adds reset user password api"
-: 1577721486:0;git push origin master 
-: 1577794947:0;cd ../mailserver
-: 1577795007:0;dps
-: 1577795153:0;docker-compose stop api
-: 1577795243:0;docker-compose start db
-: 1577795253:0;docker-compose start database cache
-: 1577795266:0;docker-compose start mail
-: 1577795342:0;docker-compose logs -f dabatase
-: 1577795489:0;docker-compose down -v --rmi
-: 1577795501:0;docker-compose -v --rmi down
-: 1577795679:0;docker-compose --rmi -v down
-: 1577795694:0;docker-compose  down --rmi --volumse
-: 1577795715:0;docker-compose --rmi --volumes down
-: 1577795723:0;docker-compose down -h
-: 1577795739:0;docker-compose down --rmi --volumes
-: 1577795759:0;docker-compose down --rmi all --volumes
-: 1577795791:0;ls -lAFh volumes
-: 1577795801:0;ls -lAFh volumes/mongo
-: 1577795805:0;ls -lAFh volumes/mongo/db
-: 1577795839:0;docker-compose up --build -d database cache
-: 1577797092:0;ionic g m auth
-: 1577797120:0;ionic g p verify
-: 1577804262:0;ng g page test
-: 1577804350:0;ionic g page verify-page
-: 1577804595:0;ionic g page verify
-: 1577954208:0;cd t
-: 1577957959:0;npm view npm version
-: 1577957984:0;npm i -g lerna neovim
-: 1577961043:0;alias xo
-: 1577961046:0;alias x
-: 1577961729:0;cd iOS-DeviceSupport
-: 1577972963:0;ionic start ionic-keyboard-test tabs
-: 1577973061:0;cd ionic-keyboard-test
-: 1577973101:0;ionic capacitor add ios
-: 1577973127:0;npn update
-: 1577973133:0;npm update
-: 1577973682:0;ionic capacitor open ios
-: 1577974001:0;ionic build
-: 1577974073:0;ionic capacitor copy ios
-: 1577978586:0;ifconfig
-: 1577979192:0;git checkout -b bugfix/POCP-44182-prohebit-arbitrary-loads-for-prod
-: 1577979229:0;git commit -m "POCP-44182 sets NSAllowsArbitraryLoads to false for prod build"
-: 1577979238:0;git push origin bugfix/POCP-44182-prohebit-arbitrary-loads-for-prod 
-: 1577981489:0;javaws ~/Tools/smclient-ent1.jnlp
-: 1578040997:0;yarn build:release:ipa
-: 1578051026:0;npm view cordova-plugin-ionic-keyboard version
-: 1578051345:0;components/widgets/auth
-: 1578059251:0;ionic g page page_reset-pass
-: 1578059303:0;ionic g page reset-pass
-: 1578061735:0;git checkout -b bugfix/POCP-42978-login-screen-ios-improvements
-: 1578061758:0;git commit -m "POCP-42978 login view ios improvements"
-: 1578061776:0;git push origin bugfix/POCP-42978-login-screen-ios-improvements 
-: 1578061956:0;ionic g page verify-mail
-: 1578062737:0;ionic g page update-pass
-: 1578066876:0;ionic g module material
-: 1578068914:0;git checkout feature/docker-image-with-ipas 
-: 1578068997:0;git push origin feature/docker-image-with-ipas --force
-: 1578080012:0;ionic g page search-results
-: 1578080035:0;ionic g page item-details
-: 1578082338:0;ionic g c marketplace/item-card
-: 1578086136:0;yarn add @ngrx/router-store
-: 1578089577:0;j
-: 1578135386:0;nvim .prettierrc
-: 1578136778:0;cd Workspace/tuts
-: 1578224599:0;cd ../client-hybrid
-: 1578224614:0;cd Workspace/xac/aeroji/client-hybrid
-: 1578225135:0;cd Workspace/xac/aeroji/
-: 1578225180:0;npm i -g lerna
-: 1578225238:0;nest new service-catalog-fake
-: 1578225339:0;cd Workspace/xac/aeroji/service-auth
-: 1578225381:0;cd ../service-auth
-: 1578225468:0;yarn add uuid
-: 1578225534:0;yarn add chance
-: 1578225763:0;yarn add ramda
-: 1578226872:0;yarn add --dev @types/ramda 
-: 1578228847:0;yarn add fs-extra
-: 1578228876:0;yarn add --dev @types/fs-extra\
+: 1585601104:0;tmux set -g pane-border-format "#{pane_index} #T"\
 
-: 1578230672:0;yarn add ramda-adjunct
-: 1578230714:0;yarn add --dev @types/ramda-adjunct
-: 1578230846:0;npm view @types/ramda-adjunct
-: 1578232908:0;cd aeroji/service-catalog-fake
-: 1578232916:0;\rm -i -rf .git 
-: 1578232957:0;git commit -m "add fake catalog service"
-: 1578235348:0;cd Workspace/tuts/angular-reactive-workshop
-: 1578235926:0;yarn add @nrwl/angular
-: 1578258227:0;yarn add @nrwl/nx
-: 1578258240:0;nvim package.json
-: 1578265461:0;git commit -m "impl fetch data for an item"
-: 1578265471:0;git push origin master
-: 1578304440:0;npx create-nx-workspace@latest aeroji-nrwl
-: 1578305203:0;cd Workspace/gk/mo
-: 1578306022:0;cd aeroji-nrwl
-: 1578306116:0;npm i -g @nestjs/cli forever
-: 1578306902:0;nx dep-graph
-: 1578307017:0;git checkout bugfix/POCP-42978-login-screen-ios-improvements 
-: 1578307096:0;cd ../../components/widgets/auth/
-: 1578307933:0;ln -snf ~/Workspace/gk/configs/mpos/mpos.conf.tron-ent1-002-6111.json  mpos.dev.conf.json
-: 1578310803:0;yarn build:dev && yarn _cordova:copy-app-src
-: 1578310878:0;yarn build:dev && gulp _cordova:copy-app-src
-: 1578311042:0;cd ../../temp
-: 1578311047:0;curl http://nexusjs.es.gk-software.com/nexus/repository/npm-all/material-design-icons/-/material-design-icons-3.0.1.tgz
-: 1578311051:0;wget http://nexusjs.es.gk-software.com/nexus/repository/npm-all/material-design-icons/-/material-design-icons-3.0.1.tgz
-: 1578311064:0;\rm -i material-design-icons-3.0.1.tgz
-: 1578311207:0;yarn build:dist && gulp _cordova:copy-app-src
-: 1578311589:0;git clean -fd
-: 1578311601:0;gd
-: 1578312124:0;cd Workspace/gk/configs/mpos/tron-8443-ent1-002.9090.MPOS612
-: 1578312129:0;touch qr_code.json
-: 1578312131:0;nvim qr_code.
-: 1578312153:0;cd tron-8443-ent1-002.9090.MPOS612
-: 1578312178:0;\mv -i qr_code.zip
-: 1578312200:0;\cp -i -R tron-8443-ent1-002.9090.MPOS612 tron-8443-ent1-002.9090.MPOS611
-: 1578312204:0;cd tron-8443-ent1-002.9090.MPOS611
-: 1578312210:0;nvim qr_code.json
-: 1578312419:0;\rm -i -rf qr_code.zip
-: 1578313296:0;git fetch 
-: 1578313311:0;git reset --hard origin/develop
-: 1578313348:0;yarn build:debug:ipa 
-: 1578314403:0;\cp -i -R tron-8443-ent1-002.9090.MPOS612 tron-8443-ent1-002.9090.MPOS613
-: 1578314405:0;cd tron-8443-ent1-002.9090.MPOS61
-: 1578314911:0;npm view gulp-eslint
-: 1578315102:0;n 10.17.0
-: 1578315330:0;eslint -v
-: 1578315336:0;eslint 
-: 1578315639:0;git diff .eslintrc
-: 1578319035:0;xo .build/ios/platforms/ios/Adidas\ MPOS.xcworkspace
-: 1578322488:0;npm view hammerjs
-: 1578322492:0;npm view hammerjs time
-: 1578322582:0;yarn view hammerjs
-: 1578322587:0;yarn info hammerjs
-: 1578322591:0;yarn info hammerjs version
-: 1578322861:0;npm view @types/hammerjs
-: 1578322875:0;npm view @types/hammerjs version
-: 1578323588:0;npm view hammerjs version
-: 1578327748:0;git diff client-app/src/main/styling/css/loginScreen/_mod_userLoginMenu.less
-: 1578328666:0;git checkout -b bugfix/POCP-42978-hammertime
-: 1578328689:0;git commit -m "POCP-42978 it's hammer time"
-: 1578329469:0;git push origin bugfix/POCP-42978-hammertime 
-: 1578330134:0;git push origin bugfix/POCP-42978-hammertime --no-verify 
-: 1578392536:0;cd ../configs
-: 1578392569:0;\cp -i mpos.conf.tron-ent1-002-6111.json tron-8443-ent1-002.9090.MPOS613/mpos.conf.json
-: 1578392619:0;../configs
-: 1578392626:0;cd tron-8443-ent1-002.9090.MPOS613
-: 1578392634:0;\mv -i mpos.conf.json conf.json
-: 1578392643:0;ln -snf ~/Workspace/gk/configs/mpos/tron-8443-ent1-002.9090.MPOS613/conf.json  mpos.dev.conf.json
-: 1578392903:0;cd configs/mpos/
-: 1578392944:0;\cp -i -R tron-8443-ent1-002.9090.MPOS613 tron-9443-ent4-002.9090.MPOS613
-: 1578392957:0;cat mpos.conf.tron-ent4-6111.json
-: 1578392970:0;cd tron-9443-ent4-002.9090.MPOS613
-: 1578392987:0;nvim .
-: 1578394769:0;git push origin bugfix/POCP-42978-hammertime --no-verify --force
-: 1578395760:0;cd ../configs/mpos
-: 1578395781:0;\cp -i -R tron-9443-ent4-002.9090.MPOS613 tron-9443-ent4-002.9090.MPOS611
-: 1578395787:0;cd tron-9443-ent4-002.9090.MPOS611
-: 1578395870:0;\rm -i qr_code.jpg
-: 1578395883:0;unzip qr_code.zip
-: 1578395891:0;\mv -i ihr_qr_code_ohne_logo.jpg qr_code.jpg
-: 1578395898:0;\rm -i qr_code.zip
-: 1578398800:0;cd .
-: 1578398806:0;cd services
-: 1578398840:0;cd basket-service
-: 1578399340:0;cd shared/runtime/
-: 1578399510:0;\rm -i -rf reports
-: 1578399809:0;git commit -m "enable junit reports for basket"
-: 1578399893:0;git checkout feature/unit-test-results-in-gitlab
-: 1578399912:0;git push origin feature/unit-test-results-in-gitlab --force
-: 1578408067:0;\ls -G components/**/junit.xml
-: 1578408092:0;\ls -G components/**/*/junit.xml
-: 1578408141:0;compgen
-: 1578408154:0;compgen -G components/**/junit.xml
-: 1578408208:0;compgen -G components/**/*/junit.xml
-: 1578408214:0;ls -lAFh reports/junit.xml
-: 1578408223:0;ls -lAFh 
-: 1578408226:0;;a reports
-: 1578408231:0;ls -lAFh reports
-: 1578408260:0;compgen -G ./**/reports/junit.xml
-: 1578408325:0;compgen -h
-: 1578408328:0;man compgen
-: 1578408384:0;ag ./**/reports/junit.xml
-: 1578408435:0;ag components/**/junit.xml
-: 1578408472:0;man ag
-: 1578408816:0;touch temp.js
-: 1578408867:0;node temp.js
-: 1578409038:0;cd runtime/rx-event-bus
-: 1578409040:0;yarn test
-: 1578409288:0;\rm -i temp.js
-: 1578409312:0;\rm -i components/runtime/rx-event-bus/reports/junit.xml
-: 1578409355:0;git checkout components/runtime/rx-event-bus/reports/junit.xml
-: 1578409745:0;docker system prune
-: 1578410713:0;vim tmux.md
-: 1578410718:0;nvim tmux.md
-: 1578410752:0;nvim vim.md
-: 1578411888:0;greadme tmux.md
-: 1578413932:0;git push origin feature/unit-test-results-in-gitlab --force --no-verify 
-: 1578415573:0;yarn add api-query-params
-: 1578419711:0;git checkout -b test-test-reports
-: 1578419794:0;cd components/services/basket-service/
-: 1578419809:0;yarn cd ..
-: 1578419815:0;cd ../shared
-: 1578419818:0;cd runtime
-: 1578419832:0;\cp -i -R reports reports-temp
-: 1578419836:0;ls -lAFh reports-temp
-: 1578419843:0;cat reports-temp/junit.xml
-: 1578419873:0;git commit -m "test reports in the pipeline"
-: 1578419888:0;git push origin test-test-reports 
-: 1578419897:0;git push origin test-test-reports  --no-verify 
-: 1578420813:0;git push origin test-test-reports  --no-verify --force 
-: 1578474758:0;n 10.18.0
-: 1578476809:0;git checkout dev
-: 1578477989:0;../components/widgets/app-information-dialog
-: 1578479093:0;git checkout -b feature/show-ws-address
-: 1578479105:0;git commit -m "show ws adress:
-: 1578479107:0;git commit -m "show ws adress"
-: 1578479118:0;git push origin feature/show-ws-address  --no-verify 
-: 1578479989:0;\rm -i -rf .build
-: 1578480006:0;yarn build:debug:ipa --eslint=false
-: 1578485701:0;open -a Xcode_10 .build/ios/platforms/ios/Mobile\ POS.xcworkspace
-: 1578486930:0;git checkout develop
-: 1578492817:0;cd xac
-: 1578492871:0;npx create-nx-workspace@latest aeroji_com
-: 1578492996:0;npm i -g @nestjs/cli node-gyp
-: 1578493024:0;cd aeroji-com
-: 1578493027:0;ng add @nrwl/angular --defaults
-: 1578493140:0;npm audit fix --force
-: 1578493156:0;npm fund
-: 1578493167:0;ng g @nrwl/angular:application todos
-: 1578493298:0;ng g @nrwl/nest:app api --frontendProject=todos
-: 1578493762:0;ng g @nrwl/angular:application another-app
-: 1578493810:0;ng serve another-app
-: 1578493830:0;ng serve todos
-: 1578493856:0;ng serve todos --port 4201
-: 1578494118:0;ng g @nrwl/workspace:lib business-model
-: 1578494145:0;ng g @nrwl/workspace:lib uikit
-: 1578496139:0;cd ../aeroji
-: 1578497341:0;\cp -i -R ../aeroji/service-auth/src/dto/* libs/business-model/src/lib/auth/
-: 1578497598:0;ng g @nrwl/workspace:lib model
-: 1578497714:0;cd ../aeroji-com
-: 1578497718:0;cd libs/model
-: 1578497809:0;yarn add --dev class-validator
-: 1578499038:0;ln -snf ~/Workspace/gk/configs/mpos/mpos.conf.ado.json  mpos.dev.conf.json
-: 1578499522:0;cd services/basket-service
-: 1578563839:0;npm i -g @angular/cli @nrwl/cli
-: 1578563894:0;cd Workspace/xac/aeroji-com
-: 1578564179:0;git commit -m "init"
-: 1578566837:0;ng serve todos --port 7777
-: 1578567838:0;cd "/Users/xac/Workspace/xac/aeroji-com"
-: 1578567838:0;npm run-script affected:dep-graph
-: 1578572727:0;nx list
-: 1578572847:0;nx list @nrwl/web
-: 1578572885:0;nvim nx.md
-: 1578572990:0;ng add @ionic/angular --project=todos
-: 1578573035:0;ng config -g cli.warnings.versionMismatch false
-: 1578573118:0;git commit -m "ionic init"
-: 1578573122:0;ionic init  �client-app � --type=angular
-: 1578573260:0;ionic serve --project=client-app
-: 1578573501:0;ng g app ionic-app --style=scss --unit-test-runner=jest --e2e-test-runner=cypress --routing --prefix=aji
-: 1578573522:0;yarn add @ionic-native/core @ionic-native/http @ionic-native/splash-screen @ionic-native/status-bar @ionic/angular\
-yarn add @ionic/angular-toolkit -D
-: 1578573926:0;ionic serve --project=todos
-: 1578573984:0;ls -lAFh apps
-: 1578574025:0;ng generate app mobile --routing
-: 1578574124:0;ng add @ionic/angular --project=mobile
-: 1578574168:0;ionic init "mobile" --type=anular
-: 1578574183:0;ionic init "mobile" --type=angular
-: 1578574220:0;ionic serve --project=mobile
-: 1578574504:0;ng serve mobile
-: 1578574686:0;yarn add -D @capacitor/core
-: 1578574827:0;ng serve ionic-mobile
-: 1578574831:0;ng serve ionic-mobile-app
-: 1578575132:0;npm install -g @nrwl/cli
-: 1578575472:0;nx add @nstudio/xplat
-: 1578575501:0;ng generate app
-: 1578575556:0;npm init nx-workspace aeroji-test
-: 1578575690:0;\rm -i package-lock.json
-: 1578575802:0;cd /var/folders/6_
-: 1578575808:0;\rm -i -rf *
-: 1578575828:0;cd 00p6br495sjfnjqy_qsyyz340000gq/T
-: 1578575852:0;\rm -i -rf tmp-2752177WuGmFTwCLG
-: 1578575857:0;\rm -i -rf tmp-17083Hu2Q5s9vydDt
-: 1578575872:0;npx create-nx-workspace@latest aeroji-test
-: 1578576650:0;kill -9 74749
-: 1578576654:0;ps aux | \grep --color node
-: 1578579677:0;mkdir aeroji-test
-: 1578579702:0;npm install @nrwl/schematics @angular/cli typescript
-: 1578579725:0;npx create-nx-workspace@latest dl
-: 1578579768:0;cd dl
-: 1578579773:0;\rm -i -rf dl
-: 1578579782:0;npx create-nx-workspace@latest aeroji
-: 1578579827:0;npm install --save-dev @nstudio/xplat
-: 1578579836:0;ng add @nstudio/xplat
-: 1578579897:0;ng g app
-: 1578580133:0;cd aeroji-test/aeroji
-: 1578580209:0;ionic integrations enable capacitor --project ionic-app
-: 1578580226:0;ng serve web-app
-: 1578580296:0;ionic serve --project ionic-app
-: 1578580368:0;ionic serve --project ionic-app --port 7777
-: 1578580394:0;ng serve web-app --port 7776
-: 1578582069:0;code .
-: 1578582707:0;npm run web-app:dev
-: 1578582757:0;npm run web-app:dev --watch
-: 1578582763:0;npm run web-app:dev -- --watch
-: 1578584050:0;npm install
-: 1578586754:0;cd vim-tuts
-: 1578588672:0;npm run start.web.app
-: 1578591283:0;ng g application
-: 1578591324:0;ng add @nrwl/nest
-: 1578591388:0;ng g @nrwl/nest:application auth-service --dry-run
-: 1578591791:0;ng g @nrwl/nest:application auth-service
-: 1578591825:0;ng g @nrwl/nest:application catalog-service
-: 1578591850:0;ng g @nrwl/nest:application media-service
-: 1578591953:0;npm i --save @nestjs/platform-fastify\
+: 1585601111:0;printf '\033]2;FOOO \033\\'\
 
-: 1578592243:0;ng serve media-service -- --port 7775
-: 1578592278:0;ng serve media-service --port 7775
-: 1578592426:0;npm run dep-graph
-: 1578592817:0;cd aeroji-test
-: 1578592879:0;\cp -i -R ../../aeroji/client-hybrid/e2e apps/ionic-app
-: 1578593128:0;npm run lint
-: 1578593210:0;npm i --save ramda
-: 1578593239:0;npm i --save-dev @types/ramda
-: 1578596769:0;\mv -i aeroji-old
-: 1578596776:0;\mv -i aeroji aeroji-old
-: 1578596798:0;\mv -i aeroji-test/aeroji aeroji
-: 1578596808:0;ls -lAFh aeroji-test
-: 1578596811:0;\rm -i -rf aeroji-test
-: 1578596820:0;ls -lAFh aeroji-com
-: 1578596827:0;\rm -i -rf aeroji-com
-: 1578596841:0;cd aeroji-old
-: 1578596895:0;\cp -i -R ../aeroji-old/service-auth/src apps/auth-service
-: 1578596942:0;\cp -i -R ../aeroji-old/service-auth/config apps/auth-service
-: 1578596948:0;\cp -i -R ../aeroji-old/service-auth/data apps/auth-service
-: 1578596987:0;\cp -i -R ../aeroji-old/service-auth/docker-compose.yml apps/auth-service
-: 1578596993:0;\cp -i -R ../aeroji-old/service-auth/Dockerfile apps/auth-service
-: 1578597028:0;\cp -i -R ../aeroji-old/service-auth/README.md apps/auth-service
-: 1578598187:0;npm i --save-dev ng-packagr
-: 1578598293:0;npm i --save @nestjs/typeorm
-: 1578598311:0;npm i --save morgan
-: 1578599417:0;npm i --save uuid
-: 1578599672:0;npm i --save-dev @types/uuid
-: 1578599777:0;ng serve media-service
-: 1578600114:0;\cp -i -R apps/auth-service/config .
-: 1578600383:0;docker-compose up -d db
-: 1578600420:0;docker container rm aji-auth-mongo 
-: 1578600452:0;docker container stop aji-auth-mongo
-: 1578600460:0;docker container stop aji-auth-redis
-: 1578600471:0;docker container rm aji-auth-mongo aji-auth-redis
-: 1578601074:0;\cp -i -R ../aeroji-old/service-auth/tsconfig.build.json  apps/auth-service/
-: 1578601203:0;npx nest build
-: 1578601346:0;npx nest start --watch
-: 1578602068:0;port=7775 ng serve media-service
-: 1578602113:0;ng build web-app
-: 1578602147:0;vifm .
-: 1578602389:0;npm run dep-graph 
-: 1578603057:0;NODE_CONFIG_DIR=app/auth-service/config ng serve auth-service
-: 1578603098:0;NODE_CONFIG_DIR="app/auth-service/config/" ng serve auth-service
-: 1578603276:0;open .
-: 1578603578:0;git commit -m "use nx to manage mono repo"
-: 1578603660:0;cat .gitignore
-: 1578603669:0;nvim -R .gitignore
-: 1578603746:0;ng build auth-service
-: 1578603885:0;mkdir config
-: 1578603890:0;ng serve auth-service
-: 1578604000:0;NODE_CONFIG_DIR="./app/auth-service/config/" ng serve auth-service
-: 1578604040:0;ls -lAFh /Users/xac/Workspace/xac/aeroji/app/auth-service/config/\
+: 1585601192:0;printf '\033]2; works? \033\\'
+: 1585601197:0;printf '\033]2;works? \033\\'
+: 1585601227:0;printf '\033]2;and here\033\\'\
 
-: 1578604069:0;NODE_CONFIG_DIR="./apps/auth-service/config/" ng serve auth-service
-: 1578604141:0;docker-compose down -rmi db cache
-: 1578604152:0;docker-compose --rmi down db cache
-: 1578604161:0;docker-compose down --rmi db cache
-: 1578604173:0;docker-compose down --rmi 
-: 1578604221:0;docker-compose up -d db cache
-: 1578604797:0;\rm -i -rf volumes
-: 1578604805:0;docker volume ls
-: 1578604817:0;docker system prune 
-: 1578604948:0;docker-compose up database cache
-: 1578605241:0;docker-compose exec -it database bash
-: 1578605451:0;docker-compose down database
-: 1578605471:0;docker-compose down
-: 1578605494:0;docker-compose -f logs database
-: 1578605511:0;docker-compose -f logs
-: 1578605761:0;docker-compose down --rmi
-: 1578605781:0;docker-compose up -d database cache
-: 1578606072:0;docker-compose stop database
-: 1578606085:0;docker-compose start database
-: 1578606092:0;docker exec -it aji-auth-mongo  bash
-: 1578606664:0;docker-compose up -d --build database 
-: 1578606754:0;docker-compose up -d cache
-: 1578606771:0;docker-compose logs -f database
-: 1578607691:0;\rm -i -rf dist
-: 1578607694:0;yarn create nx-workspace aeroji-foo
-: 1578607712:0;ls -lAFh dist
-: 1578608001:0;ls -lAFh dist/apps/auth-service
-: 1578608477:0;git config user.email "xac69@icloud.com"\
+: 1585601522:0;z-source foo
+: 1585601534:0;z-source -f
+: 1585601586:0;z-source 
+: 1585601625:0;xx foo
+: 1585601719:0;printf '\033]2;???\033\\'
+: 1585601835:0;trp huuurraaaaaaaa
+: 1585601887:0;trp mssg
+: 1585602087:0;select-pane -T "my title" 
+: 1585602958:0;brew install tmux-xpanes
+: 1585603162:0;xpanes 1 2 3 4
+: 1585574982:309;npm run web-app:serve:dev
+: 1585603679:0;xpanes -d 1 2 3 4 5 6 7 8
+: 1585603759:0;xpanes -d {1..6}
+: 1585604215:0;tmux kill-session
+: 1585604524:0;npm run auth-service:serve:dev
+: 1585662361:0;npm run mssg-service:dev
+: 1585686277:0;npmrc 
+: 1585686283:0;npm i --save sanitize-html
+: 1585686419:0;npm i --save-dev @types/sanitize-html
+: 1585689412:0;git commit -m "working messaging prototype"
+: 1585689446:0;git push
+: 1585691606:0;tmux a -t aeroji
+: 1585727433:0;м
+: 1585735282:0;cd clients/mpos-next
+: 1585737506:0;cp src/environments/environment.dev.ts ~/Workspace/gk/configs/mpos
+: 1585737511:0;rm src/environments/environment.dev.ts
+: 1585737525:0;git commit -m "adds eft payment"
+: 1585737536:0;git push origin feature/mpos-next 
+: 1585737644:0;git push -o ci.skip origin feature/mpos-next --no-verify 
+: 1585737701:0;yarn de -o ci.skip
+: 1585737733:0;ln -sf ~/Workspace/gk/configs/mpos/environment.dev.ts src/environments
+: 1585755555:0;cd ~/Workspace/xac/aeroji
+: 1585755571:0;xpanes -d -C 2 {1..8}
+: 1585755573:0;echo 1 
+: 1585755573:0;echo 7 
+: 1585755573:0;echo 8 
+: 1585755573:0;echo 5 
+: 1585755573:0;echo 6 
+: 1585755573:0;echo 3 
+: 1585755573:0;echo 4 
+: 1585755573:0;echo 2 
+: 1585762175:0;npm run media-sv:dev
+: 1585762392:0;./setup.sh email add user4@aeroji.com Pa$$w0rd
+: 1585762398:0;./setup.sh email add user5@aeroji.com Pa$$w0rd
+: 1585762673:0;docker-compose restart
+: 1585762692:0;la config
+: 1585762700:0;r config/postfix-accounts.cf
+: 1585762881:0;docker-compose ps
+: 1585763290:0;docker-compose logs -f mail
+: 1585763386:0;cd apps/mail-service
+: 1585763390:0;./setup.sh mail list
+: 1585763432:0;./setup.sh mail list -c mail
+: 1585763470:0;./setup.sh email list -c mail
+: 1585763509:0;./setup.sh email update user4@aeroji.com pass123
+: 1585763532:0;./setup.sh email update user5@aeroji.com pass123
+: 1585763817:0;npm run auth-sv:db:gui
+: 1585763869:0;npm run mssg-sv:db:gui
+: 1585765806:0;cd ~/Workspace/xac/aeroji/dist/apps/media-service
+: 1585765810:0;cd uploads
+: 1585769165:0;npm run mssg-sv:dev
+: 1585769171:0;npm run auth-sv:dev
+: 1585816208:0;brew cask upgrade alacritty
+: 1585816265:0;a-config
+: 1585816287:0;zsh
+: 1585816343:0;brew infp tmux
+: 1585816374:0;brew upgrade tmux
+: 1585816386:0;brew upgrade ctags
+: 1585818295:0;npm i -g tslint @nestjs/cli @nrwl/cli
+: 1585821643:0;tmuxinator open 
+: 1585821652:0;tmuxinator list aeroji
+: 1585821658:0;tmuxinator open aeroji
+: 1585821681:0;tmuxinator new aji
+: 1585822300:0;web-app
+: 1585822301:0;auth:svc
+: 1585822301:0;mssg:svc
+: 1585822301:0;media:svc
+: 1585822301:0;ide
+: 1585822417:0;t-edit
+: 1585822507:0;t-source
+: 1585822559:0;z-edit
+: 1585822582:0;trp foo
+: 1585822598:0;trp bar
+: 1585822612:0;trp juhuuu
+: 1585822656:0;z-source
+: 1585822660:0;trcp bar
+: 1585822758:0;tmux kill-session aji
+: 1585823148:0;auth - trcp auth_svc - clear
+: 1585823148:0;mssg - trcp mssg_svc - clear
+: 1585823241:0;trcp mssg_svc
+: 1585823242:0;trcp auth_svc
+: 1585823242:0;trcp mssg_cli
+: 1585823242:0;trcp web-app
+: 1585823242:0;trcp auth_cli
+: 1585823252:0;clear
+: 1585823322:0;tmuxinator edit aji
+: 1585823607:0;tmux kill-session -t aji
+: 1585823242:0;trcp media_cli
+: 1585823242:0;trcp media_svc
+: 1585823611:0;tmuxinator s aji
+: 1585823848:0;cp node_modules/material-design-icons/content/svg/production/ic_add_48px.svg apps/web-app/src/assets/icons
+: 1585917969:0;../gk/mono
+: 1585917988:0;git clean -fd
+: 1585919713:0;- yarn dev --eslint=true --openBrowser=false --verbose=true --livereload=false --secure=false --watch=true --bundleComponents=false
+: 1585919844:0;ln -sf ~/Workspace/gk/configs/mpos/tron-8443-ent1-002.9090.MPOS612/conf.json mpos.dev.conf.json
+: 1585923229:0;r ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS613/conf.json
+: 1585923283:0;ln -sf ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS611 mpos.dev.conf.json
+: 1585923290:0;yarn dev
+: 1585923322:0;rm -rf mpos.dev.conf.json
+: 1585923329:0;ln -sf ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS611/conf.json mpos.dev.conf.json
+: 1586110923:0;tmuxinator list
+: 1586110936:0;tmuxinator open aji
+: 1586111265:0;docker ps
+: 1586112161:0;npm run web-app:dev 
+: 1586164759:0;v /etc/hosts
+: 1586261533:0;v 
+: 1586261691:0;npmrc gk-no-auth
+: 1586262091:0;curl --location --request POST 'https://swee-test25.qasec.gk-software.com:8443/auth-service/tenants/002/oauth/token?grant_type=password&storeId=9090' \\
+--header 'Content-Type: application/x-www-form-urlencoded' \\
+--header 'Authorization: Basic bXBvczpzZXM=' \\
+--header 'Content-Type: application/x-www-form-urlencoded' \\
+--data-urlencode 'username=90903' \\
+--data-urlencode 'password=3'
+: 1586262774:0;npm view cordova-common
+: 1586262781:0;npm view cordova-common version
+: 1586262795:0;r ~/.npmrc
+: 1586263099:0;alias x
+: 1586263101:0;alias xo
+: 1586263116:0;xo .build/ios/platforms/ios/Mobile\ POS.xcworkspace
+: 1586264942:0;open .
+: 1586287419:0;cd Workspace/gk
+: 1586287421:0;hostname
+: 1586287431:0;cd configs/mpos
+: 1586287458:0;mkdir e25
+: 1586287460:0;cd e25
+: 1586287711:0;cd ../../mono/clients/mpos
+: 1586287724:0;ln -sf ~/Workspace/gk/configs/mpos/e25/conf.json mpos.dev.conf.json
+: 1586292120:0;take foo/bar/buz
+: 1586292132:0;rm -rf foo
+: 1586292183:0;man take
+: 1586336328:0;cd Workspace/gk/mono/clients/mpos
+: 1586336710:0;javaws ~/Tools/smclient-ent4.jnlp
+: 1586337123:0;v mpos.dev.conf.json
+: 1586353098:0;gco -b feature/POCP-44422-use-new-auth-api
+: 1586353116:0;git commit -m "POCP-44422 adds support for new auth api"
+: 1586353139:0;git push origin feature/POCP-44422-use-new-auth-api 
+: 1586449436:0;cat node_modules/klaw/package.json
+: 1586449444:0;r node_modules/klaw/package.json
+: 1586449509:0;npm list --depth 1
+: 1586449518:0;npm list -g --depth 0
+: 1586449813:0;kkk
+: 1586511426:0;brew install neovim
+: 1586511453:0;brew update neovim --head
+: 1586511463:0;brew upgrade neovim --head
+: 1586511480:0;brew upgrade neovim --fetch-HEAD
+: 1586691729:0;ng generate @schematics/angular:component --name=[COMPONENT-NAME] --project=web-app --module=shared --style=scss --path=apps/web-app/src/app/features/shared/ui
+: 1586691758:0;ng generate @schematics/angular:component --name=custom-radio-group --project=web-app --module=shared --style=scss --path=apps/web-app/src/app/features/shared/ui
+: 1586718760:0;ng generate @schematics/angular:component --name=custom-date-picker --project=web-app --module=shared --style=scss --path=apps/web-app/src/app/features/shared/ui
+: 1586719465:0;npm i --save 	@angular/material-moment-adapter
+: 1586799565:0;npm u
+: 1586799567:0;npm i
+: 1586805552:0;cp node_modules/material-design-icons/action/svg/production/ic_delete_48px.svg apps/web-app/src/assets/icons
+: 1586818130:0;glod
+: 1586818152:0;git commit -m "add item edit page"
+: 1586818156:0;git fetch
+: 1586818165:0;git push origin master 
+: 1586849445:0;tmux -d -s gk
+: 1586849451:0;tmux detach
+: 1586849461:0;tmux -s gk
+: 1586849472:0;tmux new -s gk
+: 1586850312:0;connect-to-tron
+: 1586853982:0;npm run web-app:dev
+: 1586856455:0;ng generate @schematics/angular:component --name=custom-checkbox --project=web-app --module=shared --style=scss --path=apps/web-app/src/app/features/shared/ui
+: 1586859884:0;brew cask upgrade joplin
+: 1586859993:0;brew update
+: 1586859997:0;brew upgrade
+: 1586861486:0;tmux ls
+: 1586861565:0;tmuxinator start aji
+: 1586861574:0;npm run mssg-svc:dev
+: 1586861578:0;npm run auth-svc:dev
+: 1586861581:0;npm run media-svc:dev
+: 1586861717:0;v
+: 1586867279:0;npm install ngx-file-drop --save
+: 1586867556:0;npm run web-app:dev
+: 1586869084:0;gst
+: 1586869085:0;git add .
+: 1586869106:0;git commit -m "adds drop image upload to edit item page"
+: 1586869107:0;gst
+: 1586869119:0;ll
+: 1586869125:0;cd clients/mpos
+: 1586869129:0;yarn build:debug:ios --eslint=false --ignoreDevAppConfigs=true 
+: 1586869901:0;la
+: 1586869909:0;yarn dev --eslint=true --openBrowser=false --verbose=true --port=8787 --livereload=false --secure=false --bundleComponents=false
+: 1586869935:0;v
+: 1586869982:0;yarn dev --eslint=true --openBrowser=false --verbose=true --port=8787 --livereload=false --secure=false --bundleComponents=false
+: 1586872264:0;lerna run build --scope @gk-software/component-service-auth
+: 1586873145:0;tmux list
+: 1586873151:0;t
+: 1586873166:0;cd Workspace/gk/mo
+: 1586873169:0;cd Workspace/gk/mono
+: 1586873170:0;ll
+: 1586873172:0;v
+: 1586873184:0;cd Workspace/gk/mono
+: 1586873188:0;cd clients/mpos
+: 1586873191:0;yarn dev --eslint=true --openBrowser=false --verbose=true --port=8787 --livereload=false --secure=false --bundleComponents=false
+: 1586873195:0;lerna run build --scope @gk-software/component-service-auth
+: 1586873946:0;lerna run build --scope @gk-software/business-model
+: 1586873966:0;lerna run build --scope @gk-software/component-service-auth
+: 1586874808:0;gst
+: 1586874811:0;git add .
+: 1586874847:0;git commit -m "use the right access token"
+: 1586874850:0;gst
+: 1586874855:0;yarn lint
+: 1586874881:0;gst
+: 1586874889:0;git push origin feature/POCP-44422-use-new-auth-api --no-verify 
+: 1586893177:0;t detach 
+: 1586893180:0;t ls
+: 1586893181:0;t list
+: 1586893184:0;tmux list
+: 1586893193:0;tmuxinator start aji
+: 1586893197:0;trcp MSSG_SVC
+: 1586893197:0;cd /Users/xac/Workspace/xac/aeroji
+: 1586893197:0;trcp AUTH_CLI
+: 1586893197:0;npm run mssg-svc:dev
+: 1586893197:0;trcp MEDIA_SVC
+: 1586893197:0;trcp AUTH_SVC
+: 1586893197:0;trcp aeroji_ide
+: 1586893197:0;trcp MEDIA_CLI
+: 1586893197:0;trcp MSSG_CLI
+: 1586893197:0;v
+: 1586893197:0;npm run auth-svc:dev
+: 1586893197:0;trcp WEB-APP
+: 1586893197:0;trcp cli
+: 1586893484:0;npm run catalog-svc:dev
+: 1586893495:0;npm run web-app:dev
+: 1586893197:900;npm run media-svc:dev
+: 1586939586:0;tmux ls
+: 1586939591:0;t
+: 1586939596:0;cd Workspace/gk/mono
+: 1586939615:0;cd clients/mpos
+: 1586941404:0;gco develop
+: 1586941405:0;gst
+: 1586941406:0;git pull
+: 1586941417:0;gst
+: 1586941420:0;git pull
+: 1586941423:0;yarn bootstrap
+: 1586941461:0;cd Workspace/gk/mono
+: 1586941462:0;ll
+: 1586941464:0;v
+: 1586941921:0;cd ci/images/mpos-android
+: 1586941924:0;./build.sh
+: 1586943761:0;v
+: 1586943911:0;lerna run build --scope @gk-software/component-service-opos-settings
+: 1586943914:0;ll
+: 1586943920:0;ln -sf ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS613/conf.json mpos.dev.conf.json
+: 1586944036:0;yarn dev --eslint=true --openBrowser=false --verbose=true --port=8787 --livereload=false --secure=false --bundleComponents=false
+: 1586944352:0;lerna run build --scope @gk-software/component-service-opos-settings
+: 1586944561:0;lerna run build --scope @gk-software/lib-runtime --scope @gk-software/component-service-opos-settings
+: 1586951481:0;gco -b bugfix/POCP-45873-settings-resource-timing-fix
+: 1586951482:0;gst
+: 1586951484:0;git add .
+: 1586951509:0;git commit -m "POCP-45873 fixes the usage of the timing api in settings widget"
+: 1586951513:0;gst
+: 1586951516:0;yarn lint
+: 1586951553:0;git push origin bugfix/POCP-45873-settings-resource-timing-fix  --no-verify 
+: 1586954564:0;gco develop
+: 1586954567:0;git pull
+: 1586954569:0;gst
+: 1586954584:0;v
+: 1586974111:0;gst
+: 1586974136:0;ll
+: 1586974152:0;v
+: 1586980396:0;cd ....
+: 1586980413:0;cd mono/ci/images/mpos-android
+: 1586980414:0;ll
+: 1586980439:0;./build.sh
+: 1586981305:0;./push.sh
+: 1586981342:0;az login
+: 1586981699:0;az acr login --name gksoftware
+: 1586981707:0;./push.sh
+: 1586985346:0;gst
+: 1586985372:0;gco -b hotfix/android-build
+: 1586985373:0;gst
+: 1586985376:0;git add .
+: 1586985395:0;git commit -m "updates mpos android docker image"
+: 1586985399:0;gst
+: 1586985414:0;git push origin hotfix/android-build  --no-verify 
+: 1587024144:0;t
+: 1587026918:0;...
+: 1587026920:0;..
+: 1587026922:0;cd clients/mpos
+: 1587026934:0;lerna run build --scope @gk-software/component-service-auth
+: 1587026971:0;yarn dev --eslint=true --openBrowser=false --verbose=true --port=8787 --livereload=false --secure=false --bundleComponents=false
+: 1587027123:0;lerna run build --scope @gk-software/component-service-auth
+: 1587027126:0;yarn dev --eslint=true --openBrowser=false --verbose=true --port=8787 --livereload=false --secure=false --bundleComponents=false
+: 1587027628:0;gco -b bugfix/POCP-45650-break-mode-listener-start-fix
+: 1587027629:0;gst
+: 1587027655:0;git add .
+: 1587027708:0;git commit -m "POCP-45650 start break mode listener after successful sign on"
+: 1587027714:0;yarn lint
+: 1587027738:0;gst
+: 1587027755:0;git push origin bugfix/POCP-45650-break-mode-listener-start-fix  --no-verify 
+: 1587027774:0;gf
+: 1587027777:0;gst
+: 1587027814:0;git push origin bugfix/POCP-45650-break-mode-listener-start-fix  --no-verify 
+: 1587030450:0;gco bugfix/POCP-45873-settings-resource-timing-fix
+: 1587030497:0;v
+: 1587030542:0;rm components/services/opos-settings/src/components.d.ts
+: 1587030549:0;gt
+: 1587030550:0;gst
+: 1587030552:0;git add .
+: 1587030555:0;git commit --amend 
+: 1587030560:0;gst
+: 1587030574:0;git push origin bugfix/POCP-45873-settings-resource-timing-fix  --no-verify --force 
+: 1587030950:0;cd Workspace/xac/aeroji
+: 1587030953:0;v package.json
+: 1587042352:0;gst
+: 1587042354:0;gco develop
+: 1587042356:0;git pull
+: 1587042362:0;gst
+: 1587042370:0;cd clients/mpos
+: 1587042389:0;yarn build:debug:apk --eslint=false --ignoreDevAppConfigs=true 
+: 1587042567:0;adb devices
+: 1587042595:0;...
+: 1587042626:0;adb -s 5200aef859575595 install MobilePOS_5.15.0_b0000_20200416-150921_debug.apk
+: 1587064066:0;brew upgrade
+: 1587071529:0;yarn build:components
+: 1587071591:0;la .build/dev/app/components/
+: 1587071595:0;la .build/dev/app/components/bundle
+: 1587071610:0;o .
+: 1587071639:0;la .build/android/www/components/
+: 1587071645:0;yarn build:debug:apk --eslint=false --ignoreDevAppConfigs=true 
+: 1587071878:0;la .build/android/www/components
+: 1587072253:0;cd clients/mpos
+: 1587072255:0;cd .build
+: 1587072255:0;ll
+: 1587072263:0;la dev/app/components
+: 1587072088:18;yarn build:debug:apk --eslint=false --ignoreDevAppConfigs=true  --verbose
+: 1587072324:0;yarn build:components
+: 1587072772:0;ll
+: 1587072780:0;la dev/app/components/bundle/
+: 1587072785:0;yarn build:debug:apk --eslint=false --ignoreDevAppConfigs=true --verbose
+: 1587072956:0;la android/www
+: 1587072964:0;la android/www/components
+: 1587072985:0;la dev/app/components
+: 1587073373:0;la dev
+: 1587073383:0;yarn build:components
+: 1587073609:0;la
+: 1587073613:0;la dev
+: 1587073618:0;la dev/components/bundle
+: 1587073733:0;la android/www/components
+: 1587073751:0;la dev/components
+: 1587073753:0;yarn build:debug:apk --eslint=false --ignoreDevAppConfigs=true 
+: 1587073882:0;ll
+: 1587074003:0;la dev
+: 1587074007:0;yarn build:debug:apk --eslint=false --ignoreDevAppConfigs=true 
+: 1587074230:0;la android/www/components
+: 1587074234:0;la android/www/components/bundle
+: 1587074246:0;cd ...
+: 1587074246:0;ll
+: 1587074247:0;..
+: 1587074248:0;ll
+: 1587074251:0;rm -rf MobilePOS_5.15.0_b0000_20200*
+: 1587074260:0;rm -rf .build
+: 1587074296:0;ll
+: 1587074305:0;yarn build:components
+: 1587074474:0;ll
+: 1587074489:0;yarn build:debug:apk --eslint=false --ignoreDevAppConfigs=true 
+: 1587074632:0;adb list
+: 1587074638:0;adb devices
+: 1587074661:0;adb -s 5200aef859575595 install MobilePOS_5.15.0_b0000_20200417-000318_debug.apk
+: 1587074769:0;...
+: 1587074771:0;gst
+: 1587074775:0;git diff
+: 1587074787:0;gst
+: 1587074826:0;gco -b bugfix/another-android-pipeline-fix
+: 1587074827:0;gst
+: 1587074829:0;git add .
+: 1587074851:0;git commit -m "add missing comps bundle to mobile archive"
+: 1587074859:0;yarn lint
+: 1587074959:0;git push origin bugfix/another-android-pipeline-fix  --no-verify
+: 1587113441:0;adb devices
+: 1587113447:0;cd ~/Downloads
+: 1587113471:0;adb -s 5200aef859575595 install MobilePOS_5.15.0_b249325_20200417-064904_debug.apk
+: 1587113833:0;gst
+: 1587113852:0;git add .
+: 1587113854:0;git commit --amend 
+: 1587113859:0;gst
+: 1587113870:0;git push origin bugfix/another-android-pipeline-fix  --force --no-verify 
+: 1587114268:0;ll
+: 1587114271:0;gst
+: 1587114272:0;pwd
+: 1587114274:0;ll
+: 1587114274:0;la
+: 1587114279:0;cd ..
+: 1587114279:0;ll
+: 1587114280:0;la
+: 1587114281:0;cd .build
+: 1587114282:0;ll
+: 1587114286:0;la dev/components
+: 1587114365:0;git add .
+: 1587114368:0;git commit --amend 
+: 1587114372:0;gst
+: 1587114375:0;git push origin bugfix/another-android-pipeline-fix  --force --no-verify 
+: 1587114406:0;..
+: 1587114409:0;rm -rf .build
+: 1587114447:0;v
+: 1587114504:0;ENV="dev" lerna run build:dev --scope MobilePOS --stream -- --project $PROJECT --buildEnv $BUILD_ENV\
 
-: 1578608534:0;git rm apps/auth-service/volumes
-: 1578608540:0;git rm -r apps/auth-service/volumes
-: 1578608557:0;git rm -r --cached apps/auth-service/volumes
-: 1578608566:0;git add . -u
-: 1578609424:0;\cp -i ../aeroji-old/mailserver apps
-: 1578609430:0;\cp -i -R ../aeroji-old/mailserver apps
-: 1578609539:0;cd ~/Tools
-: 1578609542:0;cd alacritty
-: 1578609577:0;cd ~/Tools/alacritty
-: 1578609585:0;git checkout  v0.4.1
-: 1578609677:0;brew cask install alacritt
-: 1578609689:0;brew cask instll alacritty
-: 1578609714:0;brew cask install alacritty
-: 1578609725:0;brew cask reinstall alacritty
-: 1578648813:0;cd ~/Tools/
-: 1578648816:0;\rm -i -rf alacritty
-: 1578648837:0;cd ~/Workspace/xac/aeroji
-: 1578648943:0;cd mailserver
-: 1578648954:0;docker-compose down --rmi all
-: 1578649661:0;npm install -g mongo-express
-: 1578649753:0;mongo-express -u aji -p aji777 -d aji-auth
-: 1578650368:0;redis-commander --redis-port 7773
-: 1578650374:0;mongo-express -u aji -p aji777 -d aji-auth -H localhost  -P 7772
-: 1578650420:0;mongo-express -h
-: 1578650466:0;redis-commander -h
-: 1578651280:0;cd ../aeroji/apps/mail-service
-: 1578651625:0;nvim README.md
-: 1578651810:0;brew install pandoc
-: 1578651846:0;nvim -R README.md
-: 1578651857:0;greadme README.md
-: 1578651883:0;pandoc -s -f markdown -t man README.md | groff -T utf8 -man | less
-: 1578652114:0;ls -lAFh ~/.zshrc
-: 1578652139:0;alias mm
-: 1578652156:0;alias ml
-: 1578652163:0;alias pwdc
-: 1578652195:0;pandoc -s -f markdown -t man \!* | groff -T utf8 -man | less README.md
-: 1578652528:0;mm README.md
-: 1578652653:0;pip install mdv
-: 1578652824:0;brew info markdown
-: 1578652830:0;brew install markdown
-: 1578652929:0;kjj
-: 1578652935:0;mdv README.md
-: 1578653041:0;brew info terminal_markdown_viewer 
-: 1578653051:0;brew info terminal-markdown-viewer
-: 1578653058:0;brew search markdown
-: 1578653399:0;brew view mdless
-: 1578653404:0;brew info mdless
-: 1578653409:0;npm view peg-markdown
-: 1578653470:0;gem install mdless
-: 1578653621:0;mdless -s README.md
-: 1578653685:0;mdless -s 2 README.md
-: 1578653692:0;mdless README.md
-: 1578653780:0;mdless -l README.md
-: 1578653791:0;mdless -s 6 README.md
-: 1578653852:0;m -l README.md
-: 1578653864:0;m -s 4 README.md
-: 1578653900:0;pip uninstall mdv
-: 1578654181:0;v 
-: 1578654234:0;docker-compose -up -d
-: 1578656266:0;cd apps/auth-service
-: 1578656868:0;cd service-auth
-: 1578657009:0;cd src
-: 1578657221:0;npm i --save-dev change
-: 1578657249:0;npm i --save api-query-params
-: 1578658559:0;npm i --save-dev @types/chance
-: 1578658746:0;npm i --save chance
-: 1578659517:0;docker ps
-: 1578659560:0;docker-compose up 
-: 1578659660:0;m -h
-: 1578659703:0;m -p README.md
-: 1578659765:0;mongo-express --port 8811 -u aeroji -p aji888 -d aji-auth -H localhost -P 8882
-: 1578662612:0;docker-compose up -d
-: 1578662618:0;nest g -h
-: 1578662650:0;nest g mo manage
-: 1578662656:0;nest g mo search
-: 1578662670:0;nest g co -h
-: 1578662678:0;nest g co 
-: 1578662700:0;nest g co search
-: 1578663071:0;nest g 
-: 1578663083:0;nest g service manage
-: 1578755905:0;ag "extended"
-: 1578759744:0;npm run dev:auth-service
-: 1578909043:0;cd gk/mo
-: 1578909060:0;git stash
-: 1578909071:0;git stash pop
-: 1578909499:0;git config --list
-: 1578909522:0;git config user.name "Heinz, Alexander(aheinz)"
-: 1578909560:0;git config user.email "aheinz@gk-software.com"
-: 1578910564:0;yarn dev --port=8787 --eslint=false --secure=false --watch=true --verbose=false --bundleComponents=false --project adidas
-: 1578911076:0;ln -snf ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS613/conf.json  mpos.dev.conf.json
-: 1578911344:0;cd gk/mono/
-: 1578922903:0;ag "http-server"
-: 1578922911:0;ag "http-server" --json
-: 1578922931:0;ag "qs" --json
-: 1578922979:0;yarn why union#qs@2.3.3
-: 1578922985:0;yarn why qs@2.3.3
-: 1578923132:0;yarn why connect
-: 1578923187:0;yarn why -h
-: 1578923213:0;yarn why qs
-: 1578923232:0;ag "2.3.3" --json
-: 1578923286:0;cd http-server
-: 1578923297:0;cd node_modules
-: 1578923305:0;cd union
-: 1578923309:0;vim package.json
-: 1578923342:0;yarn why http-server
-: 1578923612:0;yarn list http-server
-: 1578923631:0;yarn list --pattern http-server
-: 1578923701:0;ag "http-client" -Q --json
-: 1578923710:0;ag "http-server" -Q --json
-: 1578923798:0;yarn why union
-: 1578925183:0;yarn licenses
-: 1578925193:0;yarn lincenses list
-: 1578925208:0;yarn licenses list
-: 1578925369:0;yarn licenses union
-: 1578925385:0;yarn licenses list | grep union -b 10
-: 1578925399:0;yarn licenses list | grep union
-: 1578925427:0;yarn licenses list --json  | grep union
-: 1578925507:0;yarn licenses list --json | xclip
-: 1578925513:0;brew info xclip
-: 1578925560:0;brew install xclip
-: 1578925603:0;yarn licenses list --json | pbcopy
-: 1578929382:0;gco -b feature/POCP-43555-block-until-transaction-finalized
-: 1578929422:0;git commit -m "POCP-43555 wait until transaction finalized"
-: 1578929439:0;git push origin feature/POCP-43555-block-until-transaction-finalized 
-: 1578932854:0;cd components/services/pos-broker-service
-: 1578932859:0;cd components/services/basket-service
-: 1578935922:0;git remote add origin git@gitlab.com:xac69/aeroji.git 
-: 1578936000:0;git init
-: 1578936009:0;	git config user.name "xac"
-: 1578936017:0;git config user.email "xac69@icloud.com"
-: 1578936145:0;git clone git@gitlab.com:xac69/aeroji.git foo
-: 1578936213:0;git remote remove origin
-: 1578936216:0;git remote add origin https://gitlab.com/xac69/aeroji.git
-: 1578936255:0;git remote remove origin 
-: 1578936267:0;git remote add git@gitlab.com:xac69/aeroji.git
-: 1578936291:0;git remote add origin git@gitlab.com:xac69/aeroji.git
-: 1578936295:0;git fetch
-: 1578936347:0;gco feature/switch-to-nrwl
-: 1578936357:0;gco -b feature/switch-to-nrwl
-: 1578936379:0;git commit -m "switch to nrwl - tooling for mono repo"
-: 1578936592:0;git remote -v
-: 1578936600:0;cd apps/-service
-: 1578936621:0;docker-compose stop
-: 1578936724:0;rm -rf volumes
-: 1578936728:0;git rm -rf volumes
-: 1578936753:0;git push origin feature/switch-to-nrwl 
-: 1578997189:0;git pul
-: 1578997210:0;gb
-: 1578997220:0;gco feature/POCP-43555-block-until-transaction-finalized 
-: 1578997443:0;git rebase --abort 
-: 1578998444:0;git push origin feature/POCP-43555-block-until-transaction-finalized  --force --no-verify 
-: 1579001997:0;cd ~/.config/nvim/snippets
-: 1579004038:0;mv snippets/* xsnippets
-: 1579004041:0;la xsnippets
-: 1579004047:0;la snippets
-: 1579004050:0;rm -rf snippets
-: 1579004052:0;la UltiSnips
-: 1579004059:0;cat UltiSnips/typescript.snippets
-: 1579004164:0;la xsnippets/typescript.snippets
-: 1579004177:0;rm -rf xsnippets
-: 1579005558:0;npm un -g lerna
-: 1579005574:0;npm list -g --depth=0
-: 1579005619:0;npm i -g @nestjs/cli ionic neovim npm ts-node
-: 1579005749:0;brew info npm
-: 1579005758:0;brew install npm
-: 1579005776:0;brew link node
-: 1579005794:0;brew link --overwrite node\
+: 1587114552:0;ENV="dev" lerna run build:components --scope MobilePOS --stream\
 
-: 1579005867:0;n install 10.18.1
-: 1579005874:0;n
-: 1579005901:0;npm i -g npm
-: 1579005920:0;brew reinstall node
-: 1579005963:0;brew upgrade neovim
-: 1579006048:0;brew install --HEAD neovim
-: 1579006064:0;nvim -v
-: 1579018228:0;yarn lint
-: 1579019028:0;ag "union" 
-: 1579019038:0;ag "union" --json | fzf 
-: 1579019048:0;find . type f | fzf
-: 1579019612:0;v ~/.config/**
-: 1579019728:0;v client-app/src/main/javascript/omnipos/Main.controller.js 
-: 1579019983:0;cat clients/mpos/.gitignore 
-: 1579021554:0;history | fzf
-: 1579021578:0;history | fzf +s --tac\
+: 1587114732:0;lerna run build:debug:apk$DEVICE_VENDOR --scope MobilePOS --stream -- --eslint=false --verbose --skipBuild=false --project $PROJECT --buildEnv $BUILD_ENV\
 
-: 1579021824:0;ssh slave-jinn05.es.gk-software.com 
-: 1579022142:0;brew install bat
-: 1579022183:0;bat -A /etc/hosts
-: 1579022189:0;bat /etc/hosts
-: 1579022199:0;bat README.md
-: 1579022208:0;m README.md
-: 1579022249:0;r README.md
-: 1579022535:0;r **
-: 1579022640:0;fzf --preview 'bat --style=numbers --color=always {} | head -500'
-: 1579022751:0;cd vifm
-: 1579022850:0;f vifmrc
-: 1579022857:0;v vifmrc
-: 1579023195:0;brew info vifm
-: 1579024740:0;bat package.json
-: 1579025471:0;f
-: 1579079270:0;f .
-: 1579079493:0;brew info ranger
-: 1579079547:0;brew install ranger
-: 1579079686:0;rg
-: 1579079688:0;ranger
-: 1579079782:0;brew info lf
-: 1579079792:0;brew install lf
-: 1579079820:0;lf -h
-: 1579079826:0;lf -doc
-: 1579080153:0;lf
-: 1579080406:0;brew info nnn
-: 1579080412:0;brew install nnn
-: 1579083600:0;brew cask install xqartz
-: 1579083786:0;yarn upgrade
-: 1579084045:0;rm -rf mpos-next
-: 1579084108:0;ionic start mpos-next
-: 1579084426:0;rm -rf package-lock.json
-: 1579086182:0;дд
-: 1579086188:0;yarn outdated
-: 1579086202:0;ionic serve
-: 1579086716:0;ionic serve --port 7778
-: 1579087059:0;cd Workspace/xac/aeroji-old
-: 1579087128:0;ionic g p settings
-: 1579087137:0;ionic g page settings
-: 1579087515:0;ionic g page login
-: 1579088465:0;npm view @ionic/core version
-: 1579088649:0;npm view @stencil/core verison
-: 1579088655:0;npm view @stencil/core version
-: 1579088676:0;npm view @stencil/sass version
-: 1579088698:0;npm view stencil-fragment version
-: 1579089419:0;cd uikit
-: 1579089451:0;npm run build
-: 1579091047:0;cd gk/mono
-: 1579096860:0;rm -rf loader
-: 1579096863:0;rm -rf dist
-: 1579097759:0;cd src/components
-: 1579097764:0;rm -rf *
-: 1579100412:0;cd components/widgets/auth
-: 1579100683:0;la 
-: 1579100692:0;la loader
-: 1579101141:0;rm -rf node_modules 
-: 1579101193:0;yarn scope:prepare
-: 1579101200:0;yarn scopes:prepare
-: 1579101206:0;yarn
-: 1579102650:0;git clone https://github.com/alesgenova/stenciljs-in-angular.git
-: 1579103647:0;yarn 
-: 1579105067:0;../shared/runtime
-: 1579105843:0;npm view @angular/compiler
-: 1579105850:0;npm view @angular/compiler version
-: 1579106457:0;npm view @angular/compiler-cli
-: 1579106475:0;mkdir foo
-: 1579106476:0;cd foo
-: 1579106507:0;npm i @angular/compiler-cli@x 9.0.0-rc.8
-: 1579106511:0;npm i @angular/compiler-cli@9.0.0-rc.8
-: 1579165730:0;ps aux | grep 35692
-: 1579165761:0;kill -9 35692
-: 1579167902:0;curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
-: 1579170676:0;rm -rf yarn-error.log
-: 1579171725:0;cd apps
-: 1579171737:0;ag "click" --html
-: 1579173487:0;ag "FOO" -Q  dist/esm
-: 1579173532:0;ag "FOO" -Q  dist
-: 1579173602:0;ag "FOO BUZZZ" -Q  dist
-: 1579173768:0;yarn debug
-: 1579174057:0;ag "FOO FOO" -Q  dist
-: 1579174226:0;ag "FOO BAR" -Q  dist
-: 1579174512:0;top -o cpu
-: 1579174528:0;ps aux | grep node
-: 1579174559:0;cd components/widgets/busy-indicator
-: 1579174665:0;ag defineCustomElements
-: 1579175987:0;cd mpos
-: 1579175989:0;xo .build/ios/platforms/ios/Mobile\ POS.xcworkspace
-: 1579184018:0;ionic g page cart
-: 1579184025:0;ionic g page payment
-: 1579184035:0;npm i -g ionic
-: 1579184229:0;ionic g page -h
-: 1579184237:0;ionic g page not-found --skip-import
-: 1579184465:0;ionic g page not-found
-: 1579184607:0;ionic g module shared
-: 1579184617:0;ionic g -h
-: 1579184638:0;ionic g component shared
-: 1579184649:0;ionic g component header shared
-: 1579185804:0;npm view @stencil/core
-: 1579186334:0;cd components/widgets/drawer-config-login-menu
-: 1579190912:0;gco -b feature/mpos-next
-: 1579190955:0;git commit -m "MPOS Next"
-: 1579190965:0;git push origin feature/mpos-next 
-: 1579190976:0;git push origin feature/mpos-next --no-verify 
-: 1579191239:0;npm view ramda version
-: 1579191265:0;npm view @types/ramda version
-: 1579192455:0;brew doctro
-: 1579192460:0;brew doctor
-: 1579253072:0;brew info neovi
-: 1579259270:0;git rebase develop 
-: 1579259284:0;git mergetool
-: 1579259376:0;git rebase --continue 
-: 1579271030:0;cd stenciljs-in-angular
-: 1579271032:0;yarn start
-: 1579271699:0;cd Workspace
-: 1579271702:0;git clone git@gitlab.gk.gk-software.com:omnicommerce/mobile-sales-clients.git mono2
-: 1579271781:0;mv mono2 gk
-: 1579271785:0;cd gk
-: 1579271792:0;gco develop
-: 1579271930:0;ag "$key" --sass components/uikit
-: 1579271995:0;v components/uikit
-: 1579272144:0;git diff components/uikit/.gitignore
-: 1579272165:0;git reset --hard origin/feature/mpos-next 
-: 1579272321:0;ag temp
-: 1579272331:0;la temp
-: 1579272376:0;rm -rf temp
-: 1579272434:0;git reset --hard
-: 1579272956:0;jk
-: 1579276280:0;gco src/styles/basic.scss
-: 1579276308:0;yarn build:styles
-: 1579352076:0;gco components/uikit/src/styles/basic.scss
-: 1579354292:0;cd Workspace/xac
-: 1579354297:0;cd aeroji
-: 1579354304:0;cd apps/web-app
-: 1579363782:0;nnn
-: 1579364925:0;v-ed
-: 1579365144:0;vim ~/.config/nvim/init.vim
-: 1579372093:0;brew info ctags
-: 1579430450:0;brew info fzf
-: 1579430469:0;$(brew --prefix)/opt/fzf/install
-: 1579430603:0;brew uninstall fzf
-: 1579430826:0;r package.json
-: 1579430901:0;docker-compose start
-: 1579430916:0;docker-compose ps
-: 1579443377:0;npm i --save prettyjson-256
-: 1579449622:0;mongo-express --port 8811 -u aeroji -p aji888 -d catalog -H localhost -P 8882
-: 1579450654:0;cd ~/Workspace/xac/aeroji-old
-: 1579450666:0;cd service-catalog-fake
-: 1579466396:0;npm audit
-: 1579466454:0;git commit -m "adds pagination to catalog service search"
-: 1579466462:0;npm audit fix
-: 1579467117:0;npm run 
-: 1579467149:0;git diff libs/utils/custom-valpipe.ts
-: 1579467162:0;gco package-lock.json
-: 1579467191:0;npm run dev:catalog-service
-: 1579470301:0;brew info the_silver_searcher
-: 1579470611:0;fzf 
-: 1579473069:0;fzf .
-: 1579473082:0;fzf | v
-: 1579473116:0;v fzf.md
-: 1579473138:0;v **
-: 1579473152:0;v -o 'fzf'
-: 1579473161:0;v ./**
-: 1579473232:0;v -o `fzf`
-: 1579473295:0;nvim apps/web-app/src/main.ts 
-: 1579473317:0;v ionic.config.json 
-: 1579473638:0;ag foo
-: 1579474476:0;npm i @typescript-eslint/parser @typescript-eslint/eslint-plugin -D
-: 1579474526:0;npm install eslint-plugin-react --save-dev
-: 1579475534:0;https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
-: 1579511261:0;npm -v
-: 1579511296:0;npm i -g @nrwl/cli 
-: 1579511308:0;npm i -g @angular/cli
-: 1579511319:0;npm i -g node-sass
-: 1579511342:0;npm i -g syncpack
-: 1579511359:0;npm i -g typescript
-: 1579511372:0;npm i -g yalc
-: 1579511391:0;n ls-remote
-: 1579511615:0;cd components/uikit
-: 1579512767:0;cd ~/.config
-: 1579512953:0;ag main
-: 1579512969:0;ag "loader"
-: 1579513015:0;k
-: 1579515300:0;ag gk-opos-settings-widget --html clients/mpos
-: 1579515930:0;fzf
-: 1579516965:0;../mpos
-: 1579520673:0;ag "gk-auth" -Q
-: 1579521831:0;npm view @webcomponents/webcomponentsjs version
-: 1579522123:0;cd node_modules/@webcomponents/webcomponentsjs
-: 1579522134:0;la bundles
-: 1579522201:0;cd webcomponentsjs
-: 1579522512:0;cd clients/mpos-
-: 1579522947:0;cd components/services/auth-service
-: 1579523073:0;cd opos-settings
-: 1579523747:0;cd Workspace/xac/aeroji
-: 1579523763:0;cd ../aeroji-old
-: 1579524743:0;cd components/services/opos-settings
-: 1579601861:0;cd ~/.config/nvim
-: 1579611948:0;git push origin feature/mpos-next --no-verify --force
-: 1579615291:0;la node_modules/@webcomponents/custom-elements/src
-: 1579615597:0;cd auth-service
-: 1579616132:0;ionic g page main
-: 1579619417:0;....
-: 1579619896:0;cd mono2
-: 1579619900:0;cd clients/clienteling-prototype
-: 1579619904:0;cd ../mpos
-: 1579619927:0;ln -snf ~/Workspace/gk/configs/mpos/tron-9443-ent4-002.9090.MPOS611/conf.json mpos.dev.conf.json
-: 1579621380:0;yarn dev --port=8787 --eslint=false --secure=false --watch=true --verbose=false --bundleComponents=false 
-: 1579622068:0;javaws ~/Tools/smclient-ent4.jnlp
-: 1579623025:0;ag "Busy"
-: 1579623843:0;ag Busy
-: 1579623875:0;ag BusyIndicatorShowMessage
-: 1579624059:0;ag AuthorizeSucceededMessage
-: 1579624981:0;cd services/auth-service
-: 1579624983:0;yarn build
-: 1579625477:0;cd components/services/pos-service
-: 1579625500:0;../basket-service
-: 1579625502:0;ag SignOnSucceededMessage
-: 1579684651:0;jkkj
-: 1579684797:0;npm view @ngrx/entity
-: 1579684804:0;npm view @ngrx/entity version
-: 1579695292:0;npm outdated
-: 1579695411:0;npm view @types/node
-: 1579695416:0;npm view @types/node version
-: 1579695767:0;npm i 
-: 1579696852:0;cd ../uikit
-: 1579700802:0;npm io
-: 1579700806:0;npm i
-: 1579700853:0;cd ../../xac/aeroji-old
-: 1579700855:0;cd client-hybrid
-: 1579704191:0;cd ../tuts
-: 1579704195:0;cd angular-reactive-workshop
-: 1579706275:0;l
-: 1579706279:0;git clone https://github.com/ngrx/platform.git
-: 1579707551:0;npm run example:start 
-: 1579707793:0;ag reducer
-: 1579707797:0;ag reducer --ts
-: 1579709539:0;cd Workspace/gk/mono
-: 1579709710:0;la clients/mpos-next
-: 1579709761:0;cd Workspace/gk/mono/clients/
-: 1579709791:0;yarn -v
-: 1579709812:0;brew upgrade
-: 1579709873:0;git stash list
-: 1579709903:0;git diff shared/runtime/src/components/services/http-client/utils.ts
-: 1579709923:0;git commit -m "fu"
-: 1579709944:0;brew info git
-: 1579709956:0;brew info tmux
-: 1579709961:0;brew info alacritty
-: 1579709967:0;brew cask info alacritty
-: 1579709971:0;brew info neovim
-: 1579709975:0;brew info yern 
-: 1579709980:0;brew info yarn
-: 1579709985:0;node -v
-: 1579709990:0;n ls-remote 10
-: 1579710043:0;cd clients
-: 1579710048:0;ionic start 
-: 1579710167:0;cd clients/mpos-next2
-: 1579710310:0;yarn add @ngrx/schematics --dev
-: 1579710356:0;yarn add @ngrx/{store,effects,entity,store-devtools}
-: 1579711649:0;cd Workspace/temp
-: 1579711651:0;cd platform
-: 1579711659:0;cd projects/example-app
-: 1579712229:0;ag router
-: 1579770625:0;brew update
-: 1579771853:0;cd-docs
-: 1579771990:0;npm outdated =g
-: 1579771995:0;npm outdated -g
-: 1579772030:0;touch angular-cli.md
-: 1579772032:0;v angular-cli.md
-: 1579772112:0;z-source
-: 1579772121:0;cd temp
-: 1579772151:0;v vim.md
-: 1579772187:0;ng new angular-cli-playground
-: 1579772284:0;npm run start
-: 1579772350:0;cd xac/aeroji
-: 1579772356:0;cd apps/catalog-service
-: 1579772370:0;cd mail-service
-: 1579772372:0;v README.md
-: 1579772474:0;m angular-cli.md
-: 1579772573:0;ng test
-: 1579774199:0;ng e2e
-: 1579774318:0;ng --helpo
-: 1579774341:0;ng generate help
-: 1579774350:0;ng g --help
-: 1579774382:0;ng --help
-: 1579774390:0;ng help
-: 1579774397:0;ng help add
-: 1579774418:0;ng generate --help
-: 1579774464:0;ng --help | clip
-: 1579774520:0;ng --help | pbcopy
-: 1579774700:0;gco --amend 
-: 1579774707:0;git commit --amend 
-: 1579774805:0;git diff angular.json
-: 1579774817:0;git diff package.json
-: 1579774840:0;git commit -m "ng add @ngrx/schematics"
-: 1579774873:0;npm install @ngrx/{store,effects,entity,store-devtools} --save
-: 1579774892:0;git commit "npm install @ngrx/{store,effects,entity,store-devtools} --save"
-: 1579774902:0;git commit -m "npm install @ngrx/{store,effects,entity,store-devtools} --save"
-: 1579774967:0;ng add @ngrx/schematics
-: 1579774992:0;ng generate @ngrx/schematics:store State --root --module app.module.ts
-: 1579775058:0;git commit -m "ng generate @ngrx/schematics:store State --root --module app.module.ts"
-: 1579775066:0;ng generate @ngrx/schematics:effect App --root --module app.module.ts
-: 1579775130:0;git commit -m "ng generate @ngrx/schematics:effect App --root --module app.module.ts"
-: 1579775143:0;ng config cli.defaultCollection @ngrx/schematics
-: 1579775301:0;g generate store State --root --module app.module.ts
-: 1579775305:0;ng generate store State --root --module app.module.ts
-: 1579775321:0;ng generate module admin --flat false
-: 1579775332:0;git commit -m "ng generate module admin --flat false"
-: 1579775347:0;ng generate store admin/Admin -m admin.module.ts
-: 1579775375:0;git commit -m "ng generate store admin/Admin -m admin.module.ts"
-: 1579775383:0;ng generate store State --root --statePath store --module app.module.ts
-: 1579775470:0;ng generate action User --flat false
-: 1579775516:0;git diff
-: 1579775570:0;git commit -m "ng generate action User --flat false"
-: 1579775597:0;ng generate container UsersPage --state reducers/index.ts --stateInterface MyState
-: 1579775614:0;git diff src/app/app.module.ts
-: 1579775678:0;git commit -m "ng generate container UsersPage --state reducers/index.ts --stateInterface MyState"
-: 1579775810:0;v-edit
-: 1579775950:0;a-edit
-: 1579776121:0;ng add @ngrx/router-store
-: 1579776148:0;vimdiff src/app/app.module.ts
-: 1579776186:0;git difftool src/app/app.module.ts
-: 1579776209:0;ng serve
-: 1579776640:0;cd src/app
-: 1579776643:0;mkdir state
-: 1579776647:0;cd state/
-: 1579776652:0;mkdir settings
-: 1579776654:0;cd settings
-: 1579776666:0;ng generate action Settings --group
-: 1579776736:0;ng generate action Auth --group
-: 1579776831:0;pwd
-: 1579776838:0;rm -rf actions
-: 1579776844:0;ng generate action Settings --flat false
-: 1579776886:0;ng generate reducer Settings --flat 
-: 1579777492:0;cd-ws
-: 1579777495:0;t
-: 1579777884:0;la node_modules
-: 1579777890:0;la node_modules/@ngrx
-: 1579777892:0;..
-: 1579778475:0;npm install -g increase-memory-limit
-: 1579778491:0;increase-memory-limit
-: 1579778894:0;npm un -g increase-memory-limit
-: 1579778898:0;z-edit
-: 1579779792:0;npm run dev
-: 1579780615:0;ag "@ngrx/store" -Q --json
-: 1579780626:0;rm package-lock.json
-: 1579780631:0;rm yarn.lock
-: 1579780792:0;ionic start
-: 1579780857:0;cd ~/Workspace/temp/test-ionic
-: 1579780859:0;v package.json
-: 1579781191:0;cd-mono
-: 1579781198:0;npm view lerna version
-: 1579781273:0;rm -rf yarn.lock
-: 1579781301:0;htop
-: 1579781575:0;npm view @ngrx/effects versions
-: 1579781585:0;npm view @ngrx/store versions
-: 1579781601:0;npm view @ngrx/entity versions
-: 1579781609:0;npm view @ngrx/router-store versions
-: 1579781683:0;npm view @ngrx/store-devtools versions
-: 1579781698:0;npm view typescript versions
-: 1579781703:0;npm view typescript version
-: 1579781895:0;la node_modules/
-: 1579791018:0;cd ../mono2
-: 1579791038:0;gco feature/mpos-next 
-: 1579791047:0;git pull
-: 1579791641:0;cd Workspace/temp/angular-cli-playground
-: 1579791647:0;cd test-ionic
-: 1579791679:0;cd angular-cli-playground
-: 1579791746:0;yarn clean
-: 1579791772:0;cd ../mono
-: 1579791784:0;cd clients/mpos-next
-: 1579791800:0;rm -rf node_modules
-: 1579791830:0;cd mpos-next
-: 1579791839:0;la
-: 1579791885:0;cd ..
-: 1579791976:0;mv mpos-next mpos-next3
-: 1579791987:0;c .
-: 1579792027:0;mv mpos-next2 ../../
-: 1579792042:0;mv mpos-next3 mpos-next
-: 1579792071:0;mv mpos-next3 mpos-next2
-: 1579792080:0;mv mpos-next mpos-next2
-: 1579792107:0;cd mono
-: 1579792115:0;glod
-: 1579792125:0;git commit -m "fu fu"
-: 1579792134:0;cd clients/
-: 1579792144:0;mv mpos-next2 mpos-next
-: 1579792149:0;git add .
-: 1579792159:0;git commit -m "fu fu fui"
-: 1579792163:0;gst
-: 1579792184:0;cd mpos-next2
-: 1579793082:0;cd ...
-: 1579793093:0;../xac/aeroji-old
-: 1579793096:0;cd client-hybrid/
-: 1579793099:0;v
-: 1579793294:0;yarn install
-: 1579793574:0;...
-: 1579793581:0;yarn scopes:build --lernaDevOnly
-: 1579793780:0;yarn bootstrap
-: 1579794629:0;cd clients/mpos
-: 1579794635:0;cd ../mpos-next
-: 1579794638:0;yarn dev
-: 1579795133:0;ll
-: 1579795173:0;cp -R src/app/state/router ../../../gk/mono/clients/mpos-next/src/app/state
-: 1579799038:0;yarn dev
-: 1579857148:0;t
-: 1579857152:0;brew update
-: 1579857176:0;brew upgrade
-: 1579857262:0;brew cask info alacritty
-: 1579857268:0;brew info neovi
-: 1579857271:0;brew info neovim
-: 1579857277:0;brew info tmux
-: 1579857288:0;brew info git
-: 1579857300:0;v-edit 
-: 1579857323:0;cd-mono
-: 1579857325:0;v
-: 1579858493:0;cd clients/mpos-next
-: 1579858496:0;yarn dev
-: 1579861318:0;...
-: 1579861320:0;yarn install
-: 1579861403:0;yarn dev
-: 1579865213:0;yarn install
-: 1579865270:0;yarn scopes:build --lernaDevOnly
-: 1579865601:0;yarn dev
-: 1579866064:0;ag basket clients/mpos/client-app/src/main
-: 1579866080:0;ag broker clients/mpos/client-app/src/main
-: 1579866201:0;yarn scopes:build --lernaDevOnly
-: 1579866338:0;cd components/services/basket-service
-: 1579866339:0;ll
-: 1579866340:0;la dist
-: 1579866343:0;yarn dev
-: 1579866375:0;la dist
-: 1579866489:0;yarn install
-: 1579866516:0;yarn scopes:build --lernaDevOnly
-: 1579866640:0;yarn dev
-: 1579867026:0;lerna run build --scope @gk-software/component-runtime-rx-event-bus
-: 1579867043:0;yarn dev
-: 1579867164:0;yarn scopes:build --lernaDevOnly
-: 1579867419:0;yarn dev
-: 1579868121:0;../pos-broker-service
-: 1579868126:0;yarn dev
-: 1579868364:0;ag store --ts 
-: 1579868987:0;yarn install
-: 1579869062:0;yarn dev
-: 1579869949:0;cd Workspace/xac/aeroji
-: 1579869950:0;ll
-: 1579869953:0;cd apps/
-: 1579869954:0;ll
-: 1579869957:0;cd catalog-service
-: 1579869958:0;ll
-: 1579869959:0;v
-: 1579870388:0;t
-: 1579870393:0;alias x
-: 1579870396:0;alias xo
-: 1579874384:0;gst
-: 1579874388:0;git add .
-: 1579874394:0;glod
-: 1579874405:0;git commit -m "xxx"
-: 1579874407:0;gst
-: 1579874409:0;...
-: 1579874410:0;gst
-: 1579874411:0;git add .
-: 1579874415:0;git commit --amend 
-: 1579874522:0;ll
-: 1579874534:0;cd clients/mpos-next/src/app/state/auth
-: 1579874549:0;ng generate action auth
-: 1579874658:0;yarn install
-: 1579874763:0;ng generate action auth
-: 1579874805:0;gst
-: 1579874809:0;cd clients/mpos-next
-: 1579874810:0;ll
-: 1579874811:0;ng add @ngrx/schematics
-: 1579874820:0;gst
-: 1579874847:0;ng add @ngrx/schematics
-: 1579874862:0;gst
-: 1579874867:0;git difftool angular.json
-: 1579874918:0;ng generate action auth
-: 1579874928:0;gst
-: 1579875076:0;v-edit
-: 1579875094:0;v
-: 1579875345:0;cd ...
-: 1579875348:0;...
-: 1579875350:0;yarn dev
-: 1579875566:0;cd src/app/state/auth
-: 1579875567:0;ll
-: 1579875594:0;ng generate reducer auth --dry-run
-: 1579875607:0;ng generate reducer auth 
-: 1579876708:0;yarn dev
-: 1579876775:0;....
-: 1579876776:0;..
-: 1579876778:0;ll
-: 1579876781:0;yarn scopes:build --lernaDevOnly
-: 1579876784:0;...
-: 1579876787:0;yarn scopes:build --lernaDevOnly
-: 1579876959:0;yarn dev
-: 1579878372:0;yarn scopes:build --lernaDevOnly
-: 1579878527:0;yarn dev
-: 1579879157:0;cd ...
-: 1579879158:0;cd ..
-: 1579879167:0;cd gk/mono2
-: 1579879168:0;cd clients/mpos
-: 1579879170:0;yarn dev
-: 1579879176:0;yarn dev --port=8787 --eslint=false --secure=false --watch=true --verbose=false --bundleComponents=false 
-: 1579879319:0;cd Workspace/xac/aeroji
-: 1579879328:0;ll
-: 1579879333:0;cd apps/catalog-service
-: 1579879334:0;ll
-: 1579879345:0;r README.md
-: 1579882705:0;ll
-: 1579882712:0;r README.md
-: 1579882728:0;pwd
-: 1579882728:0;ll
-: 1579883316:0;yarn dev
-: 1579884009:0;gst
-: 1579884020:0;git add .
-: 1579884026:0;git commit -m "xxx"
-: 1579884028:0;gst
-: 1579884029:0;glod
-: 1579884034:0;glog
-: 1579884084:0;git rebase -i HEAD~7
-: 1579884103:0;gst
-: 1579884105:0;glog
-: 1579884112:0;git push origin feature/mpos-next --no-verify --force
-: 1579948934:0;cd Tools/dotfiles
-: 1579948935:0;ll
-: 1579948946:0;la config
-: 1579948968:0;ll
-: 1579948969:0;cd config
-: 1579948970:0;ll
-: 1579948978:0;cp * ~/.config/alacritty alacritty
-: 1579948990:0;cp ~/.config/alacritty/* alacritty/
-: 1579949004:0;cp ~/.config/nvim/* nvim
-: 1579949015:0;cp -R ~/.config/nvim/* nvim
-: 1579949044:0;cp -R ~/.config/tmux/* tmux
-: 1579949050:0;gst
-: 1579949053:0;..
-: 1579949055:0;gst
-: 1579949057:0;git add .
-: 1579949071:0;git commit -m "update configs"
-: 1579949071:0;gst
-: 1579949076:0;git push
-: 1579949083:0;gst
-: 1579949125:0;la ~/.zsh
-: 1579949127:0;la ~/.zshrc
-: 1579949162:0;cp -R ~/.config/omz config
+: 1587114748:0;lerna run build:debug:apk --scope MobilePOS --stream -- --eslint=false --verbose --skipBuild=false\
+
+: 1587115072:0;ll
+: 1587115074:0;cd .build
+: 1587115075:0;ll
+: 1587115079:0;la android/www
+: 1587115083:0;la android/www/components
+: 1587115087:0;la android/www/components/@gk-software
+: 1587115092:0;la android/www/components/bundle
+: 1587115103:0;gst
+: 1587140094:0;adb devices
+: 1587140113:0;adb -s 5200aef859575595 install ~/Downloads/MobilePOS_5.15.0_b250707_20200417-105737_debug.apk
+: 1587140470:0;adb -s 5200aef859575595 install ~/Downloads/MobilePOS_5.15.0_b250707_20200417-105914.apk
+: 1587161982:0;ng --version
+: 1587161998:0;npmrc global
+: 1587162002:0;t
+: 1587162016:0;npm outdated -g
+: 1587162052:0;npm i -g @angular/cli @angular-devkit/schematics-cli
+: 1587162087:0;npm i -g @nrwl/cli dockly jest n newman nodemon prettier redis-commander ts-node
+: 1587162958:0;ll
+: 1587162961:0;a-edit
+: 1587163321:0;pwd
+: 1587163322:0;ll
+: 1587163324:0;gst
+: 1587204654:0;tmuxinator start aji
+: 1587204659:0;trcp MSSG_CLI
+: 1587204659:0;trcp AUTH_SVC
+: 1587204659:0;cd /Users/xac/Workspace/xac/aeroji
+: 1587204659:0;trcp aeroji_ide
+: 1587204659:0;npm run auth-svc:dev
+: 1587204659:0;v
+: 1587204659:0;trcp AUTH_CLI
+: 1587204659:0;trcp MEDIA_SVC
+: 1587204659:0;trcp MEDIA_CLI
+: 1587204659:0;trcp cli
+: 1587204659:0;npm run media-svc:dev
+: 1587204659:0;trcp cli
+: 1587204659:0;trcp MSSG_SVC
+: 1587204660:0;npm run mssg-svc:dev
+: 1587204735:0;npm run catalog-svc:dev
+: 1587204659:0;trcp WEB-APP
+: 1587204782:0;npm run web-app:dev
+: 1587284030:0;t
+: 1587287798:0;npm outdated -g
+: 1587287813:0;n ls-remote
+: 1587287816:0;n ls-remote 12
+: 1587287818:0;node -v
+: 1587287828:0;n install 12.16.2
+: 1587287840:0;n 
+: 1587287847:0;node -v
+: 1587287849:0;npm -v
+: 1587287852:0;yarn -v
+: 1587287858:0;brew info yarn
+: 1587287876:0;brew cask info alacritty
+: 1587287887:0;brew info tmux
+: 1587287892:0;brew info neovim
+: 1587287911:0;brew upgrade neovim
+: 1587287933:0;brew update
+: 1587287937:0;brew upgrade
+: 1587294576:0;v
+: 1587294661:0;npm run web-app:dev
+: 1587297583:0;tmuxinator start aji
+: 1587297587:0;trcp AUTH_SVC
+: 1587297587:0;cd /Users/xac/Workspace/xac/aeroji
+: 1587297587:0;npm run auth-svc:dev
+: 1587297588:0;trcp aeroji_ide
+: 1587297588:0;trcp MEDIA_SVC
+: 1587297588:0;v
+: 1587297588:0;trcp MSSG_SVC
+: 1587297588:0;trcp AUTH_CLI
+: 1587297588:0;trcp MSSG_CLI
+: 1587297588:0;trcp MEDIA_CLI
+: 1587297588:0;npm run media-svc:dev
+: 1587297588:0;trcp cli
+: 1587297588:0;trcp WEB-APP
+: 1587297704:0;npm run catalog-svc:dev
+: 1587298934:0;npm run web-app:dev
+: 1587299892:0;npm run catalog-svc:dev
+: 1587313621:0;v
+: 1587313684:0;npm run catalog-svc:dev
+: 1587313717:0;npm run web-app:dev
+: 1587313983:0;v
+: 1587315162:0;npm i --save ngx-currency
+: 1587315554:0;npm run web-app:dev
+: 1587317314:0;npm run catalog-svc:db:gui
+: 1587297588:23182;npm run mssg-svc:dev
+: 1587320772:0;npm run mssg-svc:dev
+: 1587325095:0;npm run media-svc:dev
+: 1587325103:0;npm run auth-svc:dev
+: 1587325776:0;npm run catalog-svc:dev
+: 1587333979:0;npm run mssg-svc:dev
+: 1587335570:0;cd-docs
+: 1587335571:0;ll
+: 1587335577:0;pwd
+: 1587335578:0;cd ..
+: 1587335579:0;ll
+: 1587335590:0;cd dev
+: 1587335591:0;ll
+: 1587335593:0;..
+: 1587335594:0;ll
+: 1587335597:0;cd docs
+: 1587335598:0;ll
+: 1587335604:0;cd docker-gitlab-nexus
+: 1587335605:0;ll
+: 1587335609:0;v README.md
+: 1587335638:0;cat /etc/hosts
+: 1587335669:0;v /usr/local/etc/httpd/extra/httpd-vhosts.conf
+: 1587335752:0;sudo apachectl restart
+: 1587335772:0;sudo nvim /etc/hosts
+: 1587335782:0;sudo apachectl restart
+: 1587335798:0;sudo apachectl start
+: 1587335877:0;sudo brew services status httpd
+: 1587335893:0;sudo brew services httpd status
+: 1587335902:0;sudo brew services start httpd
+: 1587335908:0;sudo brew services restart httpd
+: 1587335988:0;ping aeroji.dev
+: 1587336055:0;cat /etc/hosts
+: 1587336127:0;sudo apachectl stop
+: 1587336136:0;sudo brew services start httpd
+: 1587336150:0;sudo brew services restart httpd
+: 1587336158:0;ping aeroji.dev
+: 1587336161:0;ll
+: 1587336171:0;cd ~/Downloads
+: 1587336172:0;ll
+: 1587336176:0;mkdir temp
+: 1587336177:0;ll
+: 1587336178:0;cd temp
+: 1587336179:0;ll
+: 1587336184:0;wget aeroji.dev
+: 1587336307:0;cd /usr/local/etc
+: 1587336308:0;ll
+: 1587336313:0;cd httpd
+: 1587336404:0;sudo apachectl configtest
+: 1587336419:0;sudo apachectl status
+: 1587336427:0;apachectl status
+: 1587336451:0;ps aux | grep httpd
+: 1587336462:0;sudo brew services status httpd
+: 1587336473:0;sudo brew services stop httpd
+: 1587336480:0;sudo apachectl start
+: 1587336486:0;sudo apachectl status
+: 1587336565:0;brew info lynx
+: 1587336573:0;brew install lynx
+: 1587336670:0;sudo apachectl status
+: 1587336679:0;sudo apachectl start
+: 1587336685:0;sudo apachectl status
+: 1587336727:0;sudo httpd status
+: 1587336747:0;apachectl configtest
+: 1587336753:0;apachectl status
+: 1587337158:0;sudo nvim /etc/hosts
+: 1587337173:0;sudo apachectl restart
+: 1587337177:0;sudo apachectl status
+: 1587337198:0;sudo brew services stop httpd
+: 1587337215:0;sudo apachectl stop
+: 1587337221:0;brew services stop httpd
+: 1587337229:0;brew services start httpd
+: 1587337234:0;brew services status httpd
+: 1587337255:0;ps aux | grep httpd
+: 1587337265:0;ps aux | grep apache
+: 1587337274:0;sudo apachectl start
+: 1587337280:0;sudo apachectl status
+: 1587337284:0;ps aux | grep apache
+: 1587337290:0;ps aux | grep httpd
+: 1587337309:0;apachectl configtest
+: 1587337413:0;sudo apachectl start
+: 1587337416:0;sudo apachectl status
+: 1587337423:0;ps aux | grep httpd
+: 1587337427:0;ps aux | grep apache
+: 1587337459:0;wget localhost:80
+: 1587337477:0;sudo apachectl restart
+: 1587337482:0;sudo apachectl status
+: 1587337545:0;brew info httpd
+: 1587337729:0;apachectl configtest
+: 1587337735:0;sudo apachectl start
+: 1587337738:0;sudo apachectl status
+: 1587337749:0;ps aux | grep httpd
+: 1587337758:0;ps aux | grep apache
+: 1587337803:0;sudo brew services start httpd
+: 1587337847:0;sudo apachectl stop
+: 1587337856:0;sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+: 1587337865:0;brew install httpd
+: 1587337876:0;brew reinstall httpd
+: 1587337906:0;sudo rm -rf /usr/local/Cellar/httpd/2.4.43.reinstall
+: 1587337914:0;brew install httpd
+: 1587337923:0;brew reinstall httpd
+: 1587337934:0;sudo brew services start httpd
+: 1587337975:0;ps -aef | grep httpd
+: 1587337986:0;sudo apachectl -k restart
+: 1587337994:0;ps -aef | grep httpd
+: 1587338006:0;tail -f /usr/local/var/log/httpd/error_log
+: 1587338049:0;sudo apachectl -k restart
+: 1587338064:0;ps -aef | grep httpd
+: 1587338071:0;tail -f /usr/local/var/log/httpd/error_log
+: 1587338118:0;cd ~/Downloads/temp
+: 1587338123:0;wget aeroji.local
+: 1587338129:0;r index.html
+: 1587338152:0;sudo apachectl -k restart
+: 1587338172:0;tail -f /usr/local/var/log/httpd/error_log
+: 1587338189:0;wget aeroji.local
+: 1587338193:0;ll
+: 1587338197:0;r index.html.1
+: 1587338238:0;npm run web-app:dev
+: 1587338456:0;npm run mssg-svc:dev
+: 1587371668:0;cd ~/Workspace/gk/mono
+: 1587371668:0;ll
+: 1587371874:0;c .
+: 1587372169:0;v
+: 1587372256:0;gst
+: 1587372292:0;git add .
+: 1587372298:0;gst
+: 1587372303:0;git commit --amend 
+: 1587372309:0;gst
+: 1587372323:0;git push origin bugfix/another-android-pipeline-fix  --no-verify --force
+: 1587373017:0;gst
+: 1587373019:0;git add .
+: 1587373052:0;gst
+: 1587373056:0;git commit --amend 
+: 1587373061:0;gst
+: 1587373063:0;git push origin bugfix/another-android-pipeline-fix  --no-verify --force
+: 1587386463:0;cd clients/mpos
+: 1587386464:0;ll
+: 1587386470:0;rm -rf .build
+: 1587386493:0;ll
+: 1587386520:0;ENV="dev" lerna run build:dev --scope MobilePOS --stream
+: 1587386561:0;...
+: 1587386571:0;ENV="dev" lerna run build:components --scope MobilePOS --stream
+: 1587386628:0;rm -rf .build
+: 1587386648:0;ENV="dev" lerna run build:components --scope MobilePOS --stream && ENV="dev" lerna run build:dev --scope MobilePOS --stream
+: 1587386877:0;la .build/dev/app/components
+: 1587386925:0;rm -rf .build
+: 1587387558:0;ll
+: 1587387559:0;la
+: 1587387568:0;ENV="dev" lerna run build:components --scope MobilePOS --stream && ENV="dev" lerna run build:dev --scope MobilePOS --stream
+: 1587387894:0;la .build/dev/components
+: 1587387900:0;la .build/dev/components/@gk-software
+: 1587387902:0;la .build/dev/components/@gk-software/uikit@1.0.1
+: 1587388129:0;rm -rf .build
+: 1587388138:0;ENV="dev" lerna run build:components --scope MobilePOS --stream && ENV="dev" lerna run build:dev --scope MobilePOS --stream
+: 1587388360:0;la .build/dev/components
+: 1587388364:0;la .build/dev/components/@gk-software/uikit
+: 1587388371:0;la .build/dev/components/@gk-software/component-widget-transaction-container
+: 1587388379:0;rm -rf MobilePOS_5.15.0_b0000_20200417-*
+: 1587388425:0;lerna run build:debug:apk$DEVICE_VENDOR --scope MobilePOS --stream -- --eslint=false --verbose --skipBuild=false 
+: 1587388476:0;la .build/dev/components/@gk-software/uikit/package.json
+: 1587388647:0;lerna run build:debug:apk$DEVICE_VENDOR --scope MobilePOS --stream -- --eslint=false --verbose --skipBuild=false 
+: 1587388898:0;ll
+: 1587388906:0;la .build/dev/components
+: 1587388911:0;la .build/dev/components/@gk-software/uikit
+: 1587388914:0;la .build/dev/components/bundle
+: 1587388916:0;ll
+: 1587388922:0;la .build/android/www
+: 1587388926:0;la .build/android/www/components
+: 1587388930:0;la .build/android/www/components/@gk-software/uikit@1.0.1
+: 1587388935:0;la .build/android/www/components/bundle
+: 1587389030:0;adb devices
+: 1587389039:0;adb -s 5200aef859575595 install MobilePOS_5.15.0_b0000_20200420-152343_debug.apk
+: 1587389047:0;rm -rf .build
+: 1587389142:0;ENV="dev" lerna run build:components --scope MobilePOS --stream && ENV="dev" lerna run build:dev --scope MobilePOS --stream
+: 1587389253:0;rm -rf ../../MobilePOS_5.15.0_b0000_20200420-152343_debug.apk
+: 1587389394:0;ENV='dev' PLATFORM='android' lerna run build:debug:apk --scope MobilePOS --stream -- --eslint=false --verbose --skipBuild=false 
+: 1587389627:0;adb -s 5200aef859575595 install MobilePOS_5.15.0_b0000_20200420-153323_debug.apk
+: 1587389705:0;gst
+: 1587389707:0;git add .
+: 1587389710:0;git commit --amend 
+: 1587389717:0;yarn lint
+: 1587389753:0;ll
+: 1587389757:0;git push origin bugfix/another-android-pipeline-fix  --no-verify --force
+: 1587408564:0;adb devices
+: 1587408588:0;adb -s 5200aef859575595 install ~/Downloads/MobilePOS_5.15.0_b260461_20200420-183446_debug.apk
+: 1587319958:96078;npm run auth-svc:db:gui
+: 1587459597:0;tmuxinator start aji
+: 1587459601:0;trcp AUTH_SVC
+: 1587459601:0;trcp MEDIA_CLI
+: 1587459601:0;trcp WEB-APP
+: 1587459601:0;trcp AUTH_CLI
+: 1587459601:0;cd /Users/xac/Workspace/xac/aeroji
+: 1587459601:0;npm run auth-svc:dev
+: 1587459601:0;trcp aeroji_ide
+: 1587459601:0;trcp cli
+: 1587459601:0;v
+: 1587459601:0;trcp cli
+: 1587459601:0;trcp MSSG_SVC
+: 1587459601:0;npm run mssg-svc:dev
+: 1587459601:0;trcp MSSG_CLI
+: 1587459601:0;trcp MEDIA_SVC
+: 1587459601:0;npm run media-svc:dev
+: 1587459694:0;npm run mssg-svc:dev
+: 1587459695:0;npm run auth-svc:dev
+: 1587459715:0;npm run catalog-svc:dev
+: 1587459730:0;npm run web-app:dev
+: 1587460371:0;v
+: 1587460527:0;npm run catalog-svc:db:gui
+: 1587461053:0;npm run web-app:dev
+: 1587461162:0;npm run auth-svc:db:gui
+: 1587461315:0;npm run web-app:dev
+: 1587497982:0;npm run auth-svc:dev
+: 1587500120:0;npm run web-app:dev
+: 1587500155:0;npm run auth-svc:dev
+: 1587500290:0;npm outdated
+: 1587500365:0;npmrc global
+: 1587500373:0;npm view typescript version
+: 1587500520:0;npm run auth-svc:dev
+: 1587500536:0;npm run auth-svc:db:gui
+: 1587502561:0;npm i --save deep-equal
+: 1587502772:0;npm i --save deep-diff
+: 1587502802:0;npm i --save-dev @types/deep-diff
+: 1587503003:0;npm run auth-svc:db:gui
+: 1587503014:0;npm run auth-svc:dev
+: 1587504021:0;npm run mssg-svc:dev
+: 1587504672:0;npm run mssg-svc:db:gui
+: 1587507694:0;gst
+: 1587507697:0;git add .
+: 1587507705:0;git commit -m "clean up models"
+: 1587507706:0;gst
+: 1587637895:0;npm run mssg-svc:dev
+: 1587637896:0;npm run auth-svc:dev
+: 1587637900:0;npm run media-svc:dev
+: 1587640418:0;npm run mssg-svc:dev
+: 1587640708:0;npm run auth-svc:db:gui
+: 1587644402:0;npm run web-app:dev
+: 1587644501:0;ll
+: 1587644541:0;gst
+: 1587644544:0;v
+: 1587895502:0;npm run web-app:dev
+: 1587896593:0;v-edit
+: 1587897702:0;v
+: 1587910724:0;ng generate -h
+: 1587910749:0;cd apps/web-app/src/app/features/account
+: 1587910805:0;ng generate @schetics/angular:component --name=widget-reset-password-confirm --module=account --dry-run
+: 1587910819:0;ng generate @schematics/angular:component --name=widget-reset-password-confirm --module=account --dry-run
+: 1587910844:0;ng generate @schematics/angular:component --name=widget-reset-password-confirm --module=account --dry-run --interactive
+: 1587910925:0;ng generate @schematics/angular:component -h
+: 1587910931:0;ng generate @schematics/angular:component --help
+: 1587910953:0;ng generate @schematics/angular:component --name=widget-reset-password-confirm --module=account --skip-test --dry-run
+: 1587910962:0;ng generate @schematics/angular:component --name=widget-reset-password-confirm --module=account --skip-tests --dry-run
+: 1587910970:0;ng generate @schematics/angular:component --name=widget-reset-password-confirm --module=account --skip-tests
+: 1587911038:0;rm -rf widget-reset-password-confirm
+: 1587911057:0;ng generate @schematics/angular:component --name=widget-reset-password-confirm --module=account --skip-tests --style=scss
+: 1587911885:0;npm run web-app:dev
+: 1587941224:0;c .
+: 1587941889:0;npm run web-app:dev
+: 1588100109:0;gst
+: 1588100119:0;r ~/.ssh/id_rsa.pub
+: 1588100135:0;v ~/.ssh/id_rsa.pub
+: 1588100240:0;gst
+: 1588100245:0;glod
+: 1588100250:0;git add .
+: 1588100255:0;git commit --amq
+: 1588100258:0;git commit --amend 
+: 1588100262:0;gst
+: 1588100264:0;git pull
+: 1588100278:0;gst
+: 1588100282:0;git push origin master
+: 1588100289:0;ll
+: 1588100306:0;cd ~/Tools/dotfiles
+: 1588100307:0;ll
+: 1588100311:0;cd ..
+: 1588100311:0;ll
+: 1588100314:0;cd dot-tmux
+: 1588100315:0;ll
+: 1588100322:0;r README.md
+: 1588100337:0;..
+: 1588100337:0;ll
+: 1588100385:0;cp ~/.config/alacritty/alacritty.yml config/alacritty
+: 1588100413:0;cp ~/.config/tmux/* config/tmux/
+: 1588100428:0;cp ~/.config/tmuxinator config
+: 1588100435:0;cp -R ~/.config/tmuxinator config
+: 1588100438:0;gst
+: 1588100463:0;ll
+: 1588100488:0;la ~/.config/omz
+: 1588100506:0;la config/omz
+: 1588100533:0;cp -R ~/.config/omz/* config/omz

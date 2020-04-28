@@ -76,6 +76,11 @@ Statusline plugin for vim, and provides statuslines and prompts for several othe
 
 ### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) · framework for managing zsh configuration
 
+```bash
+/Users/xac/.zshenv@ -> .zshrc
+/Users/xac/.zshrc@ -> /Users/xac/.config/omz/zshrc
+```
+
 #### Theme [Powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k)
 ```bash
 git clone https://github.com/bhilburn/powerlevel9k.git \

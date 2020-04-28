@@ -1,7 +1,8 @@
 
 env:
-  TERM: xterm-256color
+  # TERM: xterm-256color
   # TERM: screen-256color
+  TERM: tmux-256color
 
 window:
 
@@ -23,9 +24,6 @@ scrolling:
 
   history: 10000
   multiplier: 3
-  auto_scroll: false
-
-tabspaces: 8
 
 font:
   normal:
@@ -63,8 +61,12 @@ colors:
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x212121'
-    cursor: '0x33FF06'
+    # text: '0x212121'
+    # cursor: '0x33FF06'
+    # text: '0xffffff'
+    # cursor: '0xFF0000'
+    text: '0x2A2827'
+    cursor: '0x00FF00'
 
   # Normal colors
   normal:

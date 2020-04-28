@@ -288,16 +288,24 @@ filetype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx,*.ppt open -a LibreOffice.
 fileviewer *.doc antiword -
 fileviewer *.docx docx2txt.pl %f -
 
-
 " Source Code
 
-filetype *.ts,*.tsx,*.js,*.jsx
-        \ highlight -O xterm256 -s dante --syntax
-        \ {Open in NeoVim}
-        \ nvim
+" filetype *.ts,*.tsx,*.js,*.jsx,*.json
+"       \ highlight -O xterm256 -s dante --syntax
+"        \ {Open in NeoVim}
+"        \ nvim -R
+
+" filetype *.ts,*.tsx,*.js,*.jsx,*.json
+"        \ highlight -O xterm256 -s dante --syntax
+"        \ {Open in bat}
+"        \ bat
 
 " fileviewer *.ts,*.tsx,*.js,*.jsx pygmentize -f terminal256 -O style=native -g
-"
+" fileviewer *.ts,*.tsx,*.js,*.jsx,*.json nvim -R
+
+" fileviewer *.ts,*.tsx,*.js,*.jsx,*.json highlight -O xterm256 -s dante --syntax c %c
+" fileviewer *[^/] pygmentize -O style=monokai -f console256 -g
+
 " Syntax highlighting in preview
 "
 " Explicitly set highlight type for some extensions
@@ -308,7 +316,9 @@ filetype *.ts,*.tsx,*.js,*.jsx
 "
 " 16-color terminal
 " fileviewer *.c,*.h highlight -O ansi -s dante %c
-"
+
+" fileviewer *.ts,*.tsx,*.js,*.jsx,*.json highlight bat
+
 " Or leave it for automatic detection
 "
 " fileviewer *[^/] pygmentize -O style=monokai -f console256 -g

@@ -1,0 +1,28 @@
+# /Users/xac/.config/tmuxinator/aji.yml
+
+name: aji
+root: ~/Workspace/xac/aeroji
+
+windows:
+  - ide:
+    - trcp aeroji_ide
+    - v
+  - svcs:
+      layout: tiles
+      panes:
+      - auth:
+        - trcp AUTH_SVC
+        - npm run auth-svc:dev
+      - mssg:
+        - trcp MSSG_SVC
+        - npm run mssg-svc:dev
+      - media:
+        - trcp MEDIA_SVC
+        - npm run media-svc:dev
+      - trcp AUTH_CLI
+      - trcp MSSG_CLI
+      - trcp MEDIA_CLI
+      - trcp WEB-APP
+      - trcp cli
+      - trcp cli
+

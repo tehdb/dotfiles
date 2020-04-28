@@ -10,7 +10,7 @@
 # zmodload zsh/zprof # start profiling
 
 # export TERM="xterm-256color"
-# export TERM="screen-256color"
+export TERM="screen-256color"
 export ZSH="/Users/xac/.oh-my-zsh"				 # Path to your oh-my-zsh installation
 
 ### theme ######################################################################
@@ -46,9 +46,11 @@ plugins=(
   git-extras
   # gulp
   # history
+  # ionic
   node
   npm
   npx
+  ng
   yarn
   osx
   tmux
@@ -131,14 +133,25 @@ bindkey -M vicmd 'j' history-substring-search-down
 # eval "$(jenv init -)"
 
 # export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
 export MAVEN_OPTS="-Xms1024m -Xmx4096m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 
 ####################################################################### java ###
 ### android ####################################################################
 
-export ANDROID_HOME="/Users/xac/Library/Android/sdk"
-export PATH="$ANDROID_HOME/tools:$PATH"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+# avdmanager, sdkmanager
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+
+# adb, logcat
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
+# emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+
+# export ANDROID_HOME="/Users/xac/Library/Android/sdk"
+# export PATH="$ANDROID_HOME/tools:$PATH"
+# export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 #################################################################### android ###
 ### ruby #######################################################################
@@ -160,10 +173,17 @@ export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 ##################################################################### python ###
 ### Rust #######################################################################
 
-export PATH="$HOME/.cargo/bin:$PATH"
+  export PATH="$HOME/.cargo/bin:$PATH"
 
-####################################################################### rust ###
+####################################################################### Rust ###
+### Perl #######################################################################
+  export PATH="/usr/bin/perl:$PATH"
+  export PATH="/usr/local/bin/cpanm:$PATH"
+  source ~/perl5/perlbrew/etc/bashrc
+####################################################################### Perl ###
+
 ### chromium ###################################################################
+
 
 # disable google api for chromium:
 export GOOGLE_API_KEY="no"
@@ -229,3 +249,5 @@ export NODE_OPTIONS=--max_old_space_size=8192
 
 
 # zprof # end profiling
+
+source /Users/xac/Library/Preferences/org.dystroy.broot/launcher/bash/br

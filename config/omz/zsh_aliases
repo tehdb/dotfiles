@@ -8,6 +8,7 @@ alias c="code"
 alias i="idea"
 alias f="vifm"
 alias t="tmux"
+alias trcp='tmuxRenameCurrentPane() { printf "\033]2;$1\033\\" };tmuxRenameCurrentPane'
 alias xo="open -a Xcode_10"
 alias x="open -a Xcode"
 # alias r="nvim -R"
@@ -20,8 +21,8 @@ alias pwdc="pwd|pbcopy"
 
 
 ## Shortcuts
-alias v-edit="nvim ~/.config/nvim/"
-alias z-edit="nvim ~/.config/omz/"
+alias v-edit="cd ~/.config/nvim && nvim ."
+alias z-edit="cd ~/.config/omz/ && nvim ."
 # alias z-edit-alias="nvim ~/.zsh_aliases"
 alias z-source="source ~/.zshrc"
 alias f-edit="nvim ~/.config/vifm/vifmrc"
