@@ -1,7 +1,8 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
-"=== basic ====================================================================
+"
+"=== basic =====================================================================
   let s:OSName = system("uname -s")
   set nocompatible
   syntax on
@@ -11,6 +12,8 @@ let &packpath = &runtimepath
   filetype indent on
   set encoding=utf-8
   set t_CO=256			                  " use 256 bit colors
+  set cursorline
+
 
   if s:OSName == "Darwin\n"
     set shell=/usr/local/bin/zsh      " MacOS zsh path
@@ -48,9 +51,14 @@ let &packpath = &runtimepath
   call plug#begin('~/.vim/plugged')
     " Plug 'jeffkreeftmeijer/vim-numbertoggle'                      " Toggles between hybrid and absolute line numbers automatically - https://github.com/jeffkreeftmeijer/vim-numbertoggle
     " Plug 'ctrlpvim/ctrlp.vim'                                       " File searcher - https://github.com/ctrlpvim/ctrlp.vim
-    Plug 'scrooloose/nerdtree'                                      " File explorer sidebar - https://github.com/scrooloose/nerdtree
+    " Plug 'scrooloose/nerdtree'                                      " File explorer sidebar - https://github.com/scrooloose/nerdtree
+
+    Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+    Plug 'ryanoasis/vim-devicons'                                   " Glyphs / icons - https://github.com/ryanoasis/vim-devicons
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Highlight for nerdtree - https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+
     Plug 'scrooloose/nerdcommenter'                                 " Intensely orgasmic commenting - https://github.com/scrooloose/nerdcommenter
-    " Plug 'jlanzarotta/bufexplorer'                                  " Buffer explorer - https://github.com/jlanzarotta/bufexplorer
+    Plug 'jlanzarotta/bufexplorer'                                  " Buffer explorer - https://github.com/jlanzarotta/bufexplorer
     " Plug 'mcchrish/nnn.vim'
     " Plug 'prettier/vim-prettier', { 'do': 'yarn install' }          " Code formatter - https://github.com/prettier/vim-prettier
     Plug 'terryma/vim-expand-region'                                " Select increasingly regions - https://github.com/terryma/vim-expand-region
@@ -63,18 +71,23 @@ let &packpath = &runtimepath
     Plug 'whiteinge/diffconflicts'                                  " Mergetool - https://github.com/whiteinge/diffconflicts
 
     " Plug 'Quramy/vim-js-pretty-template'                            " JSX/TSX template syntax highlighting - https://github.com/Quramy/vim-js-pretty-template
-    " Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing - https://github.com/tpope/vim-surround
+    Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing - https://github.com/tpope/vim-surround
     " Plug 'tpope/vim-unimpaired'                                     " Brackets - https://github.com/tpope/vim-unimpaired
     " Plug 'Quramy/tsuquyomi'                                         " Typescript IntelliSense - https://github.com/Quramy/tsuquyomi
+    "
+    " Plug 'Shougo/denite.nvim'                                       " Generic fuzzy finder - https://github.com/Shougo/denite.nvim
     " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'}    " Completion framework - https://github.com/Shougo/deoplete.nvim
-    " Plug 'w0rp/ale'                                                   " Asynchronous linting - https://github.com/w0rp/ale
+    " Plug 'w0rp/ale'                                                 " Asynchronous linting - https://github.com/w0rp/ale
+
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " IntelliSense engine - https://github.com/neoclide/coc.nvim
+    Plug 'neoclide/coc.nvim', { 'do': 'yarn install --frozen-lockfile' }
+
     Plug 'leafgarland/typescript-vim'                               " TypeScript syntax  - https://github.com/leafgarland/typescript-vim
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " IntelliSense engine - https://github.com/neoclide/coc.nvim
+
     Plug 'SirVer/ultisnips'                                         " Snippets engine - https://github.com/SirVer/ultisnips
     Plug 'honza/vim-snippets'                                       " Snippets for various programming languages - https://github.com/honza/vim-snippets
-    Plug 'Shougo/denite.nvim'                                       " Generic fuzzy finder - https://github.com/Shougo/denite.nvim
     " Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' } " language server protocol (used for e.g. go to definition) - https://github.com/autozimu/LanguageClient-neovim
-    " Plug 'mileszs/ack.vim'                                          " Search tool - https://github.com/mileszs/ack.vim
+    Plug 'mileszs/ack.vim'                                          " Search tool - https://github.com/mileszs/ack.vim
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Fuzzy finder - https://github.com/junegunn/fzf
     Plug 'junegunn/fzf.vim'
     Plug 'easymotion/vim-easymotion'                                " Fast navigation - https://github.com/easymotion/vim-easymotion
@@ -84,9 +97,9 @@ let &packpath = &runtimepath
     " Plug 'pseewald/nerdtree-tagbar-combined'                      " Tagbar and NERDTree - https://github.com/pseewald/nerdtree-tagbar-combined
     Plug 'kristijanhusak/vim-hybrid-material'                       " Material theme - https://github.com/kristijanhusak/vim-hybrid-material
     Plug 'itchyny/lightline.vim'                                    " Status line - https://github.com/itchyny/lightline.vim
+    Plug 'tjdevries/overlength.vim'                                 " Ruler - https://github.com/tjdevries/overlength.vim
     " Plug 'blueyed/vim-diminactive'                                  " Dim inactive windows - https://github.com/blueyed/vim-diminactive
     Plug 'gcmt/taboo.vim'                                           " Pretty tabs - https://github.com/gcmt/taboo.vim
-    Plug 'ryanoasis/vim-devicons'                                   " Glyphs / icons - https://github.com/ryanoasis/vim-devicons
     Plug 'kshenoy/vim-signature'                                    " Marks tools - https://github.com/kshenoy/vim-signature
     Plug 'pseewald/vim-anyfold'                                     " Foldings - https://github.com/pseewald/vim-anyfold
     Plug 'brooth/far.vim'                                           " Find And Replace Vim plugin - https://github.com/brooth/far.vim
@@ -109,13 +122,13 @@ let &packpath = &runtimepath
   if (has("termguicolors")) | set termguicolors | endif
 
   set background=dark
+
   colorscheme hybrid_reverse
-  " colorscheme palenight
-  " colorscheme gruvbox
-  " colorscheme onedark
+
   " let g:lightline.colorscheme = 'palenight'     " configure lightline
 
   hi Normal guibg=#121212
+
 
   " let mapleader = ','                 " set default leader to comma
   set backspace=indent,eol,start      " make backspace behave like every other editor
@@ -160,6 +173,7 @@ let &packpath = &runtimepath
 
   let g:netrw_banner = 0              " remove the banner
   let g:netrw_browse_split = 2        " open files in a new vertical split
+
   " Left gap
   hi FoldColumn term=standout ctermfg=4 ctermbg=bg guifg=#6C6C6C guibg=bg
   hi Folded guibg=bg guifg=#6C6C6C ctermbg=bg
@@ -179,25 +193,30 @@ let &packpath = &runtimepath
   " hi Cursor guifg=green guibg=green
   " hi Cursor2 guifg=red guibg=red
   " set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
+  if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+  endif
 "================================================================= settings ===
 
 "
 "=== plugins configs ===========================================================
   source ~/.config/nvim/xpluggins/foldtext.vimrc
-  source ~/.config/nvim/xpluggins/coc.vimrc
   " source ~/.config/nvim/xpluggins/ctrlp.vimrc
-  " source ~/.config/nvim/xpluggins/bufexplorer.vimrc
+  source ~/.config/nvim/xpluggins/bufexplorer.vimrc
   source ~/.config/nvim/xpluggins/nerdtree.vimrc
   source ~/.config/nvim/xpluggins/nerdcommenter.vimrc
   source ~/.config/nvim/xpluggins/fzf.vimrc
   " source ~/.config/nvim/xpluggins/nnn.vimrc
-  " source ~/.config/nvim/xpluggins/ack.vimrc
+  source ~/.config/nvim/xpluggins/ack.vimrc
   source ~/.config/nvim/xpluggins/far.vimrc
   source ~/.config/nvim/xpluggins/taboo.vimrc
   source ~/.config/nvim/xpluggins/table-mode.vimrc
   source ~/.config/nvim/xpluggins/devicons.vimrc
   source ~/.config/nvim/xpluggins/tagbar.vimrc
   source ~/.config/nvim/xpluggins/ultisnips.vimrc
+  source ~/.config/nvim/xpluggins/overlength.vimrc
   " source ~/.config/nvim/xpluggins/peekaboo.vimrc
   " source ~/.config/nvim/xpluggins/diminactive.vimrc
   source ~/.config/nvim/xpluggins/marks.vimrc
@@ -205,7 +224,8 @@ let &packpath = &runtimepath
   source ~/.config/nvim/xpluggins/cutclass.vimrc
   " source ~/.config/nvim/xpluggins/deoplete.vimrc
   " source ~/.config/nvim/xpluggins/ale.vimrc
-  " source ~/.config/nvim/xpluggins/langauge-client.vimrc
+  " source ~/.config/nvim/xpluggins/language-client.vimrc
+  source ~/.config/nvim/xpluggins/coc.vimrc
 "=================================================================== plugins ===
 
 source ~/.config/nvim/mappings.vimrc
