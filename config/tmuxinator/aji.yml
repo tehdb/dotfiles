@@ -1,11 +1,11 @@
 # /Users/xac/.config/tmuxinator/aji.yml
 
 name: aji
-root: ~/Workspace/xac/aeroji
+root: ~/Workspace/aji/repo
 
 windows:
   - ide:
-    - trcp aeroji_ide
+    - trcp aji_IDE
     - v
   - svcs:
       layout: tiles

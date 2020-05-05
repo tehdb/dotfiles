@@ -71,7 +71,9 @@ git clone https://github.com/ryanoasis/nerd-fonts
 
 Statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, tmux etc...
 - ArchLinux: `pacman -S powerline`
-- MacOS: `brew install powerline`
+- MacOS:
+-- `brew install powerline`
+-- `pip install powerline-status`
 
 
 ### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) · framework for managing zsh configuration
@@ -102,9 +104,18 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
 
 ### [tmux](https://github.com/tmux/tmux) · terminal multiplexer
 - ArchLinux: `pacman -S tmux`
-- MacOS: `brew install tmux`
+- MacOS:
+  - `brew install tmux`
+  - `brew install reattach-to-user-namespace`
+
 
 #### [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+
+> tpm does not work with symlinked .tmux.conf file, the config file has to be
+copied to the home directory
+```bash
+cp /path/to/dotfiles/config/tmux/tmux.conf ~/.tmux.conf
+```
 
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
