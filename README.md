@@ -1,6 +1,13 @@
 # dotfiles
 Development Environment Setup
 
+
+# Basic Setup
+
+```bash
+ssh-keygen -t rsa
+```
+
 ## ArchLinux
 
 ### Keyboard adjustments
@@ -101,16 +108,25 @@ xmodmap -pke > ~/.Xmodmap
 - ArchLinux: `pacman -S alacritty`
 - MacOS: `brew cask install alacritty`
 
+Statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, tmux etc...
+- ArchLinux: `pacman -S powerline`
+- MacOS: `pip3 install --upgrade powerline-status`
+
 ### Typeface for source code [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
+- ArchLinux:
 ```bash
 git clone https://github.com/ryanoasis/nerd-fonts
 ./install.sh Hack
 ```
 
-Statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, tmux etc...
-- ArchLinux: `pacman -S powerline`
-- MacOS: `pip3 install --upgrade powerline-status`
+- MacOs:
+https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
+```bash
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+```
+
 
 ### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) · Framework for managing zsh configuration
 

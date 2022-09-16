@@ -1,22 +1,22 @@
 # You can edit this file by hand, but it's recommended not to do that.
 
 # Marks:
-'H
-	/Users/xac/
-	..
-1556090744
+'a
+	/Users/xac/Workspace/aji/repo
+	README.md
+1602232825
 'b
 	/Users/xac/bin/
 	..
-1556090744
+1589448338
+'c
+	/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend
+	README.md
+1602232531
 'h
 	/Users/xac/
 	..
-1556090744
-'k
-	/Users/xac/Workspace/gk/mono/clients/mpos
-	karma.ci.conf.js
-1580728946
+1589448338
 
 # Bookmarks:
 
@@ -30,381 +30,440 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build/dev/app/images
-	adidas
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build/dev/app
-	images
-5
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build/dev/app/images
-	clienteling
-2
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build/dev/app/images/clienteling
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build/dev/app/images
-	adidas
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build/dev/app
-	images
-5
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build/dev
-	app
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build
-	dev
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos
-	configs
-2
-d/Users/xac/Workspace/gk/mono/clients/mpos/configs
-	adidas
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos/configs/adidas
-	adidas.conf.json
-5
-d/Users/xac/Workspace/gk/mono/clients/mpos/configs
-	nrf
-2
-d/Users/xac/Workspace/gk/mono/clients/mpos/configs/nrf
-	nrf.comps.json
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos/configs
-	nrf
-2
-d/Users/xac/Workspace/gk/mono/clients/mpos
-	yarn.lock
-20
-d/Users/xac
-	Documents
-6
-d/Users/xac/Workspace/gk/mono/components/services/basket-service
-	..
-0
-d/Users/xac/Workspace/gk/mono/components/services
-	basket-service
-5
-d/Users/xac/Workspace/xac/aeroji-old
-	service-auth
-4
-d/Users/xac/Workspace/xac/aeroji-old/service-auth
-	..
-0
-d/Users/xac/Workspace/xac/aeroji-old
-	mailserver
-2
-d/Users/xac/Workspace/xac/aeroji-old/mailserver
-	docker-compose.yml
-4
-d/Users/xac/Workspace/xac/aeroji-old
-	service-auth
-4
-d/Users/xac/Workspace/xac/aeroji-old/service-auth
-	Dockerfile
-8
 d/Users/xac/.config/nvim
-	snippets
-4
-d/Users/xac/.config/vifm
-	colors
-1
-d/Users/xac/Workspace/gk/mono
-	tools
-7
-d/Users/xac/Workspace/gk/mono/tools
 	..
 0
-d/Users/xac/Workspace/gk/mono
-	components
-3
-d/Users/xac/Workspace/gk/mono/components
-	..
-0
-d/Users/xac/Workspace/gk/mono
-	tools
-7
-d/Users/xac/Workspace/gk/mono/tools
-	..
-0
-d/Users/xac/Workspace/gk/mono
-	tools
-7
-d/Users/xac/Workspace/gk/mono/tools
-	..
-0
-d/Users/xac/Workspace/gk/mono
-	tools
-7
-d/Users/xac/Workspace/gk/mono/tools
-	..
-0
-d/Users/xac/Workspace/gk/mono
-	tools
-7
-d/Users/xac/Workspace/gk/mono/tools
-	initializers
-1
-d/Users/xac/Workspace/gk/mono/tools/initializers
-	message
-3
-d/Users/xac/Workspace/gk/mono/tools/initializers/message
-	..
-0
-d/Users/xac/Workspace/gk/mono/tools/initializers
-	..
-0
-d/Users/xac/Workspace/gk/mono/tools
-	..
-0
-d/Users/xac/Workspace/gk/mono
-	components
-3
-d/Users/xac/Workspace/gk/mono/components
-	..
-0
-d/Users/xac/Workspace/gk/mono
-	components
-3
-d/Users/xac/Workspace/gk/mono/components
-	..
-0
-d/Users/xac/Workspace/gk/mono
-	clients
-2
-d/Users/xac/Workspace/gk/mono/clients
-	mpos
-4
-d/Users/xac/Workspace/gk/mono/clients/mpos
-	.build
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos/.build
-	dev
-1
-d/Users/xac/Workspace/gk/mono2/clients/mpos
-	.build
-1
-d/Users/xac/Workspace/gk/mono2/clients/mpos/.build
-	android
-1
-d/Users/xac/Workspace/gk/mono2/clients/mpos/.build/android
-	GK-Software-AG_Enterprise_Distribution_02.01.2022.p12
+d/Users/xac/.config
+	nvim
 9
-d/Users/xac/Workspace/gk
-	..
-0
-d/Users/xac/Workspace
-	gk
-1
 d/Users/xac
 	Workspace
-18
+14
 d/Users/xac/Workspace
-	xac
+	aji
+1
+d/Users/xac/Workspace/aji
+	repo
+1
+d/Users/xac/Workspace/aji/repo
+	nx.json
+14
+d/Users/xac/.config/nvim
+	autocmd.vimrc
 4
-d/Users/xac/Workspace/xac
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next
-	ios
+d/Users/xac/Library/Mobile Documents/com~apple~CloudDocs/vimwiki
+	Vifm.md
 2
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios
-	App
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App
-	App
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/App
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App
-	public
-5
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/public
-	plugins
-3
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/public/plugins
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/public
-	i18n
+d/Users/xac/.config/vifm
+	scripts
 2
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/public/i18n
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/public
-	assets
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/public/assets
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App/public
-	assets
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/ios/App
-	App.xcodeproj
-2
-d/Users/xac/Workspace/gk/mono
-	clients
-3
-d/Users/xac/Workspace/gk/mono/clients
-	mpos-next
-6
-d/Users/xac/Workspace/gk/mono/clients/mpos-next
-	www
-7
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www
-	node_modules
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/node_modules
-	@gk-software
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/node_modules/@gk-software
-	component-runtime-footer-widget
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/node_modules/@gk-software/component-runtime-footer-widget
-	i18n
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/node_modules/@gk-software/component-runtime-footer-widget/i18n
-	
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next
-	www
-7
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www
-	i18n
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/i18n
-	comps
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/i18n/comps
-	component-widget-drawer-config-login-menu.i18n.de-DE.json
-18
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/i18n
-	comps
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www
-	polyfills-latest.js
-22
-d/Users/xac/Workspace/gk/mono/clients/mpos-next
-	node_modules
-4
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/node_modules
-	ionicons
-22
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/node_modules/ionicons
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/node_modules
-	ionicons
-22
-d/Users/xac/Workspace/gk/mono/clients/mpos-next
-	www
-7
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www
-	svg
-3
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/svg
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www
-	i18n
-2
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/i18n
-	comps
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www
-	assets
-1
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www/assets
-	..
-0
-d/Users/xac/Workspace/gk/mono/clients/mpos-next/www
-	vendor-latest.js.map
-26
-d/Users/xac/Workspace/xac/aeroji
+d/Users/xac/.config
+	vifm
+15
+d/Users/xac
+	Pictures
+9
+d/Users/xac/Pictures
+	IMG_2877.jpg
+15
+d/Users/xac/Workspace/aji/repo
 	apps
+1
+d/Users/xac/Workspace/aji/repo/apps
+	web-app
+10
+d/Users/xac/Workspace/aji/repo/apps/web-app
+	src
 3
-d/Users/xac/Workspace/xac/aeroji/apps
-	mssg-service
+d/Users/xac/Workspace/aji/repo/apps/web-app/src
+	app
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app
+	core
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core
+	ui
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	checkbox
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/checkbox
+	checkbox.component.scss
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	input
+9
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/input
+	input.component.ts
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	radio-group
+10
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/radio-group
+	radio-group.component.html
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	select
+10
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/select
+	select.component.html
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	autocomplete-multiselect
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/autocomplete-multiselect
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	checkbox
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/checkbox
+	checkbox.component.scss
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	date-picker
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/date-picker
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	date-range-picker
+4
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/date-range-picker
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	from-to-picker
+5
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/from-to-picker
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	image
 6
-d/Users/xac/Workspace/xac/aeroji/apps/mssg-service
-	tsconfig.json
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/image
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	input
 7
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/input
+	input.component.ts
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	location-selector
+8
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/location-selector
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	radio-group
+9
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/radio-group
+	radio-group.component.html
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	text-input
+11
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/text-input
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	input
+7
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/input
+	input.component.ts
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	text-input
+11
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/text-input
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	location-radius
+8
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/location-radius
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	location-radius
+8
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/location-radius
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	location-radius
+8
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/location-radius
+	location-radius.component.html
+1
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/core/ui/widget-header
+	..
+0
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/core/ui
+	widget-header
+2
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/core
+	ui
+4
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app
+	core
+1
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/core
+	state
+3
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/core/state
+	cms
+2
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/core/state/cms
+	cms.facade.spec.ts
+4
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/location-radius
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	input-select
+8
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/input-select
+	input-select.component.html
+1
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/environments
+	..
+0
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src
+	environments
+3
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend
+	src
+4
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src
+	app
+1
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app
+	features
+2
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/features
+	page-application-details
+2
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/features/page-application-details
+	..
+0
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/features
+	page-application-create
+1
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/features/page-application-create
+	application-create.page.scss
+3
+d/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/src/app/features/page-application-create/component-basic-data
+	basic-data.widget.scss
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/widget-item-documents
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace
+	widget-item-documents
+12
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/widget-item-documents
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/widget-item-media-gallery
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace
+	widget-item-documents-viewer
+12
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/widget-item-documents-viewer
+	..
+0
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace
+	widget-item-documents-viewer
+12
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/widget-item-documents-viewer
+	item-documents-viewer.widget.scss
+2
+d/Users/xac/Workspace/aji/repo
+	apps
+1
+d/Users/xac/Workspace/aji/repo/apps
+	web-app
+10
+d/Users/xac/Workspace/aji/repo/apps/web-app
+	src
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src
+	app
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app
+	features
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features
+	marketplace
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace
+	widget-item-docs-viewer
+12
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/widget-item-docs-viewer
+	item-docs-viewer.widget.html
+1
+d/Users/xac/Workspace/aji/repo
+	apps
+1
+d/Users/xac/Workspace/aji/repo/apps
+	web-app
+10
+d/Users/xac/Workspace/aji/repo/apps/web-app
+	src
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src
+	app
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app
+	features
+2
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features
+	marketplace
+3
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace
+	page-comparison
+1
+d/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/page-comparison
+	comparison.module.ts
+1
 d
 
 # Right window history (oldest to newest):
-D/Users/xac/Workspace/gk/mono
-	..
-0
-D/Users/xac/Workspace/gk
+D/Users/xac/Workspace/aji
 	..
 0
 D/Users/xac/Workspace
-	..
-0
-D/Users/xac
-	Library
-8
-D/Users/xac/Library
-	..
-0
-D/Users/xac
-	Downloads
-7
-D/Users/xac/Downloads
-	286. Angebot Alte Jakobstraße 76 Kopie.pdf
+	comsys
+2
+D/Users/xac/Workspace/comsys
+	audi-mbv
+2
+D/Users/xac/Workspace/comsys/audi-mbv
+	mbv
+11
+D/Users/xac/Workspace/comsys/audi-mbv/mbv
+	src
+4
+D/Users/xac/Workspace/comsys/audi-mbv/mbv/src
+	main
 3
-D/Users/xac
-	Downloads
-7
-D/Users/xac/Downloads
+D/Users/xac/Workspace/comsys/audi-mbv/mbv/src/main
+	frontend
+1
+D/Users/xac/Workspace/comsys/audi-mbv/mbv/src/main/frontend
+	node_modules
+3
+D/Users/xac/Workspace/aji/repo
+	apps
+1
+D/Users/xac/Workspace/aji/repo/apps
+	web-app
+10
+D/Users/xac/Workspace/aji/repo/apps/web-app
+	src
+3
+D/Users/xac/Workspace/aji/repo/apps/web-app/src
+	app
+1
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app
+	core
+1
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core
+	ui
+2
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	from-to-picker
+5
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/from-to-picker
+	from-to-picker.component.ts
+3
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui
+	from-to-picker
+6
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core
+	ui
+2
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app
+	core
+1
+D/Users/xac/Workspace/aji/repo/apps/web-app/src
+	app
+1
+D/Users/xac/Workspace/aji/repo/apps/web-app
+	src
+3
+D/Users/xac/Workspace/aji/repo/apps/web-app/src
+	app
+1
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app
+	features
+2
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features
+	marketplace
+3
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace
+	widget-item-media-gallery
+15
+D/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/widget-item-media-gallery
 	..
 0
 D
 
 # Command line history (oldest to newest):
-:szajk
-:pwd
-:open_with nvim
+:shell
+:marks
 :help
-:qjjjkk
-:qk
-:quit
-:h
-:view
-:qa
+:SplitVim
+:exit
+:touch 
+:touch location-radius.component.html
+:touch location-radius.component.scss
+:touch
+:touch cms.effects.spec.ts
+:t
+:touch cms.reducer.spec.ts
+:touch cms.facade.spec.ts
 :q
+:touch item-documents
+:touch item-documents-viewer.widget.ts
+:touch item-documents-viewer.widget.html
+:touch item-documents-viewer.widget.scss
+:copen
+:rename
+:qa
 
 # Search history (oldest to newest):
-/vifm
-/search
-//jjkk
-/kkk
-/package.json
-/foo
-/ionicon
 
 # Prompt history (oldest to newest):
-pservices-configs.json
-pnode_modules
-pyarn-error.log
-ptest.sql
-ptest.db
-pREADME.md
-pkcordova
+pinput
+pcustom-radio-group
+ppage-comparison
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/Users/xac/Workspace/aji/repo/apps/web-app/src/app/features/marketplace/page-favorites
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/Users/xac/.local/share/vifm/Trash/000_junit.xml
+	/Users/xac/Workspace/comsys/audi/carPLAN/mbv-change-management-service/src/main/frontend/junit.xml
+t/Users/xac/.local/share/vifm/Trash/000_checkbox.component.spec.ts
+	/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/checkbox/checkbox.component.spec.ts
+t/Users/xac/.local/share/vifm/Trash/000_input.component.spec.ts
+	/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/input/input.component.spec.ts
+t/Users/xac/.local/share/vifm/Trash/000_location-radius.component.ts
+	/Users/xac/Workspace/aji/repo/apps/web-app/src/app/core/ui/location-radius.component.ts
 
 # State:
 f
 i1
-[.0
+[.1
 [F
 F
 I1

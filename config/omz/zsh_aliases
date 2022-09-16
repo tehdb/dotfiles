@@ -1,65 +1,65 @@
-
 ## Tools
 alias mb="greadme"
 alias m="mdless"
 alias v="nvim"
-# alias r="nvim -R"
+alias r="nvim -R"
 alias c="code"
 alias i="idea"
 alias f="vifm"
 alias t="tmux"
 alias trcp='tmuxRenameCurrentPane() { printf "\033]2;$1\033\\" };tmuxRenameCurrentPane'
-alias xo="open -a Xcode_10"
 alias x="open -a Xcode"
-# alias r="nvim -R"
-alias r="bat"
-# alias r="pygmentize -f terminal256 -O style=native -g"
-# alias x="open -a Xcode_10_1"
+
+alias cpu-temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
+alias gpu-temp='sudo powermetrics --samplers smc | grep -i "GPU die temperature"'
+
+alias theme="sh ~/.config/omz/scripts/switch-theme.sh"
+
+# exclude patterns for silver searchers
+alias ag='ag --path-to-ignore ~/.config/ag/.ignore'
 
 alias pwdc="pwd|pbcopy"
 # alias sh="history | fzf +s --tac"
 
+# alias use-minikube-docker-deamon="eval $(minikube docker-env)"
+# alias use-local-docker-deamon="eval $(minikube docker-env -u)"
 
 ## Shortcuts
-alias v-edit="cd ~/.config/nvim && nvim ."
-alias z-edit="cd ~/.config/omz/ && nvim ."
+alias v-edit="cd ~/.config/nvim && nvim"
+alias z-edit="cd ~/.config/omz/ && nvim"
 # alias z-edit-alias="nvim ~/.zsh_aliases"
 alias z-source="source ~/.zshrc"
 alias f-edit="nvim ~/.config/vifm/vifmrc"
 alias t-edit="nvim ~/.tmux.conf"
 alias t-source="tmux source ~/.tmux.conf"
 alias a-edit="nvim ~/.config/alacritty/alacritty.yml"
-alias k-edit="nvim ~/.config/kitty/kitty.conf"
+# alias k-edit="nvim ~/.config/kitty/kitty.conf"
 alias g-edit="nvim ~/.gitconfig"
 
 alias gpSkipCI="git push -o ci.skip"
 
-alias azure-login="az acr login --name gksoftware"
+alias dps="docker ps --format \"table {{.ID}}\t{{.Names}}\t{{.RunningFor}}\t{{.Status}}\""
+alias dpsp="docker ps --format \"table {{.ID}}\t{{.Names}}\t{{.Ports}}\""
 
-alias cd-mono="cd /Users/xac/Workspace/gk/mono"
-alias cd-icloud="cd /Users/xac/Library/Mobile\ Documents/com~apple~CloudDocs"
-alias cd-x="cd /Users/xac/Workspace/xac"
-alias cd-ws="cd /Users/xac/Workspace"
+# alias azure-login="az acr login --name gksoftware"
 
 alias e-docs="nvim ~/Library/Mobile\ Documents/com~apple~CloudDocs/dev/"
 alias cd-docs="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/dev/"
+alias cd-icloud="cd /Users/xac/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias cd-ws="cd /Users/xac/Workspace"
+
+# Projects
+alias cd-aji="cd /Users/xac/Workspace/aji/repo"
+alias cd-rc2="cd /Users/xac/Workspace/comsys/recall2"
+alias cd-aui="cd ~/Workspace/comsys/aui";
 
 
-
-## GK
 
 alias git-user-xac="git config --global user.name \"xac\" && git config --global user.email \"xac69@icloud.com\""
 alias git-user-tehdb="git config --global user.name \"tehdb\" && git config --global user.email \"tehdb@me.com\""
-alias git-user-gk="git config --global user.name \"Heinz, Alexander (alheinz)\" && git config --global user.email \"aheinz@gk-software.com\""
 
-
-alias connect-to-brent="ssh root@brent.gk.gk-software.com"
-alias connect-to-tron="ssh root@tron.gk.gk-software.com"
-alias connect-to-macmini-es="ssh devadmin@slave-jinn05.es.gk-software.com"
-alias connect-to-macmini-bas="ssh mposteam@MobilePOSs-Mac-mini.local"
-alias connect-to-macmini2-bas="ssh devadmin@macminis-mini.bas.gk-software.com"
-alias connect-to-vbox-ubuntu="ssh -p 2222 xac@localhost"
-alias connect-to-ent1="ssh cc5adm@ent1.qasec.gk-software.com"
-# alias connect-to-rhuv="ssh gitlab@rhuv.bas.gk-software.com"
-alias connect-to-rhuv="ssh ron@rhuv.bas.gk-software.com"
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
 

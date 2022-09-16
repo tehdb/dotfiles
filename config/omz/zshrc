@@ -1,4 +1,3 @@
-
 ### tmux #######################################################################
 # autostart tmux
 # [[ $TERM != "screen" ]] && exec tmux
@@ -6,14 +5,20 @@
 #     tmux attach -t x || tmux new -s x
 # fi
 ####################################################################### tmux ###
+[ -z "$ZPROF" ] || zmodload zsh/zprof # start profiling
+# usage: PROF=1 zsh -i -c exit 
 
-# zmodload zsh/zprof # start profiling
+
+# The plugin manager for zsh - https://github.com/zsh-users/antigen
+# source $(brew --prefix)/share/antigen/antigen.zsh
+# antigen bundle mroth/evalcache
+# antigen apply
 
 # export TERM="xterm-256color"
+
+### Theme ######################################################################
 export TERM="screen-256color"
 export ZSH="/Users/xac/.oh-my-zsh"				 # Path to your oh-my-zsh installation
-
-### theme ######################################################################
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -33,36 +38,31 @@ POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND='22'
 export FZF_DEFAULT_OPTS='--bind ctrl-J:down,ctrl-K:up'
 export FZF_DEFAULT_COMMAND='ag --nocolor -g "" -l'
 
-### theme ###################################################################### ## plugins ####################################################################
+###################################################################### Theme ###
+
+### Plugins ####################################################################
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 plugins=(
-  brew
-  common-aliases
+  brew                # aliases for homebrew - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/brew
+  common-aliases      # common shortcut aliases - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases
   # Expands all glob expressions, subcommands and aliases - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
   # globalias
-  docker
-  docker-compose
-  kubectl
-  git
-  git-extras
-  # gulp
-  # history
-  # ionic
-  node
-  npm
-  npx
-  ng
-  yarn
-  osx
-  tmux
-  vi-mode
-  # vscode
-  # zsh-completions
-  zsh-syntax-highlighting
-  history-substring-search
-  z
+  docker              # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
+  # docker-compose
+  kubectl             # completion for the Kubernetes cluster manager - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/kubectl
+  git                 # aliases and function for git - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git 
+  # git-extras
+  node                # docs links for node functions - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/node
+  npm                 # completion and aliases - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/npm
+  macos               # some utilities - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
+  tmux                # aliases - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
+  vi-mode             # vi mode for zsh - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode
+  safe-paste          # prevents code from running while pasting - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/safe-paste
+  zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
+  history-substring-search # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history-substring-search
 )
 
-#################################################################### plugins ###
+#################################################################### Plugins ###
 source $ZSH/oh-my-zsh.sh
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"    # faster repo status check by disabling marking untracked files
@@ -74,13 +74,19 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+export PAGER="less"
+
+# check out https://github.com/zegervdv/homebrew-zathura
+# export READER="zathura"
+
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-# Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
-export KEYTIMEOUT=1
+# Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second).
+# On troubles with vi-mode and `vv` (open nvim to edit the command) increase the value
+export KEYTIMEOUT=30
 
 ### zsh-users ##################################################################
-# autoload -U compinit && compinit
-## completion stuff
+autoload -U compinit && compinit
+# completion stuff
 zstyle ':compinstall' filename '$HOME/.zshrc'
 
 zcachedir="$HOME/.zcache"
@@ -115,45 +121,62 @@ _update_zcomp() {
 _update_zcomp "$zcachedir"
 unfunction _update_zcomp
 
-
-# source zsh-syntax-highlighting.zsh
-# source zsh-history-substring-search.zsh
-
-# bindkey '^[[5~' history-substring-search-up
-# bindkey '^[[6~' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 # bindkey -M vicmd 'n' nvim .
 ################################################################## zsh-users ###
+
+### man pages ##################################################################
+# colored man pages - http://www.tuxarena.com/2012/04/tutorial-colored-man-pages-how-it-works
+export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode – red
+export LESS_TERMCAP_md=$(printf '\e[01;35m') # enter double-bright mode – bold, magenta
+export LESS_TERMCAP_me=$(printf '\e[0m') # turn off all appearance modes (mb, md, so, us)
+export LESS_TERMCAP_se=$(printf '\e[0m') # leave standout mode
+export LESS_TERMCAP_so=$(printf '\e[01;33m') # enter standout mode – yellow
+export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
+export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode – cyan
+################################################################## man pages ###
+
 ### java #######################################################################
 
 # Manage your Java environment [jEnv](https://www.jenv.be/)
+# brew install jenv
 # export PATH="$HOME/.jenv/bin:$PATH"
+#
+# export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 # eval "$(jenv init -)"
 
+# export MAVEN_OPTS="-Xms1024m -Xmx4096m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+
 # export JAVA_HOME=$(/usr/libexec/java_home)
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
-export MAVEN_OPTS="-Xms1024m -Xmx4096m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdkXXX/Contents/Home"
+# export JAVA_HOME="/usr/local/Cellar/openjdk/15.0.2"
+# export JAVA_HOME="/usr/local/Cellar/openjdk/16.0.1"
+# export JAVA_HOME="/Users/xac/Tools/openjdk/jdk-15.0.2.jdk/Contents/Home"
 
 ####################################################################### java ###
+
 ### android ####################################################################
 
-export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+# export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 # avdmanager, sdkmanager
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+# export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
 
 # adb, logcat
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+# export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
 # emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+# export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 
 # export ANDROID_HOME="/Users/xac/Library/Android/sdk"
 # export PATH="$ANDROID_HOME/tools:$PATH"
 # export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
+# export PATH=$PATH:/Applications/Firefox\ Developer\ Edition.app
+
 #################################################################### android ###
+
 ### ruby #######################################################################
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -164,39 +187,69 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 ####################################################################### ruby ###
+
 ### python #####################################################################
 
 # export PATH=$PATH:$HOME/Library/Python/3.7/bin
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+# export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
+export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
 
 ##################################################################### python ###
 ### Rust #######################################################################
 
-  export PATH="$HOME/.cargo/bin:$PATH"
+
+# https://www.rust-lang.org/tools/install
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+export PATH="$HOME/.cargo/bin:$PATH"
 
 ####################################################################### Rust ###
+
 ### Perl #######################################################################
   export PATH="/usr/bin/perl:$PATH"
-  export PATH="/usr/local/bin/cpanm:$PATH"
-  source ~/perl5/perlbrew/etc/bashrc
+  # export PATH="/usr/local/bin/cpanm:$PATH"
+  # source ~/perl5/perlbrew/etc/bashrc
 ####################################################################### Perl ###
 
 ### chromium ###################################################################
 
-
 # disable google api for chromium:
-export GOOGLE_API_KEY="no"
-export GOOGLE_DEFAULT_CLIENT_ID="no"
-export GOOGLE_DEFAULT_CLIENT_SECRET="no"
+# export GOOGLE_API_KEY="no"
+# export GOOGLE_DEFAULT_CLIENT_ID="no"
+# export GOOGLE_DEFAULT_CLIENT_SECRET="no"
 
 ################################################################### chromium ###
 
+### AWS carPLAN ################################################################
+# export AWS_DEFAULT_REGION=eu-west-1
+# export CODEARTIFACT_TOKEN_CARPLAN=$(aws codeartifact get-authorization-token --domain carplan --domain-owner 851767868844 --query authorizationToken --output text)
+# export CODEARTIFACT_TOKEN_SRE=$(aws codeartifact get-authorization-token --domain vw-sre --domain-owner 565220512126 --query authorizationToken --output text)
+
+# temporary, goto https://vwapps.cloud/ to get new credentials
+
+################################################################ AWS carPLAN ###
+
+
+### Google Cloud ###############################################################
+
+# export GOOGLE_APPLICATION_CREDENTIALS="/Users/xac/Workspace/aji/pubsub-dev.json"
+export PUBSUB_EMULATOR_HOST=localhost:8085
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/xac/Tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/xac/Tools/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/xac/Tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/xac/Tools/google-cloud-sdk/completion.zsh.inc'; fi
+############################################################### Google Cloud ###
+
 ### brew #######################################################################
 
-export HOMEBREW_GITHUB_API_TOKEN=981bec44343f91f0f9008f5b221d5de2234fa130
-
-export PATH="/usr/local/sbin:$PATH"
+# Create a Personal Access Token for Homebrew
+# https://gist.github.com/willgarcia/7347306870779bfa664e#step-1---create-a-personal-access-token-for-homebrew
+# export HOMEBREW_GITHUB_API_TOKEN=xxx
 
 ####################################################################### brew ###
 
@@ -208,46 +261,29 @@ export PATH=$GEM_HOME/bin:$PATH
 ################################################################## cocoapods ###
 
 ### node #######################################################################
+
 export NODE_OPTIONS=--max_old_space_size=8192
+
 ####################################################################### node ###
 
-### chruby #####################################################################
-# source /usr/local/opt/chruby/share/chruby/auto.sh
-##################################################################### chruby ###
+### zenozide ###################################################################
+# a smarter cd command - https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init zsh)"
 
-### kitty ######################################################################
-# autoload -Uz compinit
-# compinit
-# # Completion for kitty
-# kitty + complete setup zsh | source /dev/stdin
-###################################################################### kitty ###
+################################################################### zenozide ###
 
+### fzf - fuzy finder ##########################################################
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+######################################################################## fzf ###
 
-
-
-### aliases ####################################################################
 . ~/.config/omz/zsh_aliases
+export PATH="/usr/local/sbin:$PATH"
 
-# Functions
+### Functions ##################################################################
 #
 # fpath+=${ZDOTDIR:-~}/.zsh_functions
 # fpath=( ~/.zsh_functions "${fpath[@]}" )
 
-# FPATH=~/.zsh_functions:$FPATH
-# function xac() {
-#   echo "xac is here"
-# }
+################################################################## Functions ###
 
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
-
-# zprof # end profiling
-
-source /Users/xac/Library/Preferences/org.dystroy.broot/launcher/bash/br
+[ -z "$ZPROF" ] || zprof # zprof # end profiling
