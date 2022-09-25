@@ -31,7 +31,6 @@ brew install python
 
 pip3 install --upgrade powerline-status
 
-
 # command-line fuzzy finder - https://github.com/junegunn/fzf
 brew install fzf
 # To install useful key bindings and fuzzy completion:
@@ -44,10 +43,10 @@ brew install ripgrep
 brew install zsh-completions
 
 # History search - https://github.com/zsh-users/zsh-history-substring-search
-brew install zsh-history-substring-search
+# brew install zsh-history-substring-search
 
 # Syntax highlighting for Zsh - https://github.com/zsh-users/zsh-syntax-highlighting
-brew install zsh-syntax-highlighting 
+# brew install zsh-syntax-highlighting 
 
 # Kubernetes command-line interface - https://kubernetes.io/
 brew install kubernetes-cli

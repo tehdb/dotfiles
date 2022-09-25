@@ -6,9 +6,15 @@ end
 return
 
 configs.setup({
-	ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+	--[[ ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages ]]
+	ensure_installed = { 
+    "bash", "css", "dockerfile", "dot", "gitattributes", "gitignore", "graphql",
+    "html", "http", "javascript", "jsdoc", "json", "json5",
+    "kotlin", "lua", "make", "markdown", "markdown_inline", "regex", "scss", "sql",
+    "swift", "todotxt", "tsx", "typescript", "vim", "yaml"
+  }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
 	sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-	ignore_install = { "" }, -- List of parsers to ignore installing
+	ignore_install = { "php", "phpdoc" }, -- List of parsers to ignore installing
 	autopairs = {
 		enable = true,
 	},

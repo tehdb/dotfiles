@@ -58,8 +58,10 @@ plugins=(
   tmux                # aliases - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
   vi-mode             # vi mode for zsh - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode
   safe-paste          # prevents code from running while pasting - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/safe-paste
-  zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
-  history-substring-search # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history-substring-search
+
+  # !!! look for install instructions for oh-my-zsh !!!
+  zsh-syntax-highlighting   # Syntax highlighting for Zsh - https://github.com/zsh-users/zsh-syntax-highlighting
+  history-substring-search  # History search feature - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history-substring-search
 )
 
 #################################################################### Plugins ###
